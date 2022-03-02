@@ -2,7 +2,7 @@
 
 read -p 'Quel est le titre du post de blog ? (répondre `a` pour annuler) : ' TITLE
 
-if [ $TITLE = a ]; then
+if [ "$TITLE" = "a" ]; then
     echo "Annulation de la création du nouveau post de blog."
     exit
 else
