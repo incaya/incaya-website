@@ -12,7 +12,7 @@ stop: ## Arrêt de Hugo en mode dev
 	docker stop incaya-local-website
 
 build: ## Génération des statiques finaux
-	docker run --rm --name incaya-local-website \
+	docker run --rm --name incaya-build-website \
 	  -v $(shell pwd):/website \
 	  -w /website \
 	  -p 1313:1313 \
@@ -25,8 +25,8 @@ new-blog-post: ## Création d'un nouveau post de blog (Hudo doit être lancé au
 docker-image: ## Construction et publication de l'image Docker Hugo
 	docker build -t incaya-website --force-rm .
 	docker tag incaya-website ghcr.io/incaya/incaya-website:latest
-	docker tag incaya-website ghcr.io/incaya/incaya-website:0.93.0
-	docker push ghcr.io/incaya/incaya-website:0.93.0
+	docker tag incaya-website ghcr.io/incaya/incaya-website:0.93.1
+	docker push ghcr.io/incaya/incaya-website:0.93.1
 	docker push ghcr.io/incaya/incaya-website:latest
 	
 
