@@ -15,14 +15,13 @@ build: ## Génération des statiques finaux
 	docker run --rm --name incaya-build-website \
 	  -v $(shell pwd):/website \
 	  -w /website \
-	  -p 1313:1313 \
 	  ghcr.io/incaya/incaya-website:latest \
 	  bash -ci hugo
 
 new-blog-post: ## Création d'un nouveau post de blog (Hudo doit être lancé au préalable avec un make start)
 	docker exec -it incaya-local-website /website/new-blog-post.sh
 
-docker-image: ## Construction et publication de l'image Docker Hugo
+docker-image: ## Construction et publication de l'image Docker Hugo utilisée en dev
 	docker build -t incaya-website --force-rm .
 	docker tag incaya-website ghcr.io/incaya/incaya-website:latest
 	docker tag incaya-website ghcr.io/incaya/incaya-website:0.93.1
