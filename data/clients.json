@@ -1,0 +1,12 @@
+{
+    "structures": [
+        { "name": "Hey! Coworking", "order": 1, "logo": "hey.png" },
+        { "name": "Le Dôme", "order": 2, "logo": "ledome.png" },
+        { "name": "Le RESPE", "order": 3, "logo": "respe.png" },
+        { "name": "Lesscop", "order": 4, "logo": "lesscop.png" },
+        { "name": "Decide Om", "order": 5, "logo": "decideom.png" },
+        { "name": "Bricozor", "order": 6, "logo": "bricozor.png" },
+        { "name": "Chambre d'agriculture Normandie", "order": 7, "logo": "cran.jpg" },
+        { "name": "Association Mouvement Artrope", "order": 8, "logo": "ama.png" }
+    ]
+}

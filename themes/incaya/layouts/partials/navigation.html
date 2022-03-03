@@ -1,0 +1,15 @@
+<nav class="navigation">
+	{{ if not .IsHome }}
+		<a href="{{ "/" | relURL }}">{{ with .Site.Params.home }}{{ . }}{{ else }}{{ i18n "home" }}{{ end }}</a>
+	{{ end }}
+	<a href="{{ "/savoir-faire" | relURL }}">{{ i18n "craft" }}</a>
+	<a href="{{ "/cooperative" | relURL }}">{{ i18n "cooperative" }}</a>
+	<a href="{{ "/blog" | relURL }}">{{ i18n "blog" }}</a>
+	<a href="{{ "/contact" | relURL }}">{{ i18n "contact" }}</a>
+	{{ range $element := .Site.Params.Links }}
+		<a href="{{ $element.path }}">{{ $element.name }}</a>
+	{{ end }}
+	{{ if .Site.Params.enableRSS }}
+	  <a class="button" href="{{ .Site.RSSLink }}">{{ with .Site.Params.subscribe }}{{ . }}{{ else }}{{ i18n "subscribe" }}{{ end }}</a>
+	{{ end }}
+</nav>
