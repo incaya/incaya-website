@@ -3,7 +3,7 @@ title: Comment ça marche, un Axidraw ?
 slug: comment-a-marche-un-axidraw
 description: "L'Axidraw dessine, c'est acté, mais comment fonctionne-t-il ? C'est un mélange d'extrême simplicité (du point de vue du roboticien) et d'astuces qui font la différence."
 date: 2021-04-26
-draft: true
+draft: false
 in_search_index: true
 tags:
 - robotique

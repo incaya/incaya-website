@@ -3,7 +3,7 @@ title: Incaya s'installe au Dôme
 slug: incaya-s-installe-au-dome
 description: "Incaya pose ses valises au Dôme, sur la presqu'île de Caen, pour donner un coup d'accélérateur à son offre d'accompagnement technique des projets scientifiques."
 date: 2019-09-16
-draft: true
+draft: false
 in_search_index: true
 tags:
 - incaya

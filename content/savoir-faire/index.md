@@ -1,7 +1,6 @@
 ---
 title: "Nos savoir-faire"
 description: "Ce qu'on fait bien"
-draft: true
 ---
 
 ### L'Assistance à Maîtrise d'Ouvrage en système d'information
