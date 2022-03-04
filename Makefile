@@ -18,6 +18,9 @@ build: ## Génération des statiques finaux
 	  ghcr.io/incaya/incaya-website:latest \
 	  bash -ci hugo
 
+deploy: build ## Deploiement du site
+	rsync -avz --delete public/ incaya-general:/var/www/incaya/beta
+
 new-blog-post: ## Création d'un nouveau post de blog (Hudo doit être lancé au préalable avec un make start)
 	docker exec -it incaya-local-website /website/new-blog-post.sh
 

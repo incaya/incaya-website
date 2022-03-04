@@ -3,7 +3,7 @@ title: Le robot qui voulait être artiste
 slug: le-robot-qui-voulait-etre-artiste
 description: "C'est une rencontre que nous voulions faire depuis longtemps. L'Axidraw, le petit robot à dessiner, est l'exemple parfait de l'outil simple mais bourré de potentiel créatif."
 date: 2021-04-23
-draft: true
+draft: false
 in_search_index: true
 tags:
 - robotique
