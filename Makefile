@@ -27,8 +27,8 @@ new-blog-post: ## Création d'un nouveau post de blog (Hudo doit être lancé au
 docker-image: ## Construction et publication de l'image Docker Hugo utilisée en dev
 	docker build -t incaya-website --force-rm .
 	docker tag incaya-website ghcr.io/incaya/incaya-website:latest
-	docker tag incaya-website ghcr.io/incaya/incaya-website:0.93.1
-	docker push ghcr.io/incaya/incaya-website:0.93.1
+	docker tag incaya-website ghcr.io/incaya/incaya-website:0.93.3
+	docker push ghcr.io/incaya/incaya-website:0.93.3
 	docker push ghcr.io/incaya/incaya-website:latest
 	
 
