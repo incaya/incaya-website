@@ -1,4 +1,4 @@
-baseURL = 'https://beta.incaya.fr/'
+baseURL = 'http://beta.incaya.fr/'
 languageCode = "fr-fr"
 title = "Incaya"
 theme = "incaya"
