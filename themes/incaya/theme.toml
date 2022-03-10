@@ -1,12 +1,21 @@
-name = "incaya"
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Incaya"
 license = "MIT"
-licenselink = "https://github.com/nodejh/hugo-theme-mini/blob/master/LICENSE.md"
-description = "A fast, minimalist and responsive hugo theme for bloggers."
-homepage = "https://github.com/nodejh/hugo-theme-mini"
-tags = ["blog", "fast", "minimalist", "responsive", "simple", "beautiful", "tags", "pages"]
-features = ["fast", "minimalist", "responsive", "archive", "tags"]
-min_version = "0.75.0"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = ""
+homepage = "http://example.com/"
+tags = []
+features = []
+min_version = "0.41.0"
 
 [author]
-    name = "nodejh"
-    homepage = "https://github.com/nodejh"
+  name = ""
+  homepage = ""
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
