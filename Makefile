@@ -8,6 +8,9 @@ start: ## Lancement de Hugo en mode dev
 	  -p 1313:1313 \
 	  ghcr.io/incaya/incaya-website:latest
 
+logs: ## Arrêt de Hugo en mode dev
+	docker logs -f incaya-local-website
+
 stop: ## Arrêt de Hugo en mode dev
 	docker stop incaya-local-website
 
@@ -30,6 +33,5 @@ docker-image: ## Construction et publication de l'image Docker Hugo utilisée en
 	docker tag incaya-website ghcr.io/incaya/incaya-website:0.93.3
 	docker push ghcr.io/incaya/incaya-website:0.93.3
 	docker push ghcr.io/incaya/incaya-website:latest
-	
 
 .PHONY: start build docker-image

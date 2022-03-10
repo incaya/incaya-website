@@ -19,6 +19,12 @@
         </span>
     </div>
 
+    
+    {{ if or .Site.Params.showToc .Params.showToc }}
+        {{ partial "toc.html" . }}
+    {{ end }}
+
+
     <div class="content">
       {{ .Content }}
     </div>
@@ -30,6 +36,10 @@
             {{ end }}
         </div>
     {{ end}}
+    
+    {{ partial "comment.html" . }}
+
 </section>
 
 {{ end }}
+
