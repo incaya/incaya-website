@@ -1,7 +1,6 @@
 baseURL = 'http://beta.incaya.fr/'
 defaultContentLanguage = "fr"
 title = "Incaya"
-theme = "incaya"
 
 [social]
 github = "https://github.com/incaya"
