@@ -1,24 +1,7 @@
 baseURL = 'http://beta.incaya.fr/'
-languageCode = "fr-fr"
+defaultContentLanguage = "fr"
 title = "Incaya"
 theme = "incaya"
-defaultContentLanguage = "fr"
-hasCJKLanguage = true
-paginate = 3
-googleAnalytics = "your-google-analytics-id"
-disqusShortname = "your-disqus-shortname"
-
-[permalinks]
-posts = "/blog/:slug/"
-
-[markup.highlight]
-guessSyntax = true
-style = "emacs"
-
-[markup.tableOfContents]
-endLevel = 3
-ordered = false
-startLevel = 2
 
 [social]
 github = "https://github.com/incaya"
@@ -28,11 +11,3 @@ twitter = "https://twitter.com/incayascop"
 author = "Incaya"
 bio = "Société coopérative de services du numérique"
 description = "A vos côtés pour inventer ! Associations, collectivités, entreprises : nous assurons l'Assistance à Maîtrise d'Ouvrage (AMO SI) de votre projet de création ou de refonte de système d'information. Spécialistes de la veille et de l'innovation technique, nous vous conseillons et réalisons des prototypes logiciels et matériels pour vos projets scientifiques, éducatifs et culturels."
-enableRSS = true
-enableComments = false
-enableGoogleAnalytics = false
-showToc = true
-showPowerBy = false
-math = false
-hiddenPostSummaryInHomePage = false
-copyright = ""

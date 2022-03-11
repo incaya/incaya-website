@@ -1,14 +1,19 @@
-<header>
-    <a href="/">
-        <img width="50"alt="avatar" src="{{ "/images/avatar.png" | relURL }}" />
-    </a>
+<header class="container">
+    <hgroup>
+        <h1><img width="50"alt="avatar" src="{{ "/images/avatar.png" | relURL }}" /> Incaya</h1>
+        <h2>Coopérative de services du numérique</h2>
+    </hgroup>
+    <nav>
+        <ul>
+            <li><a href="{{ "/" | relURL }}">{{ i18n "home" }}</a></li>
+            <li><a href="{{ "/savoir-faire" | relURL }}">{{ i18n "craft" }}</a></li>
+            <li><a href="{{ "/cooperative" | relURL }}">{{ i18n "cooperative" }}</a></li>
+            <li><a href="{{ "/contact" | relURL }}">{{ i18n "contact" }}</a></li>
+        </ul>
+        <ul>
+            <li><a href="{{ "/blog" | relURL }}">{{ i18n "blog" }}</a></li>
+            <li><a href="{{ "/atelier" | relURL }}">{{ i18n "atelier" }}</a></li>
+        </ul>
+      </nav>
 </header>
-<nav>
-    <ul>
-        <li><a href="{{ "/" | relURL }}">{{ i18n "home" }}</a></li>
-        <li><a href="{{ "/savoir-faire" | relURL }}">{{ i18n "craft" }}</a></li>
-        <li><a href="{{ "/cooperative" | relURL }}">{{ i18n "cooperative" }}</a></li>
-        <li><a href="{{ "/blog" | relURL }}">{{ i18n "blog" }}</a></li>
-        <li><a href="{{ "/contact" | relURL }}">{{ i18n "contact" }}</a></li>
-    </ul>
-</nav>
+
