@@ -1,4 +1,5 @@
 baseURL = 'http://beta.incaya.fr/'
+languageCode = "fr-fr"
 defaultContentLanguage = "fr"
 title = "Incaya"
 
