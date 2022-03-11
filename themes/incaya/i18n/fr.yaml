@@ -1,8 +1,8 @@
 home:
   other: Accueil
 
-archive:
-  other: Archives
+atelier:
+  other: L'atelier
 
 tags:
   other: Tags
@@ -11,10 +11,10 @@ about:
   other: À propos
 
 craft:
-  other: Savoir-faire
+  other: Nos savoir-faire
 
 cooperative:
-  other: Coopérative ?
+  other: Une coopérative
 
 blog:
   other: Le blog

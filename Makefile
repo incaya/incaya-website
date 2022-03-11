@@ -1,8 +1,12 @@
+export UID = $(shell id -u)
+export GID = $(shell id -g)
+
 help: # Afficher toutes les recettes du Makefile
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 start: ## Lancement de Hugo en mode dev
 	docker run --rm --name incaya-local-website -d \
+	  -u ${UID} \
 	  -v $(shell pwd):/website \
 	  -w /website \
 	  -p 1313:1313 \
@@ -16,6 +20,7 @@ stop: ## Arrêt de Hugo en mode dev
 
 build: ## Génération des statiques finaux
 	docker run --rm --name incaya-build-website \
+	  -u ${UID}	\
 	  -v $(shell pwd):/website \
 	  -w /website \
 	  ghcr.io/incaya/incaya-website:latest \
