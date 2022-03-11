@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<section id="single">
+    <h1 class="title">{{ .Title }}</h1>
+
+    <div class="content">
+      {{ .Content }}
+    </div>
+</section>
+
+<section>
+  <div class="grid">
+      {{ range $.Site.Data.clients.structures }}
+          <div><img class="logo-client" src="/clients/{{ .logo }}" alt="{{ .name }}" /></div>
+      {{ end }}
+  </div>
+</section>
+
+{{ end }}
