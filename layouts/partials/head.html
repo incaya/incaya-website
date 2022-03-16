@@ -1,8 +1,11 @@
-<head>
+<head{{ if .Site.Params.openGraph }} prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"{{ end }}>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ $sass := resources.Get "sass/pico.scss" }}
     {{ $style := $sass | resources.ToCSS (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
-    <title>Incaya reboot</title>
+    <title>{{ (partial "utils/title.html" (dict "$" . "title" .Title)).title }}</title>
+    <meta name="author" content="{{ .Params.author | default .Site.Author.name }}" />
+    {{- $description := .Description | default (partial "utils/summary.html" .) | default .Site.Params.siteDescription | plainify -}}
+    <meta name="description" content="{{ $description }}" />
 </head>
