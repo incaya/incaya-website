@@ -1,18 +1,26 @@
+export UID = $(shell id -u)
+export GID = $(shell id -g)
+
 help: # Afficher toutes les recettes du Makefile
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 start: ## Lancement de Hugo en mode dev
 	docker run --rm --name incaya-local-website -d \
+	  -u ${UID} \
 	  -v $(shell pwd):/website \
 	  -w /website \
 	  -p 1313:1313 \
 	  ghcr.io/incaya/incaya-website:latest
+
+logs: ## Arrêt de Hugo en mode dev
+	docker logs -f incaya-local-website
 
 stop: ## Arrêt de Hugo en mode dev
 	docker stop incaya-local-website
 
 build: ## Génération des statiques finaux
 	docker run --rm --name incaya-build-website \
+	  -u ${UID}	\
 	  -v $(shell pwd):/website \
 	  -w /website \
 	  ghcr.io/incaya/incaya-website:latest \
@@ -30,6 +38,5 @@ docker-image: ## Construction et publication de l'image Docker Hugo utilisée en
 	docker tag incaya-website ghcr.io/incaya/incaya-website:0.93.3
 	docker push ghcr.io/incaya/incaya-website:0.93.3
 	docker push ghcr.io/incaya/incaya-website:latest
-	
 
 .PHONY: start build docker-image

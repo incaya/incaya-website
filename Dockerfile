@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
 RUN apt update && apt install -y curl \
-    && curl -SL https://github.com/gohugoio/hugo/releases/download/v0.93.3/hugo_extended_0.93.3_Linux-64bit.tar.gz -o /tmp/hugo.tar.gz \
+    && curl -SL https://github.com/gohugoio/hugo/releases/download/v0.94.2/hugo_extended_0.94.2_Linux-64bit.tar.gz -o /tmp/hugo.tar.gz \
     && tar -xzf /tmp/hugo.tar.gz -C /tmp \
     && mv /tmp/hugo /usr/local/bin/ \
     && rm -rf /tmp/*
