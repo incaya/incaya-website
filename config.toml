@@ -1,6 +1,6 @@
 baseURL = 'http://beta.incaya.fr/'
-languageCode = "fr-fr"
 defaultContentLanguage = "fr"
+languageCode = "fr-fr"
 title = "Incaya"
 
 [social]
@@ -11,3 +11,7 @@ twitter = "https://twitter.com/incayascop"
 author = "Incaya"
 bio = "Société coopérative de services du numérique"
 description = "A vos côtés pour inventer ! Associations, collectivités, entreprises : nous assurons l'Assistance à Maîtrise d'Ouvrage (AMO SI) de votre projet de création ou de refonte de système d'information. Spécialistes de la veille et de l'innovation technique, nous vous conseillons et réalisons des prototypes logiciels et matériels pour vos projets scientifiques, éducatifs et culturels."
+
+[taxonomies]
+tag = 'tags'
+projet = 'projects'
