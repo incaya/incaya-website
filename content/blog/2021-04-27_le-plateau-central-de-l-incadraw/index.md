@@ -7,6 +7,8 @@ draft: false
 in_search_index: true
 tags:
 - robotique
+projects:
+- l-incadraw
 ---
 
 Dans notre quête d'une version maison de l'Axidraw, nous débutons par un élément crucial, qui permet à l'ensemble de fonctionner.

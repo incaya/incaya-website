@@ -7,6 +7,8 @@ draft: false
 in_search_index: true
 tags:
 - robotique
+projects:
+- l-incadraw
 ---
 
 C'est une rencontre que nous voulions faire depuis longtemps. L'[Axidraw](https://www.axidraw.com/), le petit robot à dessiner, est l'exemple parfait de l'outil simple mais bourré de potentiel créatif.
