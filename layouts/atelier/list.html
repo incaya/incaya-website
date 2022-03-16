@@ -8,4 +8,18 @@
     </div>
 </section>
 
+<section id="archive" class="grid">
+    {{ range .Data.Pages }}
+        <article>
+            <header>
+                <a href="{{ .Permalink }}">
+                    {{ .Title }}
+                </a>
+            </header>
+                {{ .Params.description }}    
+            <footer>Un truc ?</footer>
+        </article>
+    {{ end }}          
+</section>
+
 {{ end }}

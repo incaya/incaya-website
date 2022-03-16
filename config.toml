@@ -14,4 +14,4 @@ description = "A vos côtés pour inventer ! Associations, collectivités, entre
 
 [taxonomies]
 tag = 'tags'
-projet = 'projects'
+project = 'projects'

@@ -7,6 +7,8 @@ draft: false
 in_search_index: true
 tags:
 - robotique
+projects:
+- l-incadraw
 ---
 
 L'Axidraw dessine, c'est acté, mais comment fonctionne-t-il ? C'est un mélange d'extrême simplicité (du point de vue du roboticien) et d'astuces qui font la différence.

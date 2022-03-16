@@ -6,8 +6,6 @@ date: 2022-03-16T10:16:58Z
 weight: 2
 tags:
 - un tag
-projet:
-- second-projet
 links:
 - title: incaya
   url: https://www.incaya.fr

@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<section id="single">
+    <h1 class="title">Projet "{{ .Title }}"</h1>
+
+    <div class="content">
+     intro : {{ .Params.description }}  
+    </div>
+
+    <div class="content">
+      <h3 class="title">contenu</h3>
+      {{ .Content }}
+    </div>
+
+    <div class="content">
+      <h3 class="title">Les liens</h3>
+      <ul>
+        {{ range .Params.links }}
+          <li><a href={{ .url }}>{{ .title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div class="content">
+      <h3 class="title">Les articles</h3>
+      {{ $projectSlug := .Params.slug}}
+      <ul>
+      {{ range $key, $value := .Site.Taxonomies.projects }}
+        {{ if eq $key $projectSlug }}
+          {{ range sort $value.Pages "Params.date" "asc" }}
+            <li>
+              <a href="{{ .Permalink }}">
+                  {{ .Title }}
+              </a>
+            </li>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      </ul>
+    </div>
+    
+</section>
+
+{{ end }}

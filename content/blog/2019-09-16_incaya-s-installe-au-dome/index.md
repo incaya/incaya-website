@@ -7,6 +7,8 @@ draft: false
 in_search_index: true
 tags:
 - incaya
+projects:
+- second-projet
 ---
 
 C'est fait ! INCAYA pose ses valises au [Dôme](http://ledome.info/), sur la presqu'île de Caen, pour donner un coup d'accélérateur à son offre d'**accompagnement technique des projets scientifiques**.
