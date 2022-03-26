@@ -1,0 +1,94 @@
+:root {
+  --wrapper: 1130px;
+  --wrapper-padding: 1rem;
+  --space: max(
+    1rem,
+    calc((100% - calc(var(--wrapper) - var(--wrapper-padding) * 2)) / 2)
+  );
+}
+
+body {
+  font-family: "Arial";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// Header
+// ––––––––––––––––––––
+
+header {
+  background-color: white;
+  margin: 0.5rem 0rem;
+  nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #222;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--wrapper);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--wrapper-padding);
+  padding-right: var(--wrapper-padding);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  img {
+    height: 50px;
+  }
+}
+
+// Main
+// ––––––––––––––––––––
+
+section.hero {
+  padding: 2rem 1rem 2rem var(--space);
+
+  background-color: $blue;
+  max-width: calc(1130px + var(--space));
+  border-bottom-right-radius: 50px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+// Footer
+// ––––––––––––––––––––
+
+footer {
+  background-color: white;
+  margin-top: 1rem;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--wrapper);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--wrapper-padding);
+  padding-right: var(--wrapper-padding);
+}
