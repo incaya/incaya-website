@@ -122,13 +122,14 @@ h2 {
 .section-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   max-width: var(--wrapper);
   margin-left: auto;
   margin-right: auto;
   padding-left: var(--wrapper-padding);
   padding-right: var(--wrapper-padding);
   flex-direction: column;
+  margin-top: 1rem;
 }
 
 // Contact
