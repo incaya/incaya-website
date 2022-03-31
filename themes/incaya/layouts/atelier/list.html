@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<section class="hero">
+    <div>
+        <h1>{{ .Title }}</h1>
+        <p>Ici expliquer que l'atelier, c'est notre R&D raisonnée, aussi bien numérique que matérielle.</p>
+    </div>
+</section>
+
+{{ range .Data.Pages }}
+<section id="archive" class="grid">
+    <div class="section-wrapper">
+        <article>
+            <h2>
+                <a href="{{ .Permalink }}">
+                    {{ .Title }}
+                </a>
+            </h2>
+            {{ .Params.description }}
+            <div>Un truc ?</div>
+        </article>
+    </div>
+</section>
+{{ end }}
+
+{{ end }}

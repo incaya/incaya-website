@@ -2,6 +2,7 @@ baseURL = 'http://beta.incaya.fr/'
 defaultContentLanguage = "fr"
 languageCode = "fr-fr"
 title = "Incaya: reboot"
+theme = "incaya"
 
 [social]
     github = "https://github.com/incaya"
