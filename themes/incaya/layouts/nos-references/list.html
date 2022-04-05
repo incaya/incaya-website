@@ -2,16 +2,24 @@
 
 <section class="hero">
   <div>
-      <h1>{{ .Title }}</h1>
-      <p>{{ .Content }}</p>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Content }}</p>
   </div>
 </section>
 
 <section>
   <div class="section-wrapper">
-      {{ range $.Site.Data.clients.structures }}
-          <div><img class="logo-client" src="/clients/{{ .logo }}" alt="{{ .name }}" /></div>
+    {{ range $.Site.Data.clients.structures }}
+    <div class="client"><img class="logo-client" src="/clients/{{ .logo }}" alt="{{ .name }}" />
+      {{ if .description }}
+      <p class="description">{{ .description }}{{ if .link }} [<a href="{{ .link }}" title="{{ .name }}">site web</a>]{{ end }}
+      </p>
       {{ end }}
+      {{ if .mission }}
+      <p class="mission">{{ .mission }}</p>
+      {{ end }}
+    </div>
+    {{ end }}
   </div>
 </section>
 
