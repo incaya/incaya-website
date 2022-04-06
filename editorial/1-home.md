@@ -1,34 +1,35 @@
 # Incaya
 
-## Coopérative de services du numérique
-Nous sommes une entreprise associant des professionnels aux expertises techniques et méthodologiques variées, au service de vos idées.
-Si la colonne vertébrale de nos savoir-faire s’articule autour de la donnée, notre capacité de veille et de défrichage technologique nous autorise à inventer des prototypes logiciels et matériels originaux, résilients et performants pour vos projets scientifiques, éducatifs et culturels.
-La somme de nos expériences nous permet également d’assurer l’Assistance à Maîtrise d’Ouvrage de votre besoin de création ou de refonte de système d’information.
+## Une coopérative de services du numérique
+Notre entreprise associe des professionnels aux expertises techniques et méthodologiques variées, au service de vos idées.
+Si nos principaux savoir-faire s’articulent autour de la donnée et de son usage, notre investissement dans la veille et l'exploration technologique nous permet de vous proposer des prototypes logiciels et matériels originaux, des applications robustes et performantes pour vos projets scientifiques, éducatifs et culturels.
+
+Grâce à notre expérience de l'architecture logicielle et de la relation client/prestataire dans le secteur du numérique, nous pouvons également assurer l’Assistance à Maîtrise d’Ouvrage de votre projet de création ou de refonte de système d’information.
 
 # Nous sommes des artisans de la donnée.
 
-L'informatique ne remplacera jamais un savoir-faire métier. Par contre, cela apporte une indéniable aide et capacité d'invention quand il s'agit de manipuler la donnée, pour peu que cette donnée soit de qualité. Que ce soit de sa captation, à son nettoyage jusqu'à sa présentation, nous nous assurons que votre donnée soit optimisée pour vous permettre de l'utiliser au mieux dans votre métier.
+L'informatique ne remplace pas un savoir-faire métier : c'est un outil qui doit vous aider à l'exercer dans de meilleures conditions, à concrétiser vos projets. C'est particulièrement vrai avec la donnée, qui est omniprésente mais peut être difficile à manipuler, à valoriser. De sa création à sa mise en forme, en passant par son traitement, nous construisons avec vous des processus fiables et adaptés à vos utilisateurs.
 
 ## Obtenir la donnée
 
-Si une tendance actuelle tend à rendre tous les dispositifs numériques sources de donnée potentielle, nous pensons qu'une interface de captation claire, consentie et inclusive est la meilleure approche pour constituer une donnée de qualité.
+Si une tendance actuelle tend à transformer tous les dispositifs numériques en sources de donnée potentielle, nous pensons qu'une interface de captation claire, consentie et inclusive est la meilleure approche pour générer une donnée riche et de qualité.
 
-Que cela soit depuis une interface web offrant des formulaires compréhensibles, inclusifs et fiables, ou depuis des dispositifs plus expérimentaux basés sur de l'iot, nous nous portons garants d'une acquisition propre et évolutive (dans le sens on peut pas tout prévoir, mais on pourra en faire qq chose) de la donnée brute.
-
+Des formulaires web aux objets connectés, nous nous engageons à imaginer avec vous les justes modalités d'acquisition de la donnée brute, avec une attention particulière portée à l'évolutivité et à l'expérience utilisateur.
 
 ## Travailler la donnée
 
-Nous pouvons réorganiser la donnée brute bien captée, mais aussi assainir des sources de données legacy, à travers un outillage BI performant, des db variées et une architecture adaptée.
+Nous pouvons réorganiser, transformer et restructurer pour vous des bases de données de tous types, qu'elles soient consolidées, partielles, obsolètes ou exotiques grâce à un outillage décisionnel (BI) performant et, si nécessaire, via la création d'entrepôt de données.
 
-Nous ne sommes pas des data scientistes, pas de big data ni de data learning à l'aveugle, mais nous oeuvrons pour que vous puissiez justement exploiter au mieux la donnée ciblée et qualitative dans votre métier.
+Si votre projet nécessite une reprise de données, nous en tenons compte et l'anticipons.
 
-## Restituer la donnée
+## Valoriser la donnée
 
-Le résultat de l'exploitation de la donnée ne mérite rien de mieux que d'être exposé.
-Et pas forcement sous forme numérique, mais via des rapports écrits ou simplement comme carburant du métier.
-Mais nous, on peut l'exposer via des API, des sites web, des tableaux de bord, des applications ou des disposif physiques plus expérimentaux ?
+Comment "bien" valoriser la donnée ? Parce que c'est souvent un objectif essentiel, nous prenons le temps de répondre avec vous à cette question. Faut-il l'ouvrir, la partager, la personnaliser ?
 
-# Nous assurons l'Assistance à Maîtrise d'Ouvrage de vos système d'information
+Sous forme d'API, au sein d'une application dédiée, dans un tableau de bord ou sur un écran public, la donnée s'exprime de la manière la plus pertinente pour répondre à vos besoins.
 
-Du site web permettant de créer des open-badges aux systèmes complexes de système d'information pour l'audiovisuel et passant par des expérimentations de badgeuses pour tiers lieux, nous avons des années d'expérience passées à forger nos savoir-faire.
-Nous sommes donc à la fois experts techniques et consultants fonctionnels, en nous vous accompagnons de la définition du besoin à la livraison, en passant par l'appel d'offres, le choix des prestataires, le recrutement et la planification.
+# Être accompagné·e pour réussir vos projets numériques
+
+Comprendre votre métier et son quotidien, imaginer ou repenser une architecture technique, trouver les professionnels qualifiés pour développer vos outils et les maintenir au long cours : voici comment nous intervenons régulièrement pour garantir le succès de nos clients.
+
+Forts de nombreuses années d'expérience dans l'accompagnement des projets numériques, nous pouvons vous aider à prendre du recul, à faire les bons choix et à créer un climat de confiance. A la fois techniciens et assistants à maîtrise d'ouvrage (AMOA SI), nous intervenons régulièrement en facilitateurs pour lever les freins et rétablir une communication optimale.
