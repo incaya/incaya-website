@@ -2,8 +2,11 @@
  * Incaya website css
  */
 
- // Config
+ 
+// Config
 @import "variables";
+@import "breakpoints";
+@import "media";
 
 // reset css
 @import "reset";
@@ -13,4 +16,3 @@
 
 // Nos références
 @import "nosreferences"; // Point de départ
-
