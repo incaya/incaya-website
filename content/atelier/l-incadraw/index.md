@@ -1,7 +1,7 @@
 ---
 title: l'Incadraw
 slug: l-incadraw
-description: "Description du projet"
+description: "Un clone de l'Axidraw"
 date: 2022-03-16T10:13:27Z
 weight: 1
 tags:
