@@ -35,7 +35,7 @@ header {
   }
 
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #222;
   }
 }
@@ -49,6 +49,9 @@ header {
   margin-right: auto;
   padding-left: var(--wrapper-padding);
   padding-right: var(--wrapper-padding);
+  a {
+    text-decoration: none;
+  }
 }
 
 .logo {
