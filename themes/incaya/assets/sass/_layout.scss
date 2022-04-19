@@ -111,11 +111,19 @@ section {
   flex-direction: row;
 }
 section.hero {
-  margin: 10px auto;
+  margin: 10px auto 25px auto;
   width: 100%;
-  background-color: $blue;
+  background-color: $color_bandeau;
   // max-width: calc(var(--wrapper) + var(--space));
-
+  &.lacooperative {
+    background-color: $color_bandeau;
+  }
+  &.nosreferences {
+    background-color: $color_bandeau;
+  }
+  &.latelier {
+    background-color: $color_bandeau;
+  }
   .hero-image {
     text-align: center;
     padding-left: 50px;
@@ -201,7 +209,16 @@ section.hero {
 
 section.contact {
   padding: 2rem 1rem 2rem var(--space);
-  background-color: $blue-dark;
+  background-color: $color_contact;
+  &.lacooperative {
+    background-color: $color_contact;
+  }
+  &.nosreferences {
+    background-color: $color_contact;
+  }
+  &.latelier {
+    background-color: $color_contact;
+  }
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -215,7 +232,16 @@ section.contact {
 
 footer {
   padding: 2rem 1rem 2rem var(--space);
-  background-color: $blue;
+  background-color: $color_footer;
+  &.lacooperative {
+    background-color: $color_footer;
+  }
+  &.nosreferences {
+    background-color: $color_footer;
+  }
+  &.latelier {
+    background-color: $color_footer;
+  }
   width: 100%;
   display: flex;
   flex-direction: row;
