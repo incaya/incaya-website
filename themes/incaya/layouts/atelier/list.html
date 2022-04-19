@@ -1,9 +1,12 @@
 {{ define "main" }}
 
-<section class="hero">
-    <div>
-        <h1>{{ .Title }}</h1>
-        <p>Ici expliquer que l'atelier, c'est notre R&D raisonnée, aussi bien numérique que matérielle.</p>
+<section class="hero latelier">
+    <div class="section-hero-wrapper">
+        <div class="hero-text">
+            <h1>{{ .Title }}</h1>
+            <p>Retrouvez ici nos projets de R&D.</p>
+            <p>Nous essayons d'en partager les résultats, aux experts techniques ou au grand public, dans l'esprit du logiciel libre et aux côtés de celles et ceux qui cherchent avant tout du sens dans la technologie.</p>
+        </div>
     </div>
 </section>
 
@@ -17,7 +20,6 @@
                 </a>
             </h2>
             {{ .Params.description }}
-            <div>Un truc ?</div>
         </article>
     </div>
 </section>
