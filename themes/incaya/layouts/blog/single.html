@@ -1,24 +1,25 @@
 {{ define "main" }}
 
 <section class="hero">
-  <div>
-    <h1>{{ .Title }}</h1>
-    <div class="tip">
-      <time datetime="{{ .PublishDate }}">{{ i18n "publishDateFull" . }}</time>
-      <span class="split">
-        ·
-      </span>
-      <span>
-        {{ i18n "wordCount" . }}
-      </span>
-      <span class="split">
-        ·
-      </span>
-      <span>
-        {{ i18n "minuteRead" . }}
-      </span>
+  <div class="section-hero-wrapper">
+    <div class="hero-text">
+      <h1>{{ .Title }}</h1>
+      <div class="tip">
+        <time datetime="{{ .PublishDate }}">{{ i18n "publishDateFull" . }}</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          {{ i18n "wordCount" . }}
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          {{ i18n "minuteRead" . }}
+        </span>
+      </div>
     </div>
-    <p>Un article par mois</p>
   </div>
 </section>
 
