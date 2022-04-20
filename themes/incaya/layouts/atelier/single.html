@@ -1,28 +1,19 @@
 {{ define "main" }}
 
 <section class="hero">
-  <div>
-    <h1>Projet "{{ .Title }}</h1>
-    <p>{{ .Params.description }} </p>
+  <div class="section-hero-wrapper">
+    <div class="hero-text">
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Params.description }} </p>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="section-wrapper">
     <div class="content">
-      <h3 class="title">contenu</h3>
-      {{ .Content }}
+      <h3 class="title">{{ .Content }}</h3>
     </div>
-
-    <div class="content">
-      <h3 class="title">Les liens</h3>
-      <ul>
-        {{ range .Params.links }}
-        <li><a href={{ .url }}>{{ .title }}</a></li>
-        {{ end }}
-      </ul>
-    </div>
-
     <div class="content">
       <h3 class="title">Les articles</h3>
       {{ $projectSlug := .Params.slug}}
@@ -40,6 +31,16 @@
         {{ end }}
       </ul>
     </div>
+    <div class="content">
+      <h3 class="title">En savoir plus</h3>
+      <ul>
+        {{ range .Params.links }}
+        <li><a href={{ .url }}>{{ .title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+
+
   </div>
 </section>
 

@@ -21,8 +21,9 @@ body {
 // ––––––––––––––––––––
 
 header {
-  background-color: white;
-  margin: 0.5rem 0rem;
+  background-color: #444;
+  margin: 0rem;
+  padding: 5px 0;
   nav ul {
     display: flex;
     gap: 1rem;
@@ -36,7 +37,7 @@ header {
 
   a {
     text-decoration: underline;
-    color: #222;
+    color: #fff;
   }
 }
 
@@ -57,8 +58,11 @@ header {
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
+
+  height: 40px;
   img {
-    height: 50px;
+    height: 40px;
+    vertical-align: -10px;
   }
 }
 
@@ -69,7 +73,7 @@ h1 {
   font-family: Roboto, "Open Sans", Arial, Helvetica, "Liberation Sans",
     FreeSans, sans-serif;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: bold;
   margin-bottom: 0.2rem;
 }
@@ -111,20 +115,30 @@ section {
   flex-direction: row;
 }
 section.hero {
-  margin: 10px auto;
-  width: 100%;
-  background-color: $blue;
+  margin: 10px auto 25px auto;
+  width: 100%;  
+  background-color: white;
   // max-width: calc(var(--wrapper) + var(--space));
-
+  &.lacooperative {
+    background-color: $color_bandeau;
+  }
+  &.nosreferences {
+    background-color: $color_bandeau;
+  }
+  &.latelier {
+    background-color: $color_bandeau;
+  }
   .hero-image {
     text-align: center;
     padding-left: 50px;
+    padding-top: 25px;
     img {
-      width: 220px;
+      border-radius: 5px;
     }
     display: none;
     @include lg {
-      display: block;
+      display: flex;
+      align-items: center;
     }
   }
 }
@@ -139,20 +153,34 @@ section.hero {
 .section-two-column {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
   width: 100%;
   margin: 0.5rem auto;
-  padding: 0.5rem;
+  padding: 1.5rem;
   img {
     width: 150px;
     @include md {
       width: 250px;
     }
   }
+  &.bg-dark-blue {
+    background-color: $dark_blue;
+    // color: white;
+  }
+  &.bg-dark-grey {
+    background-color: $dark_grey;
+    color: white;
+  }
+  &.bg-dark-orange {
+    background-color: $dark_orange;
+  }
 }
 .hilight {
-  border-top: 1px dashed #ccc;
-  border-bottom: 1px dashed #ccc;
+  // border-top: 1px dashed #ccc;
+  // border-bottom: 1px dashed #ccc;
+  
   .section-two-column-wrapper {
     @include lg {
       flex-direction: row-reverse;
@@ -176,6 +204,13 @@ section.hero {
   flex: 1;
   min-width: 0;
   overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 200px;
+  }
 }
 
 .section__item--start {
@@ -201,7 +236,16 @@ section.hero {
 
 section.contact {
   padding: 2rem 1rem 2rem var(--space);
-  background-color: $blue-dark;
+  background-color: $color_contact;
+  &.lacooperative {
+    background-color: $color_contact;
+  }
+  &.nosreferences {
+    background-color: $color_contact;
+  }
+  &.latelier {
+    background-color: $color_contact;
+  }
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -215,7 +259,16 @@ section.contact {
 
 footer {
   padding: 2rem 1rem 2rem var(--space);
-  background-color: $blue;
+  background-color: #ccc;
+  &.lacooperative {
+    background-color: $color_footer;
+  }
+  &.nosreferences {
+    background-color: $color_footer;
+  }
+  &.latelier {
+    background-color: $color_footer;
+  }
   width: 100%;
   display: flex;
   flex-direction: row;
