@@ -59,8 +59,8 @@ deploy: build ## Deploiement du site
 docker-image: ## Construction et publication de l'image Docker Hugo utilisée en dev
 	docker build -t incaya-website --force-rm .
 	docker tag incaya-website ghcr.io/incaya/incaya-website:latest
-	docker tag incaya-website ghcr.io/incaya/incaya-website:0.96.0
-	docker push ghcr.io/incaya/incaya-website:0.96.0
+	docker tag incaya-website ghcr.io/incaya/incaya-website:0.97.3
+	docker push ghcr.io/incaya/incaya-website:0.97.3
 	docker push ghcr.io/incaya/incaya-website:latest
 
 .PHONY: start build docker-image
