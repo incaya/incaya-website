@@ -4,7 +4,6 @@ Le site web www.incaya.fr est édité par la société INCAYA, Société Coopér
 
 Le directeur de la publication du site web www.incaya.fr est M. Thomas BERRIOT.
 
-Icônes : [Linericons](https://linearicons.com/) by [Perxis](https://perxis.com/)
+Crédits photos (CC BY 2.0) : Anton Chiang, Oswaldo, Thomas Quine, Lucas H S Guimarães
 
-Background : [Luke McDonald](http://lukemcdonald.com/)
 
