@@ -120,13 +120,13 @@ section.hero {
   background-color: white;
   // max-width: calc(var(--wrapper) + var(--space));
   &.lacooperative {
-    background-color: $color_bandeau;
+    background-color: $dark_blue;
   }
   &.nosreferences {
-    background-color: $color_bandeau;
+    background-color: $dark_blue;
   }
   &.latelier {
-    background-color: $color_bandeau;
+    background-color: $dark_blue;
   }
   .hero-image {
     text-align: center;
@@ -236,15 +236,15 @@ section.hero {
 
 section.contact {
   padding: 2rem 1rem 2rem var(--space);
-  background-color: $color_contact;
+  background-color: $dark_grey;
   &.lacooperative {
-    background-color: $color_contact;
+    background-color: $dark_grey;
   }
   &.nosreferences {
-    background-color: $color_contact;
+    background-color: $dark_grey;
   }
   &.latelier {
-    background-color: $color_contact;
+    background-color: $dark_grey;
   }
   width: 100%;
   display: flex;
@@ -259,19 +259,23 @@ section.contact {
 
 footer {
   padding: 2rem 1rem 2rem var(--space);
-  background-color: #ccc;
+  color: white;
+  background-color: $dark_grey;
   &.lacooperative {
-    background-color: $color_footer;
+    background-color: $dark_grey;
   }
   &.nosreferences {
-    background-color: $color_footer;
+    background-color: $dark_grey;
   }
   &.latelier {
-    background-color: $color_footer;
+    background-color: $dark_grey;
   }
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   margin-top: 0;
+  a {
+    color: white;
+  }
 }
