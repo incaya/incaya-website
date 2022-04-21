@@ -97,8 +97,8 @@ strong {
   font-weight: bold;
 }
 section {
-  padding: 10px 0;
-  margin: 25px auto 0 auto;
+  // padding: 10px 0;
+  // margin: 25px auto 0 auto;
   p {
     margin: 15px 0 0 0;
     text-align: justify;
@@ -116,7 +116,7 @@ section {
 }
 section.hero {
   margin: 10px auto 25px auto;
-  width: 100%;  
+  width: 100%;
   background-color: white;
   // max-width: calc(var(--wrapper) + var(--space));
   &.lacooperative {
@@ -155,12 +155,11 @@ section.hero {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
   width: 100%;
-  margin: 0.5rem auto;
-  padding: 1.5rem;
+  // margin: 1.5rem auto;
+  
   img {
-    width: 150px;
+    margin: 25px 0;
     @include md {
       width: 250px;
     }
@@ -168,6 +167,17 @@ section.hero {
   &.bg-dark-blue {
     background-color: $dark_blue;
     // color: white;
+    @include lg {
+      background: linear-gradient(to right, $dark_blue 65%, white 25%);
+      
+    }
+    .section__item--end {
+      @include lg {
+        background-color: $dark_blue;
+        padding: 1.5rem 6rem 1.5rem 0;
+        border-radius: 50vh; 
+      }
+    }
   }
   &.bg-dark-grey {
     background-color: $dark_grey;
@@ -175,28 +185,46 @@ section.hero {
   }
   &.bg-dark-orange {
     background-color: $dark_orange;
+    @include lg {
+      background: linear-gradient(to right, $dark_orange 65%, white 25%);
+    }
+    .section__item--end {
+      @include lg {
+        background-color: $dark_orange;
+        padding: 1.5rem 6rem 1.5rem 0;
+        border-radius: 50vh; 
+
+      }
+    }
   }
 }
 .hilight {
   // border-top: 1px dashed #ccc;
   // border-bottom: 1px dashed #ccc;
-  
+
   .section-two-column-wrapper {
+    // margin: 0px auto 25px auto;
+    margin: 0px;
     @include lg {
       flex-direction: row-reverse;
+    }
+    .section__item--end {
+      @include lg {
+        padding: 1.5rem 2rem 1.5rem 0;
+      }
     }
   }
 }
 .section-two-column-wrapper {
   max-width: var(--wrapper);
-  padding-left: var(--wrapper-padding);
-  padding-right: var(--wrapper-padding);
+  padding: 10px var(--wrapper-padding) 25px;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  // margin: 10px auto 35px auto;
   flex-direction: column;
   @include lg {
     flex-direction: row;
+    margin: 0px auto;
+    padding: 0px var(--wrapper-padding);
   }
 }
 
@@ -229,6 +257,7 @@ section.hero {
   padding-right: var(--wrapper-padding);
   flex-direction: column;
   margin-top: 1rem;
+  padding-top: 20px;
 }
 
 // Contact
