@@ -120,10 +120,14 @@ section.hero {
   background-color: white;
   // max-width: calc(var(--wrapper) + var(--space));
   &.lacooperative {
-    background-color: $dark_blue;
+    @include lg {
+      background: linear-gradient(to right, $dark_blue 65%, white 25%);
+    }
   }
   &.nosreferences {
-    background-color: $dark_blue;
+    @include lg {
+      background: linear-gradient(to right, $dark_blue 65%, white 25%);
+    }
   }
   &.latelier {
     background-color: $dark_blue;
@@ -147,7 +151,7 @@ section.hero {
   padding: 25px 0;
   width: 100%;
   @include lg {
-    width: 70%;
+    width: 100%;
   }
 }
 .section-two-column {
@@ -157,25 +161,21 @@ section.hero {
   justify-content: center;
   width: 100%;
   // margin: 1.5rem auto;
-  
+
   img {
     margin: 25px 0;
-    @include md {
-      width: 250px;
-    }
   }
   &.bg-dark-blue {
     background-color: $dark_blue;
     // color: white;
     @include lg {
       background: linear-gradient(to right, $dark_blue 65%, white 25%);
-      
     }
     .section__item--end {
       @include lg {
         background-color: $dark_blue;
         padding: 1.5rem 6rem 1.5rem 0;
-        border-radius: 50vh; 
+        border-radius: 50vh;
       }
     }
   }
@@ -192,8 +192,7 @@ section.hero {
       @include lg {
         background-color: $dark_orange;
         padding: 1.5rem 6rem 1.5rem 0;
-        border-radius: 50vh; 
-
+        border-radius: 50vh;
       }
     }
   }
@@ -202,7 +201,7 @@ section.hero {
   // border-top: 1px dashed #ccc;
   // border-bottom: 1px dashed #ccc;
 
-  .section-two-column-wrapper {
+  .section-two-column-wrapper__home {
     // margin: 0px auto 25px auto;
     margin: 0px;
     @include lg {
@@ -215,7 +214,7 @@ section.hero {
     }
   }
 }
-.section-two-column-wrapper {
+.section-two-column-wrapper__home {
   max-width: var(--wrapper);
   padding: 10px var(--wrapper-padding) 25px;
   display: flex;
@@ -227,6 +226,18 @@ section.hero {
     padding: 0px var(--wrapper-padding);
   }
 }
+.section-two-column-wrapper {
+  max-width: var(--wrapper);
+  padding: 10px var(--wrapper-padding) 25px;
+  display: flex;
+  // margin: 10px auto 35px auto;
+  flex-direction: column;
+  @include lg {
+    flex-direction: row;
+    margin: 15px auto;
+    padding: 0px var(--wrapper-padding);
+  }
+}
 
 .section__item {
   flex: 1;
@@ -234,16 +245,17 @@ section.hero {
   overflow-wrap: break-word;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  img {
-    width: 200px;
-  }
 }
 
 .section__item--start {
   order: -1;
   text-align: center;
+  align-items: center;
+}
+
+.section__item--end {
+  align-items: flex-start;
 }
 
 .section-wrapper {
