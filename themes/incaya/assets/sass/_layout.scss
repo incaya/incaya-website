@@ -134,6 +134,11 @@ section.hero {
       background: linear-gradient(to right, $dark_blue 65%, white 25%);
     }
   }
+  &.leblog {
+    @include lg {
+      background: linear-gradient(to right, $dark_blue 65%, white 25%);
+    }
+  }
   &.article {
     @include lg {
       background: linear-gradient(to right, $dark_blue 65%, white 25%);

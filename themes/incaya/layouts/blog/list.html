@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<section class="hero">
+<section class="hero leblog">
     <div class="section-hero-wrapper">
         <div class="hero-text">
             <h1>Le blog</h1>
@@ -9,15 +9,15 @@
     </div>
 </section>
 <section>
-    <div class="section-wrapper">
+    <div class="section-article-wrapper">
         {{ range .Data.Pages.GroupByDate "2006" }}
         <div class="group">
-            <h3 class="key">
+            <!-- <h3 class="key">
                 {{ .Key }}
-            </h3>
+            </h3> -->
 
             {{ range .Pages }}
-            <div class="value">
+            <div class="article-list-item">
                 <div class="date">
                     <time datetime="{{ .PublishDate }}">{{ i18n "publishDateShort" . }}</time>
                 </div>
@@ -25,13 +25,16 @@
                     <a href="{{ .Permalink }}">
                         {{ .Title }}
                     </a>
-
+                </div>
+                <div class="summary">
+                    {{ .Summary }}
+                </div>
+                <div class="tags">
                     {{ with .Params.tags }}
-                    <div class="tags">
-                        {{ range . }}
-                        <a href="{{ " tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
-                        {{ end }}
-                    </div>
+                    {{ range . }}
+                    <!-- <a href="{{ " tags/" | absURL }}{{ . | urlize }}">#{{ . }}</a> -->
+                    #{{ . }}
+                    {{ end }}
                     {{ end}}
                 </div>
             </div>
