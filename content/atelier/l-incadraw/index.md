@@ -4,6 +4,7 @@ slug: l-incadraw
 description: "Un clone de l'Axidraw, le robot qui dessine."
 date: 2022-03-16T10:13:27Z
 weight: 1
+illustration: "incadraw.jpg"
 tags:
 - robotique
 links:
@@ -19,4 +20,4 @@ Après avoir eu la chance d'acquérir un Axidraw, qui nous a permis de mettre un
 
 L'Incadraw est un projet à long terme, un support pédagogique et un sujet d'exploration. Le genre de projet qui nous permet de mieux maîtriser les rouages de nos outils, d'espérer en créer par nous-mêmes, et en bonus, de donner envie à d'autres de s'y mettre.
 
-![image](/images/illustrations/data.png)
+![image](/images/illustrations/incadraw.jpg)

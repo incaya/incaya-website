@@ -130,7 +130,22 @@ section.hero {
     }
   }
   &.latelier {
-    background-color: $dark_blue;
+    @include lg {
+      background: linear-gradient(to right, $dark_blue 65%, white 25%);
+    }
+  }
+  &.article {
+    @include lg {
+      background: linear-gradient(to right, $dark_blue 65%, white 25%);
+      margin-bottom: 5px;
+    }
+    .hero-text {
+      @include lg {
+        background-color: $dark_blue;
+          padding: 1.5rem 6rem 1.5rem 0;
+          border-radius: 50vh;
+      }
+    }
   }
   .hero-image {
     text-align: center;
@@ -270,6 +285,18 @@ section.hero {
   flex-direction: column;
   margin-top: 1rem;
   padding-top: 20px;
+}
+.section-article-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding-left: var(--wrapper-padding);
+  padding-right: var(--wrapper-padding);
+  max-width: var(--wrapper);
+  margin-left: auto;
+  margin-right: auto;
+
+  flex-direction: column;
 }
 
 // Contact
