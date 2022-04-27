@@ -9,21 +9,28 @@
   </div>
 </section>
 
-<section>
-  <div class="section-wrapper">
-    {{ range $.Site.Data.clients.structures }}
-    <div class="client"><img class="logo-client" src="/clients/{{ .logo }}" alt="{{ .name }}" />
+<section class="section-two-column">
+
+  {{ range $.Site.Data.clients.structures }}
+  <div class="section-two-column-wrapper">
+    <div class="section__item section__item--start">
+      <img class="logo-client" src="/clients/{{ .logo }}" alt="{{ .name }}" />
+    </div>
+    <div class="section__item section__item--end list-content">
       {{ if .description }}
-      <p class="description">{{ .description }}{{ if .link }} [<a href="{{ .link }}" title="{{ .name }}">site web</a>]{{
-        end }}
+
+      <p class="description">{{ .description }}{{ if .link }} [<a href="{{ .link }}" title="{{ .name }}">site
+          web</a>]{{end }}
       </p>
       {{ end }}
       {{ if .mission }}
       <p class="mission">{{ .mission }}</p>
       {{ end }}
     </div>
-    {{ end }}
   </div>
+  </div>
+  {{ end }}
+
 </section>
 
 {{ end }}
