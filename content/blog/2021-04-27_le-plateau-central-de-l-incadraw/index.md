@@ -11,9 +11,9 @@ projects:
 - l-incadraw
 ---
 
-Dans notre quête d'une version maison de l'Axidraw, nous débutons par un élément crucial, qui permet à l'ensemble de fonctionner.
+Dans notre quête d'une version maison de l'Axidraw, nous débutons par un élément crucial, qui permet à l'ensemble de fonctionner.<!--more-->
 
-Notre matériel de référence
+## Notre matériel de référence
 
 Il s'agit de la gamme V-Slot fabriquée par [OpenBuilds](https://openbuildspartstore.com/) (US). Nous l'achetons chez [PC-CNC](https://pccnc-shop.fr/) (FR) ou chez [Systéal](https://www.systeal.com/) (FR).
 
