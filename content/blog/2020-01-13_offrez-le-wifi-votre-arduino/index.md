@@ -9,7 +9,7 @@ tags:
 - iot
 ---
 
-Connecter une carte à microcontrôleur de type Arduino au web est un besoin récurrent en particulier lorsqu’on veut collecter les données de capteurs autonomes. Les circuits intégrés ESP du fabriquant chinois [Espressif](https://www.espressif.com/en/products/hardware/esp8266ex/overview) répondent depuis quelques années à cette attente grâce à des modules WiFi à faible coût.
+Connecter une carte à microcontrôleur de type Arduino au web est un besoin récurrent en particulier lorsqu’on veut collecter les données de capteurs autonomes. Les circuits intégrés ESP du fabriquant chinois [Espressif](https://www.espressif.com/en/products/hardware/esp8266ex/overview) répondent depuis quelques années à cette attente grâce à des modules WiFi à faible coût.<!--more-->
 
 Nous avons eu l’opportunité d’explorer les différentes manières de mettre à profit ce type de module dans le cadre d’un projet de badgeuse connectée à destination des tiers lieux. Le contexte est le suivant : un Arduino pilote un shield NFC (pour le badgeage) ainsi qu’un écran LCD pour l’affichage. Lorsqu’un badge est détecté, on poste les données au backend (serveur web) qui enregistre l’heure du passage et renvoie des informations mises à jour (crédits restants, par exemple).
 

@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<section id="single">
+
+  <div class="section-wrapper content">
+    <h1 class="title">{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+
+  {{ with .Params.tags }}
+  <div class="tags">
+    {{ range . }}
+    <a href="{{ " tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end}}
+</section>
+
+{{ end }}

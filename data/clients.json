@@ -27,7 +27,7 @@
     {
       "name": "Confédération générale des SCOP",
       "order": 4,
-      "logo": "lesscop.png",
+      "logo": "cgscop.png",
       "description": "La Confédération Générale des Scop est le porte-parole des salariés des Scop et Scic auprès des pouvoirs publics et des acteurs politiques, économiques et sociaux. Elle participe à l’élaboration des textes législatifs et réglementaires qui concernent le droit coopératif, siège au Conseil supérieur de la Coopération et au Conseil économique, social et environnemental (Cese) et représente ses adhérents auprès de la Commission de l’Union européenne, du Parlement européen et des instances coopératives.",
       "mission": "Nous accompagnons la CGSCOP dans la mise à disposition aux permanents de la fédération d'un ensemble de tableaux de bord utiles au suivi de l'évolution du réseau de coopératives, tant en termes humains que financiers.",
       "link": "https://www.les-scop.coop"
@@ -50,9 +50,24 @@
       "link": "https://normandie.chambres-agriculture.fr/"
     },
 
-    { "name": "Decideom", "order": 7, "logo": "decideom.png" },
-    { "name": "Bricozor", "order": 8, "logo": "bricozor.png" },
+    {
+      "name": "Decideom",
+      "order": 7,
+      "logo": "decideom.png",
+      "description": "DecideOm accompagne les entreprises dans le pilotage de leur activité en valorisant au mieux leurs données avec la DataViz."
+    },
+    {
+      "name": "Bricozor",
+      "order": 8,
+      "logo": "bricozor.png",
+      "description": "Bricozor est une société normande de e-commerce spécialisée dans la vente de matériel et de quincaillerie pour les pros et les bricoleurs."
+    },
 
-    { "name": "Association Mouvement Artrope", "order": 9, "logo": "ama.png" }
+    {
+      "name": "Association Mouvement Artrope",
+      "order": 9,
+      "logo": "ama.png",
+      "description": "L'A.ssociation M.ouvement A.rtrope est une structure culturelle qui accompagne l'émergence de créations chorégraphiques, théâtrales et musicales contemporaines, in situ et inclusives."
+    }
   ]
 }

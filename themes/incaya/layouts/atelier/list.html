@@ -5,22 +5,28 @@
         <div class="hero-text">
             <h1>{{ .Title }}</h1>
             <p>Retrouvez ici nos projets de R&D.</p>
-            <p>Nous essayons d'en partager les résultats, aux experts techniques ou au grand public, dans l'esprit du logiciel libre et aux côtés de celles et ceux qui cherchent avant tout du sens dans la technologie.</p>
+            <p>Nous essayons d'en partager les résultats, aux experts techniques ou au grand public, dans l'esprit du
+                logiciel libre et aux côtés de celles et ceux qui cherchent avant tout du sens dans la technologie.</p>
         </div>
     </div>
 </section>
 
 {{ range .Data.Pages }}
-<section id="archive" class="grid">
-    <div class="section-wrapper">
-        <article>
-            <h2>
-                <a href="{{ .Permalink }}">
-                    {{ .Title }}
-                </a>
-            </h2>
-            {{ .Params.description }}
-        </article>
+<section>
+    <div class="section-two-column-wrapper">
+        <div class="section__item section__item--start illustration-projet">
+            <img src="/images/illustrations/{{ .Params.illustration }}" />
+        </div>
+        <div class="section__item section__item--end list-content">
+            <article>
+                <h2>
+                    <a href="{{ .Permalink }}">
+                        {{ .Title }}
+                    </a>
+                </h2>
+                {{ .Params.description }}
+            </article>
+        </div>
     </div>
 </section>
 {{ end }}

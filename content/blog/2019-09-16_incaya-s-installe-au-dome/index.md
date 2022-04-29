@@ -11,7 +11,7 @@ projects:
 - second-projet
 ---
 
-C'est fait ! INCAYA pose ses valises au [Dôme](http://ledome.info/), sur la presqu'île de Caen, pour donner un coup d'accélérateur à son offre d'**accompagnement technique des projets scientifiques**.
+C'est fait ! INCAYA pose ses valises au [Dôme](http://ledome.info/), sur la presqu'île de Caen, pour donner un coup d'accélérateur à son offre d'**accompagnement technique des projets scientifiques**.<!--more-->
 
 Nous avons choisi de nous entourer d'une communauté d'experts et de passionnés d'innovation ouverte et de recherche participative pour explorer nos hypothèses.
 
