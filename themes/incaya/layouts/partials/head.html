@@ -1,21 +1,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta name="robots" content="noindex,nofollow" />
-    <title>INCAYA - coopérative de services du numérique</title>
-    <meta name="description" content="A simple HTML5 Template for new projects.">
-    <meta name="author" content="SitePoint">
-
-    <meta property="og:title" content="A Basic HTML5 Template">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-    <meta property="og:description" content="A simple HTML5 Template for new projects.">
-    <meta property="og:image" content="image.png">
-
-    <link rel="icon" href="/favicon.ico">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- META -->
+    <title>{{ (partial "utils/title.html" (dict "$" . "title" .Title)).title }}</title>
+    <meta name="author" content="{{ .Site.Params.author }}" />
+    {{- $description := .Description | default (partial "utils/summary.html" .) | default .Site.Params.description | plainify -}}
+    <meta name="description" content="{{ $description }}" />
+    <!-- SEO -->
+    <link rel="canonical" href="{{ .Permalink }}" />
+    <!-- JSON-LD -->
+    {{- with .Site.Params.jsonLD -}}
+        {{ partial "utils/json-ld.html" (dict "$" $ "description" $description) }}
+    {{- end }}
+    <!-- Open Graph -->
+    {{- with .Site.Params.openGraph -}}
+        {{ partial "utils/open-graph.html" (dict "$" $ "description" $description) }}
+    {{- end }}
+    <!-- Twitter Cards -->
+    {{- with .Site.Params.twitterCards -}}
+        {{ partial "utils/twitter-cards.html" (dict "$" $) }}
+    {{- end }}
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Vollkorn:wght@700&display=swap"
@@ -25,5 +36,4 @@
     {{ $style := $sass | resources.ToCSS (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap"
     true) | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
-
 </head>
