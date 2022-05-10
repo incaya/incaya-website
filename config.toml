@@ -13,7 +13,7 @@ theme = "incaya"
     # Name
     name = "Incaya"
     # Email
-    email = "contact@incaya.fr"
+    email = ""
     # Avatar
     avatar = "/images/avatar.png"
     # Personal website, default: baseURL
