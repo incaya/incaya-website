@@ -1,0 +1,18 @@
+{{- $ := index . "$" -}}
+{{- $rawTitle := .title -}}
+<!-- Home -->
+{{- if eq $.Kind "home" -}}
+    {{- $rawTitle = $rawTitle | default $.Site.Title -}}
+<!-- Page -->
+{{- else -}}
+    {{- $rawTitle = $rawTitle -}}
+{{- end -}}
+
+{{- $htmlTitle := partial "utils/markdownify.html" (dict "$" $ "raw" $rawTitle "isContent" false) -}}
+
+{{- $title := $htmlTitle -}}
+{{- if ne $.Kind "home" -}}
+    {{- $title = printf "%s | %s" $title $.Site.Title -}}
+{{- end -}}
+
+{{- return dict "rawTitle" ($htmlTitle | plainify | htmlUnescape) "title" ($title | plainify | htmlUnescape) "htmlTitle" $htmlTitle -}}
