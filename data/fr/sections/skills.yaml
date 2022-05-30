@@ -29,13 +29,13 @@ skills:
   socialLinks:
   - name: Linkedin
     icon: "fab fa-linkedin"
-    url: "https://github.com/incaya"
+    url: "https://fr.linkedin.com/in/thomas-berriot-5a420513"
   - name: Twitter
     icon: "fab fa-twitter"
-    url: "https://github.com/incaya"
+    url: "https://twitter.com/tberriot"
   - name: Github
     icon: "fab fa-github"
-    url: "https://github.com/incaya"
+    url: "https://github.com/tberriot"
 
 - name: Alexis Janvier
   # logo: "/images/alexisjanvier.png"
@@ -49,13 +49,13 @@ skills:
   socialLinks:
   - name: Blog
     icon: "fab fa-blogger"
-    url: "https://github.com/incaya"
+    url: "https://alexisjanvier.net"
   - name: Mastodon
     icon: "fab fa-mastodon"
-    url: "https://github.com/incaya"
+    url: "https://mamot.fr/web/@alexisjanvier"
   - name: Github
     icon: "fab fa-github"
-    url: "https://github.com/incaya"
+    url: "https://github.com/alexisjanvier"
 
 - name: Thomas Maziere
   # logo: "/images/thomasmaziere.png"
@@ -65,14 +65,14 @@ skills:
     **Experience** : 17 ans    
     **Spécialité** : l'AMOA et le brainstorming   
     **Outils favoris** : JavaScript, Python et Processing      
-    **Passion** : la sculture du bois
+    **Passion** : la sculpture du bois
   socialLinks:
     - name: Linkedin
       icon: "fab fa-linkedin"
-      url: "https://github.com/incaya"
+      url: "https://fr.linkedin.com/in/thomasmaziere"
     - name: Twitter
       icon: "fab fa-twitter"
-      url: "https://github.com/incaya"
+      url: "https://twitter.com/thomasmaziere"
     - name: Github
       icon: "fab fa-github"
-      url: "https://github.com/incaya"
+      url: "https://github.com/tmaziere"

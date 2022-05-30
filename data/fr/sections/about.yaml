@@ -21,20 +21,20 @@ designation: Être accompagné·e pour réussir vos projets numériques
 summary: |
   Comprendre votre métier et son quotidien, imaginer ou repenser une architecture technique, trouver les professionnels qualifiés pour développer vos outils et les maintenir au long cours : voici comment nous intervenons régulièrement pour garantir le succès de nos clients. 
 
-  Forts de nombreuses années d'expérience dans l'accompagnement des projets numériques, nous pouvons vous aider à prendre du recul, à faire les bons choix et à créer un climat de confiance. A la fois techniciens et assistants à maîtrise d'ouvrage (AMOA SI), nous intervenons régulièrement en facilitateurs pour lever les freins et rétablir une communication optimale."
+  Forts de nombreuses années d'expérience dans l'accompagnement des projets numériques, nous pouvons vous aider à prendre du recul, à faire les bons choix et à créer un climat de confiance. A la fois techniciens et assistants à maîtrise d'ouvrage (AMOA SI), nous intervenons régulièrement en facilitateurs pour lever les freins et rétablir une communication optimale.
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
 - name: Linkedin
   icon: "fab fa-linkedin"
-  url: "https://github.com/incaya"
+  url: "https://fr.linkedin.com/company/scop-incaya"
 - name: Twitter
   icon: "fab fa-twitter"
-  url: "https://github.com/incaya"
+  url: "https://twitter.com/IncayaScop"
 - name: Mastodon
   icon: "fab fa-mastodon"
-  url: "https://github.com/incaya"
+  url: "https://indieweb.social/web/@inkaya"
 - name: Github
   icon: "fab fa-github"
   url: "https://github.com/incaya"
