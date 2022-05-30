@@ -50,7 +50,7 @@ build: ## Génération des statiques finaux
 	  bash -ci hugo
 
 deploy: build ## Deploiement du site
-	rsync -avz --delete public/ incaya-general:/var/www/incaya/beta
+	rsync -avz --delete public/ incaya-general:/var/www/incaya/web
 
 #-------
 # Docker
