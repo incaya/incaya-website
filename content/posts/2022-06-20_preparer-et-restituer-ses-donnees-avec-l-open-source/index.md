@@ -50,7 +50,7 @@ Habitué par le passé aux outils propriétaires forcément (quoique) bien conç
 
 Aussi, dans ce domaine, l'offre open-source n'est de loin pas composée que d'[outils libres](https://fr.wikipedia.org/wiki/Logiciel_libre), ce qui contraint parfois à souscrire à une offre payante dans le cloud (ou pas) pour disposer de l'ensemble des fonctionnalités attendues.
 
-Pour cocher toutes les cases, et bien que ce ne soit pas la seule solution, nous avons été séduit par le projet [Superset](https://superset.apache.org/) porté par la puissante communauté [Apache](https://projects.apache.org/). Notons que les visualisations à disposition repose notamment sur le très robuste librairie [D3.js](https://d3js.org/) que l'on peut même utiliser seule pour intégrer des indicateurs dans un [site ou une application web (webapp)](https://dev.to/lawalalao/quelle-est-la-difference-entre-un-site-web-et-une-application-web-2ml1).
+Pour cocher toutes les cases, et bien que ce ne soit pas la seule solution, nous avons été séduit par le projet [Superset](https://superset.apache.org/) porté par la puissante communauté [Apache](https://projects.apache.org/). Notons que les visualisations à disposition reposent notamment sur la très robuste librairie [D3.js](https://d3js.org/) que l'on peut même utiliser seule pour intégrer des indicateurs dans un [site ou une application web (webapp)](https://dev.to/lawalalao/quelle-est-la-difference-entre-un-site-web-et-une-application-web-2ml1).
 
 ## Notre démarche
 
