@@ -1,2 +1,2 @@
 # incaya-website
-Le site web d'incaya
+Le site web d'INCAYA

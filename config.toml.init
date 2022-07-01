@@ -11,7 +11,7 @@ theme = "incaya"
 # Author’s information
 [author]
     # Name
-    name = "Incaya"
+    name = "INCAYA"
     # Email
     email = ""
     # Avatar
@@ -25,7 +25,7 @@ theme = "incaya"
 [params]
     siteCreatedTime = "2022-03-16T10:16:58Z"
     siteLogo = "/images/avatar.png"
-    author = "Incaya"
+    author = "INCAYA"
     baseline = "Nous sommes des artisans de la donnée"
     description = "A vos côtés pour inventer ! Associations, collectivités, entreprises : nous assurons l'Assistance à Maîtrise d'Ouvrage de votre projet de création ou de refonte de système d'information. Spécialistes de la veille et de l'innovation technique, nous vous conseillons et réalisons des prototypes logiciels et matériels ou des produits pour vos projets scientifiques, éducatifs et culturels."
     mainSections = ["blog"]

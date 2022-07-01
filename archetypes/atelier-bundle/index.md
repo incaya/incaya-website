@@ -7,6 +7,6 @@ weight: #WEIGHT
 tags:
 - un tag
 links:
-- title: incaya
+- title: INCAYA
   url: https://www.incaya.fr
 ---

@@ -15,7 +15,7 @@
   {{ $sections = (index site.Data site.Language.Lang).sections }}
 {{ end }}
 
-{{ $backgroundImage:= "/images/default-background.jpg" }}
+{{ $backgroundImage:= "/images/carbon_fibre.png" }}
 {{ if site.Params.background }}
   {{ $backgroundImage = site.Params.background }}
 {{ end }}
@@ -78,33 +78,9 @@
     /* 0 to 299 */
     #homePageBackgroundImageDivStyled {
       background-image: url(/images/carbon_fibre.png);
+      transform: scale(1.1);
     }
-    /* 300 to X */
-    @media (min-width: 500px) and (max-width: 800px) { /* or 301 if you want really the same as previously.  */
-      #homePageBackgroundImageDivStyled {   
-          background-image: url('{{ strings.TrimSuffix "/" site.BaseURL }}{{ $small.RelPermalink }}');
-        }
-    }
-    @media (min-width: 801px) and (max-width: 1200px) { /* or 301 if you want really the same as previously.  */
-      #homePageBackgroundImageDivStyled {   
-          background-image: url('{{ strings.TrimSuffix "/" site.BaseURL }}{{ $medium.RelPermalink }}');
-          background-attachment: fixed;
-          background-position: center;
-          transform: scale(1.1);
-          filter: blur(1px);
-          background-size:cover;
-        }
-    }
-    @media (min-width: 1201px) { /* or 301 if you want really the same as previously.  */
-      #homePageBackgroundImageDivStyled {   
-          background-image: url('{{ strings.TrimSuffix "/" site.BaseURL }}{{ $large.RelPermalink }}');
-          background-attachment: fixed;
-          background-position: center;
-          transform: scale(1.1);
-          filter: blur(0.5px);
-          background-size:contain;
-        }
-    }
+    
     </style>
     <span class="on-the-fly-behavior"></span>
   <div

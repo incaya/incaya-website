@@ -1,4 +1,4 @@
-# Incaya
+# INCAYA
 
 ## Une coopérative de services du numérique
 Notre entreprise associe des professionnels aux expertises techniques et méthodologiques variées, au service de vos idées.
