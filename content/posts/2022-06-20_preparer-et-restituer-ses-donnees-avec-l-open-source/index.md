@@ -17,7 +17,7 @@ Quand on maîtrise l'art de la débrouille avec les feuilles de calcul à coups 
 
 Cette méthode éprouvée et très efficace s'avère néanmoins fragile avec une maintenance qui peut devenir lourde et une évolutivité limitée voir coûteuse.
 
-Pléthore de logiciels propriétaires pour transformer et restituer ses données ont déjà fait leur preuve, aussi l'open source gagne indéniablement du terrain. C'est en tout cas le pari que nous faisons ...
+Pléthore de logiciels propriétaires pour transformer et restituer ses données ont déjà fait leurs preuves, aussi l'open source gagne indéniablement du terrain. C'est en tout cas le pari que nous faisons chez Incaya ...
 
 ## Un peu de jargon
 
@@ -52,7 +52,7 @@ Chez Incaya, nous apprécions tout particulièrement un outil comme [DBT](https:
 
 Pour le stockage des données de l'entrepôt, nous utilisons - sauf contre ordre du client - [PostgreSQL](https://www.postgresql.org/) qui nous semble le [SGBD](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_base_de_donn%C3%A9es) open source le plus complet à ce jour.
 
-> Résumé : l'association ELT *Airbyte-DBT-PostgreSQL* à de l'avenir, en témoigne le nombre grandissant d'articles qui en fait la promotion sur le oueb
+> Résumé : l'association ELT *Airbyte-DBT-PostgreSQL* à de l'avenir, en témoigne le nombre grandissant d'articles qui en font la promotion sur le oueb
 
 ## La visualisation de données pour toutes et tous
 
@@ -67,13 +67,13 @@ Pour cocher toutes les cases, et bien que ce ne soit pas la seule solution, nous
 
 A noter qu'une solution de visualisation de données se choisit selon plusieurs critères :
 - la solution doit-elle s'intégrer à une application existante ?
-- y-a-t-il une large gamme de types d'utilisation à prévoir au sain de l'organisation ? de l'utilisateur "consommateur" à l'analyste qui doit être capable de créer ses propres visualisations au travers de la solution ?
+- y-a-t-il une large gamme de types d'utilisation à prévoir au sein de l'organisation ? de l'utilisateur "consommateur" à l'analyste qui doit être capable de créer ses propres visualisations au travers de la solution ?
 - la production, voir l'envoi automatisé, de rapports préformatés est-il nécessaire ?
 - etc ...
 
 L'offre est suffisamment étoffée pour qu'il soit possible de trouver la ou les solutions idoines, y compris en focalisant sur l'open source.
 
-> Résumé : il n'existe pas de solution open source de visualisation de données "qui fait tout même le café". Cependant, Apache Superset nous semble LE projet à suivre qui se focalise sur l'essentiel pour répondre à un très grand nombre de besoins
+> Résumé : il n'existe pas de solution open source de visualisation de données "qui fait tout même le café" - et c'est surement une bonne chose. Cependant, Apache Superset nous semble LE projet à suivre qui se focalise sur l'essentiel pour répondre à un très grand nombre de besoins
 
 ## L'open source, une démarche
 
