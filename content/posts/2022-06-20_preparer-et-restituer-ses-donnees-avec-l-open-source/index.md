@@ -1,8 +1,9 @@
 ---
-title: Préparer et restituer ses données avec l'open source
-slug: preparer-et-restituer-ses-donnees-avec-l-open-source
-description: "Alors qu'il existe pléthore de logiciels propriétaires pour transformer et restituer ses données, l'open-source gagne indéniablement du terrain"
-date: 2022-08-02T09:51:14Z
+title: Préparer et restituer ses données avec le libre et l'open source
+slug: preparer-et-restituer-ses-donnees-avec-le-libre-et-l-open-source
+description: "Alors qu'il existe pléthore de logiciels propriétaires pour transformer et restituer ses données, le libre et l'open-source gagnent indéniablement du terrain"
+author: Thomas B
+date: 2022-08-29T09:51:14Z
 draft: false
 in_search_index: true
 tags:
@@ -11,13 +12,11 @@ tags:
 - dataviz
 ---
 
-Des données de formulaire ou d'une feuille de calcul à exploiter pour produire des indicateurs ou des statistiques ? [L'open source](https://fr.wikipedia.org/wiki/Open_source) et [le logiciel libre](https://fr.wikipedia.org/wiki/Logiciel_libre) ont des réponses.<!--more-->
-
 Quand on maîtrise l'art de la débrouille avec les feuilles de calcul à coups de formules magiques, on peut faire parler les données d'un export brut et obtenir des résultats satisfaisants pour suivre son activité ou "produire des statistiques".
 
 Cette méthode pragmatique, éprouvée et souvent efficace, s'avère néanmoins fragile dans le temps avec une maintenance qui peut devenir lourde et une évolutivité limitée voir coûteuse.
 
-L'offre logicielle pour professionnaliser ces traitements est pléthorique. Bien que ces logiciels apprtiennent souvent au monde du [logiciel propriétaire](https://fr.wikipedia.org/wiki/Logiciel_propri%C3%A9taire), l'offre open source gagne indéniablement du terrain. C'est en tout cas le pari que nous faisons chez Incaya ...
+L'offre logicielle pour professionnaliser ces traitements est pléthorique. Bien que ces logiciels apprtiennent souvent au monde du [logiciel propriétaire](https://fr.wikipedia.org/wiki/Logiciel_propri%C3%A9taire), l'offre [libre et open source](https://fr.wikipedia.org/wiki/Free/Libre_Open_Source_Software) gagne indéniablement du terrain. C'est en tout cas le pari que nous faisons chez Incaya ...
 
 ## Un peu de jargon
 
@@ -60,7 +59,7 @@ Pour le stockage des données de l'entrepôt, nous utilisons - sauf contre ordre
 
 ## La visualisation de données pour toutes et tous
 
-Habitué par le passé aux outils propriétaires forcément (quoique) bien conçus, j'étais (Thomas B) souvent déçu par l'offre open-source de visualisation de données (je parle d'un temps ... bref avant 2015, en gros). Il y manquait toujours l'une ou l'autre de ces fonctionnalités souvent très attendues :
+Habitué par le passé aux outils propriétaires forcément (quoique) bien conçus, j'étais souvent déçu par l'offre open-source de visualisation de données (je parle d'un temps ... bref avant 2015, en gros). Il y manquait toujours l'une ou l'autre de ces fonctionnalités souvent très attendues :
 - accéder aux données à restituer sans contrainte
 - fournir aux utilisatrices et utilisateurs un accès personnalisé, tou.te.s n'ayant pas les mêmes besoins, entre simplement utiliser les tableaux de bord et pouvoir en concevoir
 - disposer d'un catalogue de types de visualisation suffisant pour couvrir les besoins d'analyse
@@ -85,9 +84,9 @@ L'offre est suffisamment étoffée pour qu'il soit possible de trouver la ou les
 
 > Résumé : il n'existe pas de solution open source de visualisation de données "qui fait tout même le café" - et c'est surement une bonne chose. Cependant, Apache Superset nous semble LE projet à suivre qui se focalise sur l'essentiel pour répondre à un très grand nombre de besoins
 
-## L'open source résiste très bien face aux logiciels propriétaires
+## Le libre et l'open source résistent très bien face aux logiciels propriétaires
 
-L'open source s'impose lorsqu'on est soucieux de pouvoir fournir des tableaux de bord au plus grand nombre, notamment dans des domaines d'activité où les budgets sont réduits - de la plus petite association ou collectivité à la PME oeuvrant dans [l'ESS](https://fr.wikipedia.org/wiki/%C3%89conomie_sociale_et_solidaire) par exemple.
+Le libre et l'open source s'imposent lorsqu'on est soucieux de pouvoir fournir des tableaux de bord au plus grand nombre, notamment dans des domaines d'activité où les budgets sont réduits - de la plus petite association ou collectivité à la PME oeuvrant dans [l'ESS](https://fr.wikipedia.org/wiki/%C3%89conomie_sociale_et_solidaire) par exemple.
 
 Par ailleurs, il n'est pas rare de rencontrer des projets où la visualisation de données se trouve être "la cerise sur le gâteau", par exemple quand il s'agit de fournir de simples indicateurs dans une application web de collecte de données de [sciences participatives](https://fr.wikipedia.org/wiki/Sciences_participatives) grand public. La robustesse des solutions apportées par l'open source dans ce cas n'est plus à démontrer.
 

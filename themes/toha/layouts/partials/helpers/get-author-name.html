@@ -7,11 +7,9 @@
 {{ end }}
 
 {{/*  Lastly, overrides with the post specific author if provided  */}}
-{{ if eq (printf "%T" .Params.author ) "maps.Params" }}
-    {{ with .Params.author }}
-        {{ if .name }}
-        {{ $authorName = .name }}
-        {{ end }}
-    {{ end }}
+
+{{ if .Params.author }}
+  {{ $authorName = .Params.author }}
 {{ end }}
+
 {{ return $authorName }}
