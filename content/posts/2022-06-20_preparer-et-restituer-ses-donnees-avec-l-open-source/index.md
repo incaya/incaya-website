@@ -3,7 +3,7 @@ title: Préparer et restituer ses données avec le libre et l'open source
 slug: preparer-et-restituer-ses-donnees-avec-le-libre-et-l-open-source
 description: "Alors qu'il existe pléthore de logiciels propriétaires pour transformer et restituer ses données, le libre et l'open-source gagnent indéniablement du terrain"
 author: Thomas B
-date: 2022-08-29T09:51:14Z
+date: 2022-09-01T00:01:00Z
 draft: false
 in_search_index: true
 tags:
