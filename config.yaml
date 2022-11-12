@@ -21,6 +21,12 @@ markup:
 # Enable global emoji support
 enableEmoji: false
 
+outputs:
+  home:
+  - HTML
+  - RSS
+  - JSON
+
 # Site parameters
 params:
   # GitHub repo URL of your site

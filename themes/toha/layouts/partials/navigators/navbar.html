@@ -121,6 +121,9 @@
               </li>
             {{ end }}
         {{ end }}
+        <li class="nav-item">
+          <a class="nav-link" href="/posts/index.xml" title="RSS"><i class="fa-solid fa-square-rss"></i></a>
+        </li>
         {{ if .IsTranslated }}
           {{ partial "navigators/lang-selector.html" . }}
         {{ end }}
