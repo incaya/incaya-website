@@ -47,7 +47,7 @@ a {
 }
 
 a:hover {
-  color: var(--link-hoover-color);
+  color: var(--link-hoover-color)!important;
 }
 
 .nav-button {
@@ -304,23 +304,26 @@ mark {
 /* --- FOOTER START --- */
 
 .footer {
-  color: #8392a5 !important;
-  background-color: #1c2d41;
+  color: var(--bg-darker-color) !important;
+  background-color: var(--font-header-color);
   position: relative;
   z-index: 9999;
+  border-top: 4px solid var(--link-hoover-color);
 }
 
 .footer h5 {
-  color: #c0ccda;
+  color: var(--bg-darker-color);
 }
 .footer a {
-  color: #8392a5;
+  color: var(--bg-color);
   transition: all 0.3s ease-out;
 }
 
 .footer a:hover {
-  margin-left: 5px;
+  margin-left: 2px;
   transition: all 0.3s ease-out;
+  color:var(--bg-color)!important;
+  text-decoration:none;
 }
 
 .footer ul {
@@ -333,7 +336,7 @@ mark {
 }
 
 .footer hr {
-  background-color: #8392a5;
+  background-color: var(--bg-darker-color);
 }
 
 .footer p:first-child {
