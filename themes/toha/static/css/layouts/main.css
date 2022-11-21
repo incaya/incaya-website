@@ -12,10 +12,18 @@ Pink:    #ED63D2
 Green:   #2DCA73
 Yellow:  #FFC212
 */
+:root{
+  --bg-color: #e1e1e1;
+  --bg-darker-color: #d1d1d1;
+  --font-header-color: #411c26;
+  --font-p-color: #46212b;
+  --link-color: #7e1c36;
+  --link-hoover-color: #9d2746 ;
+}
 
 body {
-  background-color: #f9fafc;
-  font-family: "Muli";
+  background-color: #3b3b3b;
+  font-family: Helvetica, Arial, Sans-serif;
 }
 
 h1,
@@ -23,80 +31,80 @@ h2,
 h3,
 h4,
 h5 {
-  color: #1c2d41;
+  color: var(--font-header-color)
 }
 
 strong {
-  color: #1c2d41 !important;
+  color: var(--font-header-color)!important;
 }
 
 p {
-  color: #3c4858;
+  color: var(--font-p-color);
 }
 
 a {
-  color: #248aaa;
+  color: var(--link-color);
 }
 
 a:hover {
-  color: #207089;
+  color: var(--link-hoover-color);
 }
 
 .nav-button {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
-  color: #8392a5;
+  color: var(--font-p-color);
 }
 
 .btn-dark {
-  background-color: #3c4858!important;
-  border-color: #3c4858!important;
-  color: #e5e9f2!important;
+  background-color: var(--font-header-color)!important;
+  border-color: var(--font-header-color)!important;
+  color: var(--bg-color)!important;
   transition: all 0.3s ease-out!important;
 }
 
 .btn-dark:hover,
 .btn-dark:focus {
-  background-color: #248aaa!important;
-  border-color: #248aaa!important;
+  background-color: var(--link-hoover-color)!important;
+  border-color: var(--link-hoover-color)!important;
   transition: all 0.3s ease-out!important;
 }
 
 .btn-outline-info {
-  color: #2098d1 !important;
-  border-color: #2098d1 !important;
+  color: var(--font-header-color) !important;
+  border-color: var(--font-header-color) !important;
 }
 
 .btn-outline-info:hover {
-  background-color: #2098d1 !important;
-  color: #e5e9f2 !important;
+  background-color: var(--link-hoover-color) !important;
+  color: var(--bg-color) !important;
 }
 
 .btn-info {
-  background-color: #248aaa !important;
-  color: #e5e9f2 !important;
+  background-color: var(--font-header-color) !important;
+  color: var(--bg-darker-color) !important;
 }
 
 .btn-info:hover {
-  background-color: #2098d1 !important;
-  color: #e5e9f2 !important;
+  background-color: var(--link-hoover-color) !important;
+  color: var(--bg-color) !important;
 }
 
 .btn-link {
-  color: #248aaa;
+  color: var(--link-color);
 }
 
 .btn-link:hover {
-  color: #207089;
+  color: var(--link-hoover-color);
 }
 
 .bg-white {
-  background-color: #f9fafc !important;
+  background-color: #e1e1e1 !important;
 }
 
 .bg-dimmed {
-  background-color: #e5e9f2;
+  background-color: #dedede;
 }
 
 .anchor {
@@ -120,9 +128,10 @@ img.right {
 }
 
 .card {
-  box-shadow: none;
+  box-shadow: 4px 4px 1px rgba(130, 9, 66);
   transition: all 0.3s ease-out;
   overflow: hidden;
+  border-radius:0rem;
 }
 
 .card-img-sm {
@@ -137,7 +146,7 @@ img.right {
 
 .card:hover,
 .card:focus {
-  box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
+  box-shadow: 8px 8px 1px rgba(130, 9, 66);
   border: 1px solid #fff;
   transition: all 0.3s ease-out;
 }
@@ -239,12 +248,12 @@ pre > code {
 
 a.header-anchor {
   text-decoration: none;
-  color: #1c2d41;
+  color: var(--font-p-color);
 }
 
 a.header-anchor i {
   font-size: 10pt;
-  color: #3c4858;
+  color: var(--link-color);
   display: none;
   margin-left: 0.5rem;
 }

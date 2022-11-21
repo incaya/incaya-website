@@ -1,3 +1,12 @@
+:root{
+  --bg-color: #e1e1e1;
+  --bg-darker-color: #d1d1d1;
+  --font-header-color: #411c26;
+  --font-p-color: #46212b;
+  --link-color: #7e1c36;
+  --link-hoover-color: #9d2746 ;
+}
+
 .experiences-section {
   padding-bottom: 1rem;
 }
@@ -27,11 +36,12 @@
 
 .circle {
   padding: 13px 20px;
-  border-radius: 50%;
-  background-color: #248aaa;
+  border-radius: 100%;
+  background-color: var(--font-header-color);
   color: #f9fafc;
   max-height: 50px;
   z-index: 2;
+  box-shadow: 4px 4px 1px rgba(130, 9, 66);
 }
 
 .timeline .vertical-line {
@@ -41,7 +51,7 @@
 .timeline .vertical-line::after {
   content: "";
   position: absolute;
-  border-left: 3px solid #248aaa;
+  border-left: 3px solid var(--link-color);
   z-index: 1;
   height: 100%;
   left: 50%;
@@ -57,7 +67,7 @@
 }
 
 .timeline .horizontal-line hr {
-  border-top: 3px solid #248aaa;
+  border-top: 3px solid var(--link-color);
   margin: 0;
   top: 17px;
   position: relative;
@@ -69,7 +79,7 @@
 }
 
 .timeline .horizontal-line .corner {
-  border: 3px solid #248aaa;
+  border: 3px solid var(--link-color);
   width: 100%;
   position: relative;
   border-radius: 15px;
