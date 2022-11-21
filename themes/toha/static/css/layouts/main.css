@@ -128,7 +128,7 @@ img.right {
 }
 
 .card {
-  box-shadow: 4px 4px 1px rgba(130, 9, 66);
+  box-shadow: 4px 4px 1px var(--link-color);
   transition: all 0.3s ease-out;
   overflow: hidden;
   border-radius:0rem;
@@ -146,7 +146,7 @@ img.right {
 
 .card:hover,
 .card:focus {
-  box-shadow: 8px 8px 1px rgba(130, 9, 66);
+  box-shadow: 8px 8px 1px var(--link-color);
   border: 1px solid #fff;
   transition: all 0.3s ease-out;
 }
