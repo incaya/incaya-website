@@ -3,7 +3,7 @@ section:
   name: Nous sommes des artisans de la donnée
   id: artisans-donnee
   enable: true
-  weight: 3
+  weight: 2
   showOnNavbar: false
   template: sections/experiences.html
   # Can optionally hide the title in sections

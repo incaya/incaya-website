@@ -3,7 +3,7 @@ section:
   name: La Coopérative
   id: cooperative
   enable: true
-  weight: 2
+  weight: 3
   showOnNavbar: true
   template: sections/skills.html
   # Can optionally hide the title in sections
