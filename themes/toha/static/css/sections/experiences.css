@@ -1,12 +1,3 @@
-:root{
-  --bg-color: #e1e1e1;
-  --bg-darker-color: #d1d1d1;
-  --font-header-color: #411c26;
-  --font-p-color: #46212b;
-  --link-color: #7e1c36;
-  --link-hoover-color: #9d2746 ;
-}
-
 .experiences-section {
   padding-bottom: 1rem;
 }
@@ -51,7 +42,7 @@
 .timeline .vertical-line::after {
   content: "";
   position: absolute;
-  border-left: 3px solid var(--link-color);
+  border-left: 3px solid var(--link-hoover-color);
   z-index: 1;
   height: 100%;
   left: 50%;
@@ -67,7 +58,7 @@
 }
 
 .timeline .horizontal-line hr {
-  border-top: 3px solid var(--link-color);
+  border-top: 3px solid var(--link-hoover-color);
   margin: 0;
   top: 17px;
   position: relative;
@@ -79,7 +70,7 @@
 }
 
 .timeline .horizontal-line .corner {
-  border: 3px solid var(--link-color);
+  border: 3px solid var(--link-hoover-color);
   width: 100%;
   position: relative;
   border-radius: 15px;

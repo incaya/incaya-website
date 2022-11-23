@@ -17,7 +17,7 @@ Yellow:  #FFC212
   --bg-darker-color: #d1d1d1;
   --font-header-color: #411c26;
   --font-p-color: #46212b;
-  --link-color: #7e1c36;
+  --link-color: #b75e76;
   --link-hoover-color: #9d2746 ;
 }
 
@@ -128,7 +128,7 @@ img.right {
 }
 
 .card {
-  box-shadow: 4px 4px 1px var(--link-color);
+  box-shadow: 4px 4px 1px var(--link-hoover-color);
   transition: all 0.3s ease-out;
   overflow: hidden;
   border-radius:0rem;
@@ -146,7 +146,7 @@ img.right {
 
 .card:hover,
 .card:focus {
-  box-shadow: 8px 8px 1px var(--link-color);
+  box-shadow: 8px 8px 1px var(--link-hoover-color);
   border: 1px solid #fff;
   transition: all 0.3s ease-out;
 }

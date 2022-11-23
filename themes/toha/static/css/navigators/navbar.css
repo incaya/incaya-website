@@ -1,12 +1,3 @@
-:root{
-  --bg-color: #e1e1e1;
-  --bg-darker-color: #d1d1d1;
-  --font-header-color: #411c26;
-  --font-p-color: #46212b;
-  --link-color: #7e1c36;
-  --link-hoover-color: #9d2746 ;
-}
-
 .top-navbar {
   position: fixed;
   left: 0;
@@ -76,9 +67,9 @@
 
 .final-navbar .navbar-nav .active,
 .final-navbar li a:hover {
-  color: var(--bg-darker-color);
+  color: var(--link-color);
   transition: all 0.3s ease-out;
-  border-bottom: 0px solid var(--bg-darker-color);
+  border-bottom: 0px solid var(--link-color);
 
 }
 
