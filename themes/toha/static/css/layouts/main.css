@@ -102,11 +102,11 @@ a:hover {
 }
 
 .bg-white {
-  background-color: #e1e1e1 !important;
+  background-color: var(--bg-color) !important;
 }
 
 .bg-dimmed {
-  background-color: #dedede;
+  background-color: var(--bg-darker-color);
 }
 
 .anchor {
@@ -127,6 +127,12 @@ img.left {
 img.right {
   display: block;
   margin-left: auto;
+}
+
+
+.card-client {
+mix-blend-mode:luminosity;
+
 }
 
 .card {
