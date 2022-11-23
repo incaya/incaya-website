@@ -1,10 +1,10 @@
 # section information
 section:
   name: A propos
-  id: a-propos
+  id: home
   enable: true
   weight: 1
-  showOnNavbar: true
+  showOnNavbar: false
   template: sections/about.html
 
 # your designation
