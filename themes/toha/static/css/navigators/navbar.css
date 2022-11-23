@@ -74,7 +74,7 @@
 }
 
 .final-navbar .navbar-toggler-icon{
-  filter:invert(1)
+  filter:invert(0);
 }
 
 .navbar-collapse.show li a,
@@ -96,13 +96,13 @@
 /* --- state after scroll end --- */
 
 #top-navbar-divider {
-  background: rgba(192, 204, 218, 0.8);
+  background: transparent;
   height: 20px;
   width: 2px;
 }
 
 .final-navbar #top-navbar-divider {
-  background: rgba(0, 0, 0, 0.6);
+  background: transparent;
 }
 
 #top-navbar-divider {
@@ -132,7 +132,7 @@
 }
 
 .top-navbar .dropdown-menu a {
-  color: #1c2d41;
+  color: var(--link-color);
   border-bottom: none;
 }
 
@@ -178,13 +178,13 @@
 
   .initial-navbar .navbar-nav .active,
   .initial-navbar li a:hover {
-    color: #2098d1;
+    color: var(--link-color);
     transition: all 0.3s ease-out;
   }
 
   .final-navbar .navbar-nav .active,
   .final-navbar li a:hover {
-    color: #2098d1;
+    color: var(--link-hoover-color);
     transition: none;
 
     border-bottom: none;
@@ -217,13 +217,13 @@
 @media (max-width: 992px) {
   .initial-navbar .navbar-nav .active,
   .initial-navbar li a:hover {
-    color: #2098d1;
+    color: var(--link-color);
     transition: all 0.3s ease-out;
   }
 
   .final-navbar .navbar-nav .active,
   .final-navbar li a:hover {
-    color: #2098d1;
+    color: var(--link-hoover-color);
     transition: none;
 
     border-bottom: none;
@@ -250,13 +250,13 @@
 @media only screen and (max-width: 768px) {
   .initial-navbar .navbar-nav .active,
   .initial-navbar li a:hover {
-    color: #2098d1;
+    color: var(--link-color);
     transition: all 0.3s ease-out;
   }
 
   .final-navbar .navbar-nav .active,
   .final-navbar li a:hover {
-    color: #2098d1;
+    color: var(--link-hoover-color);
     transition: none;
 
     border-bottom: none;
