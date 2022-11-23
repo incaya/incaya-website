@@ -34,8 +34,23 @@ h5 {
   color: var(--font-header-color)
 }
 
-h2{margin-top:30px;
-margin-bottom:30px;}
+h2{
+margin-bottom:35px;
+}
+
+h2 > span {
+  margin-top: -55px!important;
+  padding-bottom: 55px!important;
+  display: block;
+}
+
+.bg-dimmed h2{
+  margin-top:-5px;
+}
+
+.experiences-section h2{
+  margin-bottom:70px;
+}
 
 strong {
   color: var(--font-header-color)!important;
@@ -317,6 +332,20 @@ mark {
   position: relative;
   z-index: 9999;
   border-top: 4px solid var(--link-hoover-color);
+}
+
+
+.footer:after{
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 20%;
+  display: block;
+  height: 55px;
+  width: 100px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: var(--link-hoover-color);
 }
 
 .footer h5 {
