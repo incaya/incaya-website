@@ -179,6 +179,7 @@ filter:brightness(120%);
   transition: all 0.3s ease-out;
   overflow: hidden;
   border-radius:0rem;
+  background:var(--bg-second-color);
 }
 
 .card-img-sm {
@@ -202,6 +203,7 @@ filter:brightness(120%);
   -o-object-fit: cover;
   object-fit: cover;
   overflow: hidden;
+  background-color: rgba(0,0,0,.03);
 }
 
 .card-img-top {
