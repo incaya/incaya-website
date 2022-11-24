@@ -22,7 +22,7 @@ Yellow:  #FFC212
 }
 
 body {
-  background-color: #3b3b3b;
+  background-color: var(--bg-color);
   font-family: Helvetica, Arial, Sans-serif;
 }
 
