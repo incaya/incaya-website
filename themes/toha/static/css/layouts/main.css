@@ -14,7 +14,7 @@ Yellow:  #FFC212
 */
 :root{
   --bg-color: #FAF7D9;
-  --bg-second-color: #F5EFB0;
+  --bg-second-color: #fffac7;
   --bg-darker-color: #0A3240;
   --font-header-color: #0A3240;
   --font-p-color: #04141A;
@@ -33,7 +33,9 @@ h2,
 h3,
 h4,
 h5 {
-  color: var(--font-header-color)
+  color: var(--font-header-color);
+  font-weight:500;
+  letter-spacing: 1px;
 }
 
 
@@ -55,10 +57,12 @@ h2 > span {
 
 .experiences-section h2, .reference-section h2{
   color:var(--bg-second-color);
+  font-weight: 300;
 }
 
 .experiences-section h4, .reference-section h4{
   color:var(--bg-second-color);
+  font-weight: 400;
 }
 
 .experiences-section  p, .reference-section p{

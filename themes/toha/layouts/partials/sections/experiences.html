@@ -12,23 +12,23 @@
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
   {{ end }}
 
-  <div class="container timeline text-justify">
+  <div class="container text-justify d-flex flex-row" style="flex-wrap:wrap;">
    {{ $totalExperiences:= len .experiences }}
    {{ range $index,$experience:= .experiences }}
      {{ if eq (mod $index 2) 0 }}
-       <div class="row align-items-center  d-flex">
-         {{ partial "sections/experiences/vertical-line.html" $index }}
+       <div class="col-xs-12 col-sm-6 col-lg-4 d-flex">
+         <!-- {{ partial "sections/experiences/vertical-line.html" $index }} -->
          {{ partial "sections/experiences/experience-info.html" $experience }}
        </div>
      {{else}}
-       <div class="row align-items-center justify-content-end d-flex">
+       <div class="col-xs-12 col-sm-6 col-lg-4 d-flex" >
          {{ partial "sections/experiences/experience-info.html" $experience }}
-         {{ partial "sections/experiences/vertical-line.html" $index }}
+         <!-- {{ partial "sections/experiences/vertical-line.html" $index }} -->
        </div>
      {{ end }}
-     {{ if lt $index (sub $totalExperiences 1) }}
+     <!-- {{ if lt $index (sub $totalExperiences 1) }}
        {{ partial "sections/experiences/horizontal-line.html" $index }}
-     {{ end }}
+     {{ end }} -->
    {{ end }}
   </div>
 </div>

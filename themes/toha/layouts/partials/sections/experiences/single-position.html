@@ -1,6 +1,12 @@
-<div class="col-10 col-lg-8">
+<div class="col">
     <div class="experience-entry-heading">
         {{ $position:= index .positions 0 }}
+
+            <!-- IMAGE -->
+            <div class="illu">
+                <p class="card-text" style="text-align: center">{{ .position | markdownify }}</p>
+            </div>
+
         <!-- For single position, give emphasis on the designation-->
         <h4>{{ $position.designation }}</h4>
     </div>
