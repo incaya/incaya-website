@@ -38,19 +38,6 @@
   background-color: #fff;
   padding: 5px;
   margin-bottom: 10px;
-  box-shadow: 0px 6px 1px var(--link-hoover-color);
-}
-
-.home:after{
-  content: '';
-  display: block;
-  background: var(--link-hoover-color);
-  border-radius: 50%;
-  width: 140px;
-  height: 140px;
-  position: absolute;
-  top: 89px;
-  left: -89px;
 }
 
 .home .greeting, .home .greeting-subtitle {

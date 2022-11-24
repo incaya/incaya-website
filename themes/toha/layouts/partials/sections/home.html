@@ -73,16 +73,16 @@
   {{ $large := $src}}
 {{ end }}
 
-<div class="container-fluid home" id="home">
-  <!-- <style>
+<!-- <div class="container-fluid home" id="home">
+  <style>
     /* 0 to 299 */
     #homePageBackgroundImageDivStyled {
       background-image: url(/images/carbon_fibre.png);
       transform: scale(1.1);
     }
     
-    </style> -->
-    <!-- <span class="on-the-fly-behavior"></span> -->
+    </style>
+    <span class="on-the-fly-behavior"></span>
   <div
     id="homePageBackgroundImageDivStyled"
     class="background container-fluid"
@@ -92,7 +92,7 @@
       class="rounded-circle mx-auto d-block img-fluid"
       alt="Author Image"
     />
-    <!-- <h1 class="greeting"> {{ $author.greeting }} {{ $name }}</h1>
+      <h1 class="greeting"> {{ $author.greeting }} {{ $name }}</h1>
     {{ if $author.subtitle }}
       <h2 class="greeting-subtitle">{{ $author.subtitle }}</h2>
     {{ end }}
@@ -106,15 +106,15 @@
           <li>{{ . }}</li>
         {{ end}}
       {{ end }}
-    </ul> -->
+    </ul>
     {{ if $sections }}
       {{ range first 1 (where (sort $sections "section.weight") ".section.enable" true) }}
         {{ $sectionID := replace (lower .section.name) " " "-"  }}
         {{ if .section.id }}
           {{ $sectionID = .section.id }}
         {{ end }}
-        <!-- <a href="#{{ $sectionID }}" aria-label="{{ i18n "read" }} {{ i18n "more" }} - {{ $name }}"><i class="arrow fa fa-chevron-down"></i></a> -->
+        <a href="#{{ $sectionID }}" aria-label="{{ i18n "read" }} {{ i18n "more" }} - {{ $name }}"><i class="arrow fa fa-chevron-down"></i></a>
       {{ end }}
     {{ end }}
   </div>
-</div>
+</div> -->

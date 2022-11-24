@@ -13,12 +13,14 @@ Green:   #2DCA73
 Yellow:  #FFC212
 */
 :root{
-  --bg-color: #e1e1e1;
-  --bg-darker-color: #d1d1d1;
-  --font-header-color: #411c26;
-  --font-p-color: #46212b;
-  --link-color: #b75e76;
-  --link-hoover-color: #9d2746 ;
+  --bg-color: #FAF7D9;
+  --bg-second-color: #F5EFB0;
+  --bg-darker-color: #0A3240;
+  --font-header-color: #0A3240;
+  --font-p-color: #04141A;
+  --link-color: #0FD1FF;
+  --link-hoover-color: #0FD1FF;
+  --card-color: #0A3240;
 }
 
 body {
@@ -34,8 +36,11 @@ h5 {
   color: var(--font-header-color)
 }
 
+
+
 h2{
-margin-bottom:35px;
+margin-bottom:10px;
+margin-top:10px;
 }
 
 h2 > span {
@@ -48,8 +53,16 @@ h2 > span {
   margin-top:-5px;
 }
 
-.experiences-section h2{
-  margin-bottom:70px;
+.experiences-section h2, .reference-section h2{
+  color:var(--bg-second-color);
+}
+
+.experiences-section h4, .reference-section h4{
+  color:var(--bg-second-color);
+}
+
+.experiences-section  p, .reference-section p{
+  color:var(--bg-color);
 }
 
 strong {
@@ -101,7 +114,7 @@ a:hover {
 
 .btn-info {
   background-color: var(--font-header-color) !important;
-  color: var(--bg-darker-color) !important;
+  color: var(--bg-color) !important;
 }
 
 .btn-info:hover {
@@ -122,7 +135,17 @@ a:hover {
 }
 
 .bg-dimmed {
-  background-color: var(--bg-darker-color);
+  background-color: var(--bg-color);
+}
+
+/*PERMET DE GERER MANUELLEMENT LE BACKGROUND PAR SECTION*/
+.container-fluid{
+  padding-left:0px;
+padding-right:0px;
+}
+
+.experiences-section, .reference-section{
+  background-color: var(--bg-darker-color)!important;
 }
 
 .anchor {
@@ -145,14 +168,14 @@ img.right {
   margin-left: auto;
 }
 
-
+/* IMAGES REFERENCES */
 .card-client {
 mix-blend-mode:luminosity;
-
+filter:brightness(120%);
 }
 
 .card {
-  box-shadow: 4px 4px 1px var(--link-hoover-color);
+  box-shadow: 4px 4px 1px var(--card-color);
   transition: all 0.3s ease-out;
   overflow: hidden;
   border-radius:0rem;
@@ -170,7 +193,7 @@ mix-blend-mode:luminosity;
 
 .card:hover,
 .card:focus {
-  box-shadow: 8px 8px 1px var(--link-hoover-color);
+  box-shadow: 8px 8px 1px var(--card-color);
   transition: all 0.3s ease-out;
 }
 
@@ -327,7 +350,7 @@ mark {
 /* --- FOOTER START --- */
 
 .footer {
-  color: var(--bg-darker-color) !important;
+  color: var(--bg-color) !important;
   background-color: var(--font-header-color);
   position: relative;
   z-index: 9999;
@@ -335,21 +358,8 @@ mark {
 }
 
 
-.footer:after{
-  content: '';
-  position: absolute;
-  top: 0px;
-  right: 20%;
-  display: block;
-  height: 55px;
-  width: 100px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  background: var(--link-hoover-color);
-}
-
 .footer h5 {
-  color: var(--bg-darker-color);
+  color: var(--bg-second-color);
 }
 .footer a {
   color: var(--bg-color);
@@ -373,7 +383,8 @@ mark {
 }
 
 .footer hr {
-  background-color: var(--bg-darker-color);
+  background-color: var(--bg-second-color);
+  width:86%;
 }
 
 .footer p:first-child {
