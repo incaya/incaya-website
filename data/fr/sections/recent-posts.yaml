@@ -1,5 +1,5 @@
 section:
-  name: Derniers articles
+  name: Nos articles
   id: derniers-articles
   enable: true
   weight: 5

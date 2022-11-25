@@ -1,6 +1,6 @@
 # section information
 section:
-  name: La Coopérative
+  name: Notre Coopérative
   id: cooperative
   enable: true
   weight: 3
