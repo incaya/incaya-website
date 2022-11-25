@@ -173,9 +173,12 @@ img.right {
 }
 
 /* IMAGES REFERENCES */
-.card-client {
+.card-client img{
 mix-blend-mode:luminosity;
 filter:brightness(120%);
+width:160px;
+height:auto;
+margin:-1rem;
 }
 
 .card {
@@ -185,7 +188,7 @@ filter:brightness(120%);
   border-radius:0rem;
   background:var(--bg-second-color);
   margin-top : 10px;
-  margin-bottom:10px
+  margin-bottom:10px;
 }
 
 .card-img-sm {

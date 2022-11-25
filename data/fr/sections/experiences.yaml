@@ -12,7 +12,7 @@ section:
 # Your experiences
 experiences:
 - company:
-    illustration : "![Respe](/images/clients/respe.png)"
+    illustration : "![acquerons](/images/acquerons.svg)"
     #name: Example Co.
     #url: "https://www.example.com"
     #location: Dhaka Branch
@@ -34,7 +34,7 @@ experiences:
     # - Lead backend team.
 
 - company:
-    illustration : "![Respe](/images/clients/respe.png)"
+    illustration : "![transformons](/images/transformons.svg)"
     #name: PreExample Co.
     #url: "https://www.preexample.com"
     #location: Nowhere
@@ -52,7 +52,7 @@ experiences:
     # - See lots of example videos.
 
 - company:
-    illustration : "![Respe](/images/clients/respe.png)"
+    illustration : "![restituons](/images/restituons.svg)"
     #name: PreExample Co.
     #url: "https://www.preexample.com"
     #location: Nowhere
