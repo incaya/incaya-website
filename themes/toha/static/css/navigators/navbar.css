@@ -51,7 +51,7 @@
   background-color: var(--font-header-color);
   color: var(--bg-color);
   transition: all 0.3s ease-out;
-  border-bottom:  4px solid var(--link-hoover-color);
+  border-bottom:  5px solid var(--link-hoover-color);
 }
 
 .final-navbar .navbar-brand {

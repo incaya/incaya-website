@@ -22,8 +22,6 @@
 }
 
 .skills-section .card {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
   height: 100%;
 }
 
@@ -32,6 +30,9 @@
   padding-left: 0.7rem;
 }
 
+.skills-section{
+  margin-bottom:50px;
+}
 /* ============= Device specific fixes ======= */
 
 /* Large screens such as TV */
