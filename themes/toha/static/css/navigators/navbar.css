@@ -91,24 +91,19 @@
 
 #top-navbar-divider {
   margin-top: 10px;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 /* --- state after scroll end --- */
 
 #top-navbar-divider {
-  background: transparent;
+  background: var(--bg-color);
   height: 20px;
-  width: 2px;
+  width: 1px;
+  border-top:none;
 }
 
-.final-navbar #top-navbar-divider {
-  background: transparent;
-}
-
-#top-navbar-divider {
-  height: 20px;
-  width: 2px;
-}
 
 .navbar-brand img {
   width: 42px;

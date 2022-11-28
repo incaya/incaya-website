@@ -19,7 +19,7 @@ Dans notre cas, on souhaite conserver la souplesse de l’Arduino Uno pour ce qu
 
 Pour mettre en place ces échanges, nous avons plusieurs options.
 
-### Commandes AT
+## Commandes AT
 
 Nous testons d’abord une approche « native » qui consiste à communiquer sur le port série grâce à des [commandes AT](https://cdn.sparkfun.com/assets/learn_tutorials/4/0/3/4A-ESP8266__AT_Instruction_Set__EN_v0.30.pdf) (Hayes), ce que permet le firmware par défaut.
 
@@ -90,7 +90,7 @@ C'est plutôt lourd avec cette méthode, puisqu'il faut construire les requêtes
 
 Nous avons donc choisi de déléguer cette partie à l'ESP lui-même, qui peut être programmé comme un Arduino via l'IDE habituel et bénéficier de la plupart de ses bibliothèques.
 
-### Comme un Arduino
+## Comme un Arduino
 
 Nous cherchons à rendre l'ESP autonome dans sa gestion du WiFi et des requêtes.  
 Il doit recevoir un identifiant d'utilisateur via le port série, puis répondre sur le même canal avec des données pertinentes qui seront affichées à l'utilisateur (nom, crédit restant, entrée ou sortie).
@@ -251,7 +251,7 @@ void showNewData() {
 
 _Nota Bene : L’ESP8266 est disponible sous différentes formes en fonction du rôle qu’il doit jouer dans votre projet. [Cet article](https://sebastien.warin.fr/2016/07/12/4138-decouverte-des-esp8266-le-microcontroleur-connecte-par-wifi-pour-2-au-potentiel-phenomenal-avec-constellation/ "différentes formes d'ESP8266") détaille bien les différentes possibilités._
 
-### ESP32, l'alternative de luxe
+## ESP32, l'alternative de luxe
 
 Pour ce projet précis nous sommes tombés sur un os : le module implémentait SSL d'une manière qui n'était pas compatible avec notre infrastructure. Il reste néanmoins pertinent pour toute une gamme de projets qui mettent en oeuvre des capteurs autonomes, avec un impératif de sobriété énergétique.
 

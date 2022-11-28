@@ -375,6 +375,11 @@ mark {
   border-top: 4px solid var(--link-hoover-color);
 }
 
+.logo-footer {
+  width:100px;
+  height:auto;
+  margin-top:0px;
+}
 
 .footer h5 {
   color: var(--bg-second-color);

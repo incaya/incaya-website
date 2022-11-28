@@ -11,7 +11,8 @@ projects:
 - l-incadraw
 ---
 
-L'Axidraw dessine, c'est acté, mais comment fonctionne-t-il ? C'est un mélange d'extrême simplicité (du point de vue du roboticien) et d'astuces qui font la différence.<!--more-->
+## L'Axidraw dessine, c'est acté.. 
+..mais comment fonctionne-t-il ? C'est un mélange d'extrême simplicité (du point de vue du roboticien) et d'astuces qui font la différence.<!--more-->
 
 Allons à l'essentiel. Nous parlons d'une petite machine à commande numérique ([CNC](https://fr.wikipedia.org/wiki/Machine-outil_%C3%A0_commande_num%C3%A9rique)), à deux axes principaux (X et Y), avec un pseudo troisème axe (Z) qui est pris en charge par un servomoteur de modélisme.
 

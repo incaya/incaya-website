@@ -11,6 +11,7 @@ projects:
 - l-incadraw
 ---
 
+## L'Incadraw
 C'est une rencontre que nous voulions faire depuis longtemps. L'[Axidraw](https://www.axidraw.com/), le petit robot à dessiner, est l'exemple parfait de l'outil simple mais bourré de potentiel créatif.<!--more-->
 
 Que fait-il ? Il dessine, vraiment, en maniant avec dextérité tout crayon, stylo, feutre, pinceau que vous voudrez bien lui confier.

@@ -101,7 +101,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius:0.4rem;
+  padding-left:0;
+  padding-right:0;
+
+  filter:blur(6px);
 }
+
 
 .page-content {
   width: 100%;
@@ -291,7 +296,7 @@ h6 {
 
 #scroll-to-top {
   position: fixed;
-  bottom: 0rem;
+  bottom: 3rem;
   right: 1rem;
   color: var(--link-color);
   font-size: 24pt;
