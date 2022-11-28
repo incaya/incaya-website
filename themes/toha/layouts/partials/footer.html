@@ -70,30 +70,16 @@
         {{ if $navigationEnabled }}
         <div class="col-md-3 col-sm-12 text-left ml-5">
           <h5>{{ i18n "navigation" }}</h5>
-          {{ if $sections }}
           <ul>
-            {{- range sort $sections "section.weight" }}
-              {{ if and (.section.enable) (.section.showOnNavbar)}}
-                {{ $sectionID := replace (lower .section.name) " " "-"  }}
-                {{ if .section.id }}
-                  {{ $sectionID = .section.id }}
-                {{ end }}
+            {{ range .Site.Menus.main }}
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="{{ "" | absLangURL }}#{{ $sectionID }}">{{ .section.name }}</a>
+                  <a class="smooth-scroll" href="{{ .URL }}">{{ .Name }}</a>
                 </li>
-              {{ end }}
-            {{- end }}
-            {{ if $customMenusEnabled }}
-              {{ range $customMenus }}
-                {{ if .showOnFooter }}
-                    <li class="nav-item">
-                      <a class="smooth-scroll" href="{{ .url }}">{{ .name }}</a>
-                    </li>
-                {{ end }}
-              {{ end }}
             {{ end }}
+
+
           </ul>
-          {{ end }}
+
         </div>
         {{ end }}
 

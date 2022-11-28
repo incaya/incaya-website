@@ -1,7 +1,11 @@
 ---
-title: "La coopérative"
+title: Notre Coopérative
+slug: cooperative
 description: "Incaya est une SCOP une Société COopérative et Participative. Chez nous la gouvernance est démocratique, la pérennité des emplois et le projet d’entreprise ont la priorité sur le profit. Pour nous ça veut dire beaucoup."
-pageName: "lacooperative"
+pageName: "cooperative"
+draft: false
+in_search_index: true
+layout: "cooperative"
 ---
 
 Incaya est une **SCOP** une Société COopérative et Participative. Chez nous la gouvernance est démocratique, la pérennité des emplois et le projet d’entreprise ont la priorité sur le profit. Pour nous ça veut dire beaucoup.
