@@ -18,7 +18,7 @@ Yellow:  #FFC212
   --bg-darker-color: #0A3240;
   --font-header-color: #0A3240;
   --font-p-color: #04141A;
-  --link-color: #0FD1FF;
+  --link-color: #0084A5;
   --link-hoover-color: #0FD1FF;
   --card-color: #0A3240;
 }
@@ -187,12 +187,16 @@ margin:-1rem;
   overflow: hidden;
   border-radius:0.4rem;
   background:var(--bg-second-color);
-  margin-top : 10px;
-  margin-bottom:10px;
+  margin-top : 10px!important;
+  margin-bottom: 10px!important ;
   height:100%;
 
 }
 
+.card-img{
+  padding: 4px;
+  border-radius:0.4rem;
+}
 .card-img-sm {
   width: 32px;
   height: 32px;

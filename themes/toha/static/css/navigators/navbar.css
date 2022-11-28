@@ -67,7 +67,7 @@
 
 .final-navbar .navbar-nav .active,
 .final-navbar li a:hover {
-  color: var(--link-color);
+  color: var(--link-hoover-color);
   transition: all 0.3s ease-out;
   border-bottom: 0px solid var(--link-color);
 
@@ -132,7 +132,7 @@
 }
 
 .top-navbar .dropdown-menu a {
-  color: var(--link-color);
+  color: var(--link-hoover-color);
   border-bottom: none;
 }
 
@@ -170,6 +170,8 @@
     height: fit-content;
     padding-bottom: 0px;
     padding-top: 0px;
+    padding-left:3rem;
+    padding-right:3rem;
   }
 
   .top-navbar .container {

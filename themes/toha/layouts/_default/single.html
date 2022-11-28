@@ -12,11 +12,11 @@
 {{ end }}
 
 {{ define "navbar" }}
-    {{ partial "navigators/navbar-2.html" . }}
+    {{ partial "navigators/navbar-blog.html" . }}
 {{ end }}
 
 {{ define "sidebar" }}
-  <section class="sidebar-section" id="sidebar-section">
+  <!-- <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
         <br />
@@ -30,6 +30,20 @@
         </div>
       </div>
     </div>
+  </section> -->
+{{ end }}
+
+{{ define "toc" }}
+  <section class="toc-section" id="toc-section">
+    {{ if site.Params.enableTOC }}
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">{{ i18n "toc_heading" }}</h5>
+      <hr>
+      <div class="toc">
+        {{ .TableOfContents }}
+      </div>
+    </div>
+    {{ end }}
   </section>
 {{ end }}
 
@@ -76,19 +90,7 @@
 </section>
 {{ end }}
 
-{{ define "toc" }}
-  <section class="toc-section" id="toc-section">
-    {{ if site.Params.enableTOC }}
-    <div class="toc-holder">
-      <h5 class="text-center pl-3">{{ i18n "toc_heading" }}</h5>
-      <hr>
-      <div class="toc">
-        {{ .TableOfContents }}
-      </div>
-    </div>
-    {{ end }}
-  </section>
-{{ end }}
+
 
 {{ define "scripts" }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
