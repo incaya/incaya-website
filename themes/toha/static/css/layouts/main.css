@@ -185,10 +185,12 @@ margin:-1rem;
   box-shadow: 4px 4px 1px var(--card-color);
   transition: all 0.3s ease-out;
   overflow: hidden;
-  border-radius:0rem;
+  border-radius:0.4rem;
   background:var(--bg-second-color);
   margin-top : 10px;
   margin-bottom:10px;
+  height:100%;
+
 }
 
 .card-img-sm {

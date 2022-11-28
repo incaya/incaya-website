@@ -18,9 +18,15 @@
 .content {
   padding: 0;
   position: relative;
-  padding-top: 2rem;
+  padding-top: 3rem;
   min-height: 130vh;
+  max-width:1140px;
 }
+
+.card{
+  box-shadow: none;
+}
+
 
 .post-card-holder {
   margin-top: 32px;
@@ -31,8 +37,9 @@
 }
 
 .post-card-holder .post-card {
-  width: calc(100% / 3);
+  width: calc(90% / 3);
   display: inline-flex;
+  margin:0.4rem;
 }
 
 .post-card-holder .card {
@@ -206,7 +213,8 @@
   .content-section {
     flex: 100%;
     max-width: 100%;
-    padding-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
     width: 100%;
   }
 

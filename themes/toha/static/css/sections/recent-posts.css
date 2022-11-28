@@ -1,3 +1,8 @@
+.card{
+  min-height:220px;
+  height:100%;
+}
+
 .recent-posts-section .container {
   padding-top: 1rem;
 }
