@@ -20,7 +20,7 @@
                 <a class="nav-link" href="/">{{ i18n "home" }}</a>
             </li>
             {{ range .Site.Menus.main }}
-            <li>
+            <li  class="nav-item">
                 <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
             </li>    
             {{ end }}

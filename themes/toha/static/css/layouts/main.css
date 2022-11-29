@@ -96,14 +96,17 @@ a:hover {
   background-color: var(--font-header-color)!important;
   border-color: var(--font-header-color)!important;
   color: var(--bg-color)!important;
-  transition: all 0.3s ease-out!important;
+  transition: all 0.2s ease-out!important;
+  box-shadow: 0 3px 0px var(--link-hoover-color);
 }
 
 .btn-dark:hover,
 .btn-dark:focus {
-  background-color: var(--link-hoover-color)!important;
-  border-color: var(--link-hoover-color)!important;
-  transition: all 0.3s ease-out!important;
+  transition: all 0.2s ease-out!important;
+  color:var(--bg-color)!important;
+  box-shadow: 0 6px 0px var(--link-hoover-color);
+  transform: translateY(-4px);
+  filter:brightness(150%);
 }
 
 .btn-outline-info {
@@ -179,6 +182,10 @@ filter:brightness(120%);
 width:160px;
 height:auto;
 margin:-1rem;
+}
+
+.card-client img:hover{
+  mix-blend-mode:normal;
 }
 
 .card {
