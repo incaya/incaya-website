@@ -2,7 +2,7 @@ baseURL: https://incaya.fr
 defaultContentLanguage: fr
 languageCode: fr-fr
 title: "INCAYA"
-theme: "toha"
+theme: "incaya"
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/

@@ -1,0 +1,34 @@
+{{ $sectionID := replace (lower .section.name) " " "-"  }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+<div class="container-fluid anchor pb-5 experiences-section">
+  {{ if not (.section.hideTitle) }}
+    <h2 class="text-center">
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h2>
+  {{ else }}
+    <h1 class="text-center" style="display: none">
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ end }}
+
+  <div class="container text-justify d-flex flex-row" style="flex-wrap:wrap;">
+   {{ $totalExperiences:= len .experiences }}
+   {{ range $index,$experience:= .experiences }}
+     {{ if eq (mod $index 2) 0 }}
+       <div class="col-xs-12 col-sm-6 col-lg-4 d-flex">
+         <!-- {{ partial "sections/experiences/vertical-line.html" $index }} -->
+         {{ partial "sections/experiences/experience-info.html" $experience }}
+       </div>
+     {{else}}
+       <div class="col-xs-12 col-sm-6 col-lg-4 d-flex" >
+         {{ partial "sections/experiences/experience-info.html" $experience }}
+         <!-- {{ partial "sections/experiences/vertical-line.html" $index }} -->
+       </div>
+     {{ end }}
+     <!-- {{ if lt $index (sub $totalExperiences 1) }}
+       {{ partial "sections/experiences/horizontal-line.html" $index }}
+     {{ end }} -->
+   {{ end }}
+  </div>
+</div>

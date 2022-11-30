@@ -1,0 +1,164 @@
+.top-navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 99999;
+  transition: all 0.4s ease-out;
+  margin: 0px;
+  padding-top: 0.4rem;
+  text-align: center;
+}
+
+.final-navbar {
+  background-color: var(--foncé);
+  color: var(--blanc);
+  transition: all 0.3s ease-out;
+  border-bottom:  5px solid var(--noir);
+}
+
+.final-navbar .navbar-brand {
+  color: var(--blanc);
+  font-weight: 600;
+}
+
+.final-navbar li a {
+  color: var(--blanc);
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+}
+
+.final-navbar .navbar-nav .active,
+.final-navbar li a:hover {
+  color: var(--logo);
+  transition: all 0.3s ease-out;
+}
+
+.final-navbar .navbar-toggler-icon{
+  filter:invert(0);
+}
+
+.navbar-collapse.show li a,
+.navbar-collapse.collapsing li a {
+  color: var(--blanc);
+  font-weight: 500;
+  transition: all 0.3s ease-out;
+}
+
+.navbar-collapse.show .navbar-nav .active,
+.navbar-collapse.show .navbar-nav a:hover {
+  color: var(--logo);
+}
+
+#top-navbar-divider {
+  margin-top: 10px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+
+#top-navbar-divider {
+  background: var(--clair);
+  height: 20px;
+  width: 1px;
+  border-top:none;
+}
+
+
+.navbar-brand img {
+  width: 42px;
+  padding: 5px;
+  margin-left: -10px;
+}
+
+.top-navbar .dropdown-menu {
+  border: 1px solid var(--clair);
+  max-height: 0vh;
+  overflow: hidden;
+  display: block;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.top-navbar .dropdown-menu.show {
+  max-height: 100vh;
+  visibility: visible;
+  transition: all 0.3s ease-in;
+}
+
+.top-navbar .dropdown-menu a {
+  color: var(--blanc);
+  border-bottom: none;
+}
+
+.top-navbar .dropdown-menu a:hover {
+  color: var(--logo);
+  transition: all 0.3s ease-out;
+  border-bottom: none;
+  background: var(--foncé);
+}
+
+/* ============= Device specific fixes ======= */
+
+/* Large screens such as TV */
+@media only screen and (min-width: 1824px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+/* IPad Pro */
+@media (max-width: 1024px) {
+  .top-navbar {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left:3.3rem;
+    padding-right:3rem;
+  }
+
+  .top-navbar .container {
+    max-width: 100%;
+  }
+}
+
+/*  Large devices (desktops, 992px and up) */
+
+@media (max-width: 992px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media only screen and (max-width: 576px) {
+  .top-navbar .dropdown-menu {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+/* iPhoneX, iPhone 6,7,8 */
+@media only screen and (max-width: 375px) {
+}
+
+/* Galaxy S5, Moto G4 */
+@media only screen and (max-width: 360px) {
+}
+
+/* iPhone 5 or before */
+@media only screen and (max-width: 320px) {
+}

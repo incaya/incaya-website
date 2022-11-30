@@ -1,36 +1,36 @@
-{{ define "main" }}
-<section id="archive">
-    {{ range .Data.Pages.GroupByDate "2006" }}
-        <div class="group">
-            <h3 class="key">
-                {{ .Key }}
-            </h3>
-
-            {{ range .Pages }}
-                <div class="value">
-                  <div class="date">
-                    <time datetime="{{ .PublishDate }}">{{ i18n "publishDateShort" . }}</time>
-                  </div>
-                  <div class="title">
-                      <a href="{{ .Permalink }}">
-                          {{ .Title }}
-                      </a>
-
-                      {{ with .Params.tags }}
-                          <div class="tags">
-                              {{ range . }}
-                                  <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
-                              {{ end }}
-                          </div>
-                      {{ end}}
-                  </div>
-                </div>
-            {{ end }}          
-        </div>
-    {{ end }}
-
-
-</section>
-
+{{ define "header" }}
+    <link rel="stylesheet" href="{{ "/css/layouts/list.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "/css/navigators/sidebar.css" | relURL}}">
+    <!--================= custom style overrides =========================-->
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
 
 {{ end }}
+
+{{ define "navbar" }}
+    {{ partial "navigators/custom-navbar.html" . }}
+{{ end }}
+
+
+
+{{ define "content" }}
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content">
+    <div class="container-fluid post-card-holder" id="post-card-holder">
+      {{ $posts := where .RegularPagesRecursive "Layout" "!=" "search" }}
+      {{ $paginator := .Paginate $posts 12 }}
+      {{ range $paginator.Pages }}
+        {{ if .Layout }}
+          {{/* ignore the search.md file*/}}
+        {{ else }}
+          {{ partial "cards/post.html" . }}
+        {{ end }}
+      {{ end }}
+    </div>
+    <div class="paginator">
+      {{ template "_internal/pagination.html" . }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+

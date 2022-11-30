@@ -1,0 +1,46 @@
+# section information
+section:
+  name: Ils nous font confiance
+  id: references
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  template: sections/clients.html
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+clients:
+
+- name:  Amnesty International
+  # logo: "/images/clients/amnesty.png"
+  summary: "![Amnesty International](/images/clients/amnesty.png)"
+
+- name: Réseau d'Epidémio-Surveillance en Pathologie Equine
+  # logo: "/images/clients/respe.png"
+  summary: "![Respe](/images/clients/respe.png)"
+
+- name:  Le Dôme
+  # logo: "/images/clients/amnesty.png"
+  summary: "![Le Dôme](/images/clients/ledome.png)"
+
+- name: Confédération Générale des Scop
+  # logo: "/images/clients/respe.png"
+  summary: "![Confédération Générale des Scop](/images/clients/cgscop.png)"
+
+- name:  DecideOm
+  # logo: "/images/clients/amnesty.png"
+  summary: "![DecideOm](/images/clients/decideom.png)"
+
+- name: Bricozor
+  # logo: "/images/clients/respe.png"
+  summary: "![Bricozor](/images/clients/bricozor.png)"
+
+- name:   Chambre d'agriculture Normandie
+  # logo: "/images/clients/amnesty.png"
+  summary: "![Chambre d'agriculture Normandie](/images/clients/cran.png)"
+
+- name: Hey! Coworking
+  # logo: "/images/clients/respe.png"
+  summary: "![Hey! Coworking](/images/clients/heycoworking.png)"

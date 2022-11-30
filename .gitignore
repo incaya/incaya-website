@@ -1,9 +1,0 @@
-.vscode
-public
-.hugo_build.lock
-resources/_gen/*
-themes/meme
-assets/sassPico
-layoutsInit
-configNginxLegacy.conf
-hugo.exe
