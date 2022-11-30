@@ -19,11 +19,11 @@
       <h1> Nos derniers articles </h1>
     </div>
     <div class="container-fluid post-card-holder" id="post-card-holder">
-      {{ $posts := where .RegularPagesRecursive "Layout" "!=" "search" }}
+      {{ $blogs := where .RegularPagesRecursive "Layout" "!=" "search" }}
       <!--gestion du nombre de blog par page-->
-      {{ $paginator := .Paginate $posts 12 }}
+      {{ $paginator := .Paginate $blogs 12 }}
       {{ range $paginator.Pages }}
-          {{ partial "cards/post.html" . }}
+          {{ partial "cards/blog.html" . }}
       {{ end }}
     </div>
     <div class="paginator">
