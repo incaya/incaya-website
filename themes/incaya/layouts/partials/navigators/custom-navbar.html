@@ -15,22 +15,28 @@
         </button>
 
         <div class="collapse navbar-collapse" id="top-nav-items">
-            <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/">{{ i18n "home" }}</a>
+                <a class="nav-link" href="/">Accueil</a>
             </li>
-            {{ range .Site.Menus.main }}
+            
             <li  class="nav-item">
-                <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                <a class="nav-link" href="/cooperative/">Notre Coopérative</a>
             </li>    
-            {{ end }}
+
+            <li  class="nav-item">
+                <a class="nav-link" href="/#references">Références</a>
+            </li>    
+            
             <div class="dropdown-divider" id="top-navbar-divider"></div>
+
             <li class="nav-item">
-                <a class="nav-link" id="blog-link" href="{{ "/posts" | relLangURL }}">{{ i18n "posts" }}</a>
+                <a class="nav-link" id="blog-link" href="/posts/">Blog</a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="/posts/index.xml" title="RSS"><i class="fa-solid fa-square-rss"></i></a>
               </li>
-            </ul>
+          </ul>
     </div>            
    </nav>

@@ -12,7 +12,7 @@ section:
 # Your experiences
 experiences:
 - company:
-    illustration : "![acquerons](/images/acquerons.svg)"
+    illustration : "![acquerons](/images/accueil/acquerons.svg)"
     #name: Example Co.
     #url: "https://www.example.com"
     #location: Dhaka Branch
@@ -34,7 +34,7 @@ experiences:
     # - Lead backend team.
 
 - company:
-    illustration : "![transformons](/images/transformons.svg)"
+    illustration : "![transformons](/images/accueil/transformons.svg)"
     #name: PreExample Co.
     #url: "https://www.preexample.com"
     #location: Nowhere
@@ -44,15 +44,10 @@ experiences:
       Si votre projet nécessite une reprise de données, nous en tenons compte et l'anticipons.
   positions:
   - designation: Nous transformons
-    #start: March 2016
-    #end: May 2017
-    #responsibilities:
-    # - Write lots of example codes.
-    # - Read lots of examples.
-    # - See lots of example videos.
+
 
 - company:
-    illustration : "![restituons](/images/restituons.svg)"
+    illustration : "![restituons](/images/accueil/restituons.svg)"
     #name: PreExample Co.
     #url: "https://www.preexample.com"
     #location: Nowhere

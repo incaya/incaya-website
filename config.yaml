@@ -42,12 +42,3 @@ params:
   # Currently, you can just hide it from the footer.
   newsletter:
     enable: false
-
-menu:
-  main:
-  - name: Notre Coopérative
-    url: /cooperative/
-    weight: 1
-  - name: Références
-    url: /#references
-    weight: 2

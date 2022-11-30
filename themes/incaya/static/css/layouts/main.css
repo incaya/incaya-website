@@ -1,7 +1,7 @@
 :root{
   --noir : #111;
   --blanc : #f2f2f2;
-  --clair : rgb(218, 218, 218);
+  --clair : #ccc;
   --foncé : #555;
   --logo : #0df1ff;
 }
@@ -238,7 +238,21 @@ mix-blend-mode:normal;
   font-size: 10pt;
 }
 
+.social-link {
+  list-style: none;
+  padding: 0.2rem;
+}
 
+.social-link a {
+  font-size: 1.5rem;
+  color: var(--noir);
+  padding: 0.5rem;
+}
+
+.social-link a:hover {
+  color: var(--logo);
+  transition: all 0.3s ease-in;
+}
 
 /* ====== codeblocks ====== */
 /* à retélécharger depuis incaya-website */

@@ -43,27 +43,7 @@
               {{ end }}
             </div>
           {{ end }}
-          <div class="project-btn-holder">
-            {{ if .repo }}
-            <a
-              class="github-button-inactive project-btn"
-              href="{{ .repo }}"
-              data-icon="octicon-standard"
-              data-show-count="true"
-              aria-label="Star {{ .name }}"
-              >{{ i18n "project_star" }}</a
-            >
-            {{ else if .url }}
-            <span>
-              <a
-                class="btn btn-outline-info btn-sm"
-                href="{{ .url }}"
-                target="#"
-                >{{ i18n "project_details" }}</a
-              >
-            </span>
-            {{ end }}
-          </div>
+          
         </div>
       </div>
     

@@ -25,6 +25,12 @@
   height: 100%;
 }
 
+.card .card-head {
+height:70px;
+width:100%;
+justify-content: center;
+}
+
 .skills-section .card .card-body {
   padding-top: 0.2rem;
   padding-left: 0.7rem;

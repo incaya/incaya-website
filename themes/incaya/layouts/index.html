@@ -17,6 +17,11 @@
 
     <!--================= custom style overrides =========================-->
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
+    <link rel="stylesheet" href="{{ "/css/sections/experiences.css" | relURL }}"/>
+    <link rel="stylesheet" href="{{ "/css/sections/recent-posts.css" | relURL }}"/>
+    <link rel="stylesheet" href="{{ "/css/sections/projects.css" | relURL }}"/>
+
+
     
   </head>
   <body data-spy="scroll" data-target="#top-navbar" data-offset="100">
@@ -26,13 +31,17 @@
 
 
     <!--- SECTIONS ------------------------>
-    {{ range $.Site.Data.Sections }}
-    <section class="container-fluid section-holder d-flex">
-      
-            {{ }}
-        
-    </section>
-    {{ end }}
+
+
+    {{ $sections:= site.Data.sections }}
+      {{ range sort $sections "section.weight" }}
+        {{ if .section.template }}
+              {{- partial .section.template . -}}
+            {{ else }}
+              {{- partial (printf "sections/%s.html" (replace (lower .section.id) " " "-")) . -}}
+        {{ end }}
+      {{ end }}
+    
 
     <!--- ADD FOOTER ----------------------->
     {{ $footerTemplate:= site.Params.footer.template | default "footer.html" }}

@@ -1,6 +1,6 @@
 <div class="col-xs-12 col-sm-6 col-lg-4 pt-2">
     <div class="card">
-      <div class="card-head d-flex" style="justify-content: space-between;align-items: center;">
+      <div class="card-head d-flex">
         {{ if .logo }}
           {{ $logoImage := resources.Get .logo }}
           {{/*  svg don't support "Fit" operation   */}}
@@ -9,7 +9,7 @@
           {{ end }}
         
           <img class="card-img-m" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" style="margin: 0.2rem 0 0.5rem 0.2rem"/>
-          <h3 class="card-title" style="text-align: center; width: 100%">{{ .name }}</h3>
+          <h3 class="card-title  text-center" style="text-align: center; width: 100%">{{ .name }}</h3>
         {{ else if .icon }}
           {{ $iconName := .icon }}
           <h5 class="card-title"><span class="{{ $iconName }}"> {{ .name }}</span></h5>
@@ -38,4 +38,4 @@
         </ul>
       </div>
     </div>
-</div>
+</div> 
