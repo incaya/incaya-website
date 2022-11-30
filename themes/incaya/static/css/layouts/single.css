@@ -29,9 +29,9 @@ body {
   background: var(--blanc);
 }
 .toc-section {
-  flex: 30%;
+  flex: 20%;
   order: 1;
-  max-width: 60%;
+  max-width: 30%;
   transition: all ease-out 0.5s;
   padding:3rem;
 }
@@ -103,8 +103,6 @@ body {
   border-radius:0.4rem;
   padding-left:0;
   padding-right:0;
-
-  filter:blur(6px);
 }
 
 
@@ -252,8 +250,8 @@ h6 {
 /* Large screens such as TV */
 @media only screen and (min-width: 1824px) {
   .content-section {
-    flex: 65%;
-    max-width: 65%;
+    flex: 70%;
+    max-width: 70%;
   }
   .content-section .container {
     max-width: 100%;

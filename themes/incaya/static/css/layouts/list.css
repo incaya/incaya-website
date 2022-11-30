@@ -22,11 +22,6 @@
   max-width:1140px;
 }
 
-.card{
-  box-shadow: none;
-}
-
-
 .post-card-holder {
   margin-top: 32px;
   padding: 0;
@@ -78,13 +73,14 @@
   margin: auto;
 }
 
-.paginator .page-item > a {
-  color: #248aaa;
+.page-link{
+  background:transparent!important;
+  color:var(--foncé)!important;
+  border:none;
 }
 
 .paginator .page-item.active > a {
-  background-color: #248aaa;
-  color: #f9fafc;
+  color: var(--logo)!important;
 }
 
 .navbar-toggler {
@@ -101,6 +97,10 @@
   width: fit-content;
 }
 
+.title {
+  text-align: center;
+}
+
 /* ============= Device specific fixes ======= */
 
 /* Large screens such as TV */
@@ -110,9 +110,11 @@
     padding-right: 1rem;
     flex: 85%;
     max-width: 85%;
+    margin-right:auto;
+    margin-left:auto;
   }
   .post-card-holder .post-card {
-    width: calc(90% / 5);
+    width: calc(90% / 3);
   }
 }
 

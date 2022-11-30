@@ -1,6 +1,5 @@
 {{ define "header" }}
     <link rel="stylesheet" href="{{ "/css/layouts/list.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "/css/navigators/sidebar.css" | relURL}}">
     <!--================= custom style overrides =========================-->
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
 
@@ -15,15 +14,16 @@
 {{ define "content" }}
 <section class="content-section" id="content-section">
   <div class="content container-fluid" id="content">
+    <div class="title">
+      <br>
+      <h1> Nos derniers articles </h1>
+    </div>
     <div class="container-fluid post-card-holder" id="post-card-holder">
       {{ $posts := where .RegularPagesRecursive "Layout" "!=" "search" }}
+      <!--gestion du nombre de blog par page-->
       {{ $paginator := .Paginate $posts 12 }}
       {{ range $paginator.Pages }}
-        {{ if .Layout }}
-          {{/* ignore the search.md file*/}}
-        {{ else }}
           {{ partial "cards/post.html" . }}
-        {{ end }}
       {{ end }}
     </div>
     <div class="paginator">

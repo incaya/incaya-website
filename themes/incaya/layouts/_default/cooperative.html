@@ -26,10 +26,19 @@
 
 
       <div class="page-content">
+        <br>
         <div class="title">
           <h1>{{ .Page.Title }}</h1>
+          <h2>{{ .Page.Description  }}</h2>
         </div>
-        
+
+        {{ .Page.Content }}
+
+
+
+
+
+
         <div class="container d-flex-block">
             <div class="row" id="primary-skills">
             {{ range $.Site.Data.sections.skills.skills }}

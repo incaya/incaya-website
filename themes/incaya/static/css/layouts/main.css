@@ -1,8 +1,8 @@
 :root{
-  --noir : #111;
-  --blanc : #f2f2f2;
-  --clair : #ccc;
-  --foncé : #555;
+  --noir : #04141A;
+  --blanc : #FAEDD7;
+  --clair : #E8CC9B;
+  --foncé : #0A3240;
   --logo : #0df1ff;
 }
 
@@ -81,8 +81,7 @@ a:hover {
 }
 
 .btn-dark {
-  background-color: var(--noir)!important;
-  border-color: var(--noir)!important;
+  background-color: var(--foncé)!important;
   color: var(--blanc)!important;
   transition: all 0.2s ease-out!important;
   box-shadow: 0 3px 0px var(--logo);
@@ -112,7 +111,7 @@ a:hover {
 }
 
 .btn-info:hover {
-  background-color: var(--clair) !important;
+  background-color: var(--foncé) !important;
   color: var(--blanc) !important;
 }
 
@@ -124,13 +123,6 @@ a:hover {
   color: var(--clair);
 }
 
-.bg-white {
-  background-color: var(--blanc) !important;
-}
-
-.bg-dimmed {
-  background-color: var(--blanc);
-}
 
 .container-fluid{
   padding-left:0px;
@@ -139,7 +131,7 @@ padding-right:0px;
 
 /*PERMET DE GERER MANUELLEMENT LE BACKGROUND PAR SECTION*/
 .experiences-section{
-  background-color: var(--noir)!important;
+  background-color: var(--foncé)!important;
 }
 
 .reference-section{
@@ -180,11 +172,11 @@ mix-blend-mode:normal;
 }
 
 .card {
-  box-shadow: 4px 4px 1px var(--noir);
+  box-shadow: 0px 4px 1px var(--noir);
   transition: all 0.3s ease-out;
   overflow: hidden;
   border-radius:0.4rem;
-  background:var(--clair);
+  background:var(--blanc);
   margin-top : 10px!important;
   margin-bottom: 10px!important ;
   height:100%;
@@ -207,8 +199,9 @@ mix-blend-mode:normal;
 
 .card:hover,
 .card:focus {
-  box-shadow: 8px 8px 1px var(--noir);
+  box-shadow: 0px 8px 1px var(--logo);
   transition: all 0.3s ease-out;
+  transform: translateY(-4px);
 }
 
 .card .card-head {
@@ -265,7 +258,7 @@ mix-blend-mode:normal;
   background-color: var(--foncé);
   position: relative;
   z-index: 9999;
-  border-top: 4px solid var(--noir);
+  border-top: 4px solid var(--clair);
 }
 
 .logo-footer {
