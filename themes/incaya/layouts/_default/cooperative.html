@@ -41,8 +41,8 @@
 
         <div class="container d-flex-block">
             <div class="row" id="primary-skills">
-            {{ range $.Site.Data.sections.skills.skills }}
-                {{ partial "cards/skill.html" . }}
+            {{ range $.Site.Data.sections.cooperative.membres }}
+                {{ partial "cards/cooperative.html" . }}
             {{ end }}
             </div>
         </div>

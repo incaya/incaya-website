@@ -4,4 +4,4 @@ section:
   enable: true
   weight: 5
   showOnNavbar: false
-  template: sections/recent-posts.html
+  template: sections/derniers-articles.html

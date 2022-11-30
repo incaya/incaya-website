@@ -55,6 +55,7 @@ h2 > span {
 
 .experiences-section  p, .reference-section p{
   color:var(--blanc);
+  font-weight:400;
 }
 
 strong {
@@ -63,6 +64,7 @@ strong {
 
 p {
   color: var(--noir);
+  font-weight:500!important;
 }
 
 a {

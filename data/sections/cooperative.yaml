@@ -5,7 +5,7 @@ section:
   enable: true
   weight: 3
   showOnNavbar: true
-  template: sections/skills.html
+  template: sections/cooperative.html
   # Can optionally hide the title in sections
   # hideTitle: true
   overview: |
@@ -16,7 +16,7 @@ section:
 
 # Your Skills.
 # Give a summary of you each skill in the summary section.
-skills:
+membres:
 - name: Thomas Berriot
   # logo: "/images/thomasberriot.png"
   summary: |
