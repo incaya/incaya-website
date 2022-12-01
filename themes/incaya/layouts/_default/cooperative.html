@@ -21,8 +21,7 @@
 
 {{ define "content" }}
 <section class="content-section" id="content-section">
-  <div class="content">
-    <div class="container p-0 read-area">
+
 
 
       <div class="page-content">
@@ -34,17 +33,16 @@
 
         {{ .Page.Content }}
 
-        <div class="container d-flex-block">
+
             <div class="row" id="primary-skills">
             {{ range $.Site.Data.sections.cooperative.membres }}
                 {{ partial "cards/cooperative.html" . }}
             {{ end }}
             </div>
-        </div>
+
 
       </div>
-    </div>
-  </div>
+
 </section>
 {{ end }}
 

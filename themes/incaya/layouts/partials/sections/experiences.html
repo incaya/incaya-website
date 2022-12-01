@@ -12,7 +12,7 @@
   <div class="container text-justify d-flex flex-row" style="flex-wrap:wrap;">
    {{ $totalExperiences:=  .experiences }}
    {{ range $index,$experience:= .experiences }}
-       <div class="col-xs-12 col-sm-6 col-lg-4 d-flex">
+       <div class="col m-auto d-flex" style="min-width:240px; max-width:300px;">
          {{ partial "sections/experiences/single-position.html" $experience }}
        </div>
    {{ end }}

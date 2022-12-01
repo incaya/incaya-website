@@ -139,6 +139,10 @@ img {
   border-radius:0.4rem;
   background:var(--blanc);
   height:100%;
+  min-width:280px;
+  max-width:340px;
+  margin-right:auto;
+  margin-left:auto;
 }
 
 .card:hover,
