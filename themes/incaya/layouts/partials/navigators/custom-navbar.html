@@ -1,19 +1,24 @@
 <nav class="navbar navbar-expand-xl top-navbar final-navbar" id="top-navbar">
-    <div class="container">
+  <div class="container">
         <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
             {{- site.Title -}}
         </a>
-        <button
+
+        <input type="checkbox" id="navbar-toggle-cbox">
+
+        <label for="navbar-toggle-cbox"
       class="navbar-toggler navbar-dark"
       id="navbar-toggler"
       type="button"
       data-toggle="collapse"
       data-target="#top-nav-items"
       aria-label="menu"
-      aria-expanded="true"
+      aria-expanded="false"
+      aria-contol="#top-nav-items"
         >
         <span class="navbar-toggler-icon"></span>
-        </button>
+        </label>
+
 
         <div class="collapse navbar-collapse" id="top-nav-items">
           <ul class="navbar-nav ml-auto">
@@ -29,15 +34,15 @@
                 <a class="nav-link" href="/#references">Références</a>
             </li>    
             
-            <div class="dropdown-divider" id="top-navbar-divider"></div>
 
             <li class="nav-item">
                 <a class="nav-link" id="blog-link" href="/blogs/">Blog</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/posts/index.xml" title="RSS"><i class="fa-solid fa-square-rss"></i></a>
+              <a class="nav-link" href="/index.xml" title="RSS"><i class="fa-solid fa-square-rss"></i></a>
             </li>
           </ul>
-    </div>            
-   </nav>
+
+  </div>            
+</nav>
