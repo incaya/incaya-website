@@ -8,12 +8,17 @@
   {{ $author = (index site.Data site.Language.Lang).author }}
 {{ end }}
 
-<div class="container anchor p-lg-5 about-section" id="{{ $sectionID }}">
-  <div class="row pt-sm-2 pt-md-4 align-self-center justify-content-center">
-      <h2 class="p-1 text-center mb-5">{{ .titre }}</h2>
-      <p class="p-1 text-justify">
-        {{ .summary | markdownify }}
-      </p>
+<div class="container-fluid anchor pb-5 about-section">
+  
+      <h2 class="text-center mb-5 mt-5">{{ .titre }}</h2>
+    <div class="container">
+
+      <div class="row pt-sm-2 pt-md-4 align-self-center">
+        <p class="p-1 text-justify">
+          {{ .summary | markdownify }}
+        </p>
+      </div>
+
       <div class="text-container ml-auto">
         <ul class="social-link d-flex">
           {{ range .socialLinks }}
@@ -30,5 +35,8 @@
         </ul>
       </div>
     </div>
-  </div>
+
+    </div>  
+      
+
 </div>

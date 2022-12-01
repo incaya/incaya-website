@@ -4,13 +4,10 @@
 {{ end }}
 
 <div class="container-fluid anchor pb-5 skills-section">
-  {{ if not (.section.hideTitle) }}
+  
     <h2 class="text-center">
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
-  {{ else }}
-    <h1 class="text-center" style="display: none">
-        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
-  {{ end }}
+
   <div class="container" >
     <div class="row pt-sm-2 pt-md-4 align-self-center">
       

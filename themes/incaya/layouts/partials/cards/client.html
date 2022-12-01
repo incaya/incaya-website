@@ -1,12 +1,10 @@
-<div class="col pt-2">
-    <a class="skill-card-link" {{ if .url }}href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener"{{ end }}>
+
+    <a class="skill-card-link" title="{{ .name }}">
       <div class="card-client" style="text-align: center">
-        
-          <h5 class="card-title" style="text-align: center; display:none;">{{ .name }}</h5>
-        
+                
         <div class="card-body">
-          <p class="card-text" style="text-align: center">{{ .summary | markdownify }}</p>
+          <p class="card-text" style="text-align: center">{{ .image | markdownify }}</p>
         </div>
       </div>
     </a>
-  </div>
+
