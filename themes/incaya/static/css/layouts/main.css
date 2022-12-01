@@ -21,8 +21,6 @@ h5 {
   letter-spacing: 1px;
 }
 
-
-
 h2{
 margin-bottom:10px;
 margin-top:10px;
@@ -38,26 +36,6 @@ h2 > span {
   margin-top:-5px;
 }
 
-.experiences-section h2{
-  color:var(--blanc);
-  font-weight: 300;
-}
-
-.reference-section h2{
-  color:var(--noir);
-  font-weight: 400;
-}
-
-.experiences-section h4, .reference-section h4{
-  color:var(--blanc);
-  font-weight: 400;
-}
-
-.experiences-section  p, .reference-section p{
-  color:var(--blanc);
-  font-weight:400;
-}
-
 strong {
   color: var(--noir)!important;
 }
@@ -71,16 +49,16 @@ a {
   color: var(--foncé);
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: var(--logo)!important;
 }
 
-.nav-button {
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  color: var(--noir);
+img {
+  width: 100%;
+  height:auto;
 }
+
 
 .btn-dark {
   background-color: var(--foncé)!important;
@@ -102,7 +80,8 @@ a:hover {
   border-color: var(--noir) !important;
 }
 
-.btn-outline-info:hover {
+.btn-outline-info:hover,
+.btn-outline-info:focus {
   background-color: var(--logo) !important;
   color: var(--noir) !important;
 }
@@ -112,65 +91,49 @@ a:hover {
   color: var(--blanc) !important;
 }
 
+.btn-info:hover,
 .btn-info:hover {
   background-color: var(--foncé) !important;
   color: var(--blanc) !important;
 }
-
-.btn-link {
-  color: var(--foncé);
-}
-
-.btn-link:hover {
-  color: var(--clair);
-}
-
 
 .container-fluid{
   padding-left:0px;
 padding-right:0px;
 }
 
-/*PERMET DE GERER MANUELLEMENT LE BACKGROUND PAR SECTION*/
+.anchor {
+  padding-top: 3.5rem;
+}
+
+
+/* gestion manuelle des sections colorées*/
+.experiences-section h2{
+  color:var(--blanc);
+  font-weight: 300;
+}
+
+.reference-section h2{
+  color:var(--noir);
+  font-weight: 400;
+}
+
+.experiences-section h4, .reference-section h4{
+  color:var(--blanc);
+  font-weight: 400;
+}
+
+.experiences-section  p, .reference-section p{
+  color:var(--blanc);
+  font-weight:400;
+}
+
 .experiences-section{
   background-color: var(--foncé)!important;
 }
 
 .reference-section{
   background-color: var(--clair)!important;
-}
-
-.anchor {
-  padding-top: 3.5rem;
-}
-
-img.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-img.left {
-  display: block;
-  margin-right: auto;
-}
-
-img.right {
-  display: block;
-  margin-left: auto;
-}
-
-/* IMAGES REFERENCES */
-.card-client img{
-mix-blend-mode:luminosity;
-filter:brightness(100%);
-width:160px;
-height:auto;
-margin:0rem;
-}
-
-.card-client img:hover{
-mix-blend-mode:normal;
 }
 
 .card {
@@ -182,21 +145,6 @@ mix-blend-mode:normal;
   margin-top : 10px!important;
   margin-bottom: 10px!important ;
   height:100%;
-
-}
-
-.card-img{
-  padding: 4px;
-  border-radius:0.4rem;
-}
-.card-img-sm {
-  width: 32px;
-  height: 32px;
-}
-
-.card-img-xs {
-  width: 24px;
-  height: 24px;
 }
 
 .card:hover,
@@ -205,6 +153,26 @@ mix-blend-mode:normal;
   transition: all 0.3s ease-out;
   transform: translateY(-4px);
 }
+
+.card-img{
+  padding: 4px;
+  border-radius:0.4rem;
+}
+
+
+/* IMAGES REFERENCES */
+.card-client img{
+  mix-blend-mode:luminosity;
+  filter:brightness(100%);
+  width:160px;
+  height:auto;
+  margin:0rem;
+  }
+  
+  .card-client img:hover{
+    transform: translateY(-4px);
+    transition: all 0.2s ease-out!important;
+  }
 
 .card .card-head {
   height: 172px;

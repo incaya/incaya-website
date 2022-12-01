@@ -20,7 +20,7 @@
   <div class="container">
     <div class="row" id="recent-post-cards">
       {{ range first $numShow (where site.RegularPages.ByDate.Reverse "Type" "in" "blogs" )}}
-        {{ partial "cards/article.html" . }}
+        {{ partial "cards/derniers-articles.html" . }}
       {{ end }}
     </div>
   </div>

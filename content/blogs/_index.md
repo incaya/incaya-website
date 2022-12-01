@@ -1,8 +1,7 @@
 ---
-title: INCAYA le titre du fichier markdown
-slug: cooperative
+title: Nos derniers articles
 description: "La description du fichier Markdown"
-pageName: "cooperative"
+pageName: "Blogs"
 draft: false
 in_search_index: true
 ---

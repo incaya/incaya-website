@@ -16,8 +16,9 @@
   <div class="content container-fluid" id="content">
     <div class="title">
       <br>
-      <h1> Nos derniers articles </h1>
+      <h1> {{ .Page.Title }} </h1>
     </div>
+
     <div class="container-fluid post-card-holder" id="post-card-holder">
       {{ $blogs := where .RegularPagesRecursive "Layout" "!=" "search" }}
       <!--gestion du nombre de blog par page-->
@@ -26,6 +27,7 @@
           {{ partial "cards/blog.html" . }}
       {{ end }}
     </div>
+    
     <div class="paginator">
       {{ template "_internal/pagination.html" . }}
     </div>
