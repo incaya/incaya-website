@@ -1,5 +1,5 @@
 ---
-title: Nos derniers articles
+title: Nos articles
 description: "La description du fichier Markdown"
 pageName: "Blogs"
 draft: false

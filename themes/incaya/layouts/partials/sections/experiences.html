@@ -9,12 +9,14 @@
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h2>
 
 
-  <div class="container text-justify d-flex flex-row" style="flex-wrap:wrap;">
+  <div class="container text-justify align-items-center d-flex flex-row" style="flex-wrap:wrap;">
+
    {{ $totalExperiences:=  .experiences }}
    {{ range $index,$experience:= .experiences }}
-       <div class="col m-auto d-flex" style="min-width:240px; max-width:300px;">
+       <div class="col mx-auto " style="min-width:240px; max-width:300px; height:600px;">
          {{ partial "sections/experiences/single-position.html" $experience }}
        </div>
    {{ end }}
+
   </div>
 </div>
