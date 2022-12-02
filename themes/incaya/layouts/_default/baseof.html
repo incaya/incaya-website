@@ -4,7 +4,7 @@
     <title>{{ .Page.Title }}</title>
     <!------ ADD COMMON HEADERS -------->
     {{- partial "header.html" . -}}
-    {{ template "_internal/opengraph.html" . }}
+
 
     <!------ ADD PAGE SPECIFIC HEADERS ------->
     {{ block "header" . }} {{ end }}
@@ -14,9 +14,6 @@
     <div class="container-fluid bg-dimmed wrapper">
       <!----- ADD NAVBAR --------------->
       {{ block "navbar" . }} {{ end }}
-
-      <!----- ADD SIDEBAR --------------->
-      {{ block "sidebar" . }} {{ end }}
 
       <!----- ADD PAGE CONTENT --------->
       {{ block "content" . }} {{ end }}

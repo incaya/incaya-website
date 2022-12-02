@@ -13,9 +13,28 @@
 
    {{ $totalExperiences:=  .experiences }}
    {{ range $index,$experience:= .experiences }}
-       <div class="col mx-auto " style="min-width:240px; max-width:300px; height:600px;">
-         {{ partial "sections/experiences/single-position.html" $experience }}
-       </div>
+        <div class="col mx-auto " style="min-width:240px; max-width:300px; height:600px;">
+      
+        <!-- UNE COL PAR PARTIE -->
+        <div class="col">
+            <div class="experience-entry-heading">
+                {{ $position:= index .positions 0 }}
+        
+                    <!-- IMAGE -->
+                    {{ if .partie.illustration }}
+                    <div class="illu">
+                        {{ .partie.illustration | markdownify  }}
+                    </div>
+                    {{ end }}
+                <!-- TITRE DE LA PARTIE -->
+                <h4>{{ $position.designation }}</h4>
+            </div>
+            <!-- PARAGRAPHE -->
+            <p>{{ .partie.overview | markdownify }}</p>
+        
+        </div>
+      
+    </div>
    {{ end }}
 
   </div>

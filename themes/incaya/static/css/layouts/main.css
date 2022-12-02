@@ -45,13 +45,16 @@ p {
   font-weight:500!important;
 }
 
+
 a {
   color: var(--foncé);
+  text-decoration:none!important;
 }
 
 a:hover,
 a:focus {
   color: var(--logo)!important;
+  text-decoration:none!important;
 }
 
 img {

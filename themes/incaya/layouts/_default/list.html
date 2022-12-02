@@ -24,7 +24,7 @@
       <!--gestion du nombre de blog par page-->
       {{ $paginator := .Paginate $blogs 12 }}
       {{ range $paginator.Pages }}
-          {{ partial "cards/blog.html" . }}
+          {{ partial "cards/article.html" . }}
       {{ end }}
     </div>
     

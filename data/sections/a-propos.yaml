@@ -1,11 +1,11 @@
 # section information
 section:
   name: A propos
-  id: home
+  id: a-propos
   enable: true
   weight: 1
   showOnNavbar: false
-  template: sections/about.html
+  template: sections/a-propos.html
 
 
 titre: Vous accompagner pour réussir vos projets numériques
