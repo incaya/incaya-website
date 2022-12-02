@@ -182,7 +182,7 @@ img {
   }
 
 .card .card-head {
-  height: 172px;
+  max-height: 172px;
   -o-object-fit: cover;
   object-fit: cover;
   overflow: hidden;
