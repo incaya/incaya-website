@@ -1,37 +1,24 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
+<html lang="fr">
   <head>
-    <title>{{- .Site.Title -}}</title>
-    {{ $siteDescription := .Site.Params.description }}
-    {{ if (index .Site.Data .Site.Language.Lang).site }}
-      {{ $siteConfig := (index .Site.Data .Site.Language.Lang).site }}
-      {{ if $siteConfig.description }}
-        {{ $siteDescription = $siteConfig.description }}
-      {{ end }}
-    {{ end }}
-    <meta name="description" content="{{ $siteDescription }}" />
-    
+    <title>INCAYA - Artisans du numérique</title>
+    <meta name="description" content="Comprendre votre métier et son quotidien, imaginer ou repenser une architecture technique, trouver les professionnels qualifiés pour développer vos outils et les maintenir au long cours" />
+
     <!-- import common headers -->
     {{- partial "header.html" . -}}
-
 
     <!--================= custom style overrides =========================-->
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
     <link rel="stylesheet" href="{{ "/css/sections/experiences.css" | relURL }}"/>
     <link rel="stylesheet" href="{{ "/css/sections/recent-posts.css" | relURL }}"/>
 
-
-
-    
   </head>
   <body data-spy="scroll" data-target="#top-navbar" data-offset="100">
 
     <!--- NAVBAR ------------------------->
     {{- partial "navigators/custom-navbar.html" . -}}
 
-
     <!--- SECTIONS ------------------------>
-
 
     {{ $sections:= site.Data.sections }}
       {{ range sort $sections "section.weight" }}
@@ -42,11 +29,9 @@
         {{ end }}
       {{ end }}
     
-
     <!--- ADD FOOTER ----------------------->
     {{ $footerTemplate:= site.Params.footer.template | default "footer.html" }}
     {{- partial $footerTemplate . -}}
-
 
   </body>
 </html>

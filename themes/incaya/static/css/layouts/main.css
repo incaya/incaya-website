@@ -45,6 +45,10 @@ p {
   font-weight:500!important;
 }
 
+p a{
+  font-style:italic;
+  font-weight:600;
+}
 
 a {
   color: var(--foncé);
