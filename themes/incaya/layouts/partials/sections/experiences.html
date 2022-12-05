@@ -3,9 +3,9 @@
   {{ $sectionID = .section.id }}
 {{ end }}
 
-<div class="container-fluid anchor pb-5 experiences-section mb-5 mt-5">
+<div class="container-fluid anchor pb-5 experiences-section mb-5 mt-5" style="transform:skewY(3deg)">
   
-    <h2 class="text-center mt-4">
+    <h2 class="text-center mt-4" style="transform:skewY(-3deg)">
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h2>
 
 
@@ -13,7 +13,7 @@
 
    {{ $totalExperiences:=  .experiences }}
    {{ range $index,$experience:= .experiences }}
-        <div class="col mx-auto " style="min-width:240px; max-width:300px; height:600px;">
+        <div class="col mx-auto " style="min-width:240px; max-width:300px; height:600px; transform:skewY(-3deg)">
       
         <!-- UNE COL PAR PARTIE -->
         <div class="col">
