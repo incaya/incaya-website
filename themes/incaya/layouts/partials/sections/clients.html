@@ -3,13 +3,13 @@
   {{ $sectionID = .section.id }}
 {{ end }}
 
-<div class="container-fluid anchor pb-5 reference-section">
+<div class="container-fluid anchor pb-5 reference-section mb-5 mt-5">
 
-    <h2 class="text-center">
+    <h2 class="text-center mt-3">
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
 
 
-    <div class="row scrolling-wrapper-flexbox" id="primary-skills">
+    <div class="row scrolling-wrapper-flexbox mb-4" id="primary-skills">
       {{ range .clients }}
         {{ partial "cards/client.html" . }}
       {{ end }}

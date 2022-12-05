@@ -3,13 +3,13 @@
   {{ $sectionID = .section.id }}
 {{ end }}
 
-<div class="container-fluid anchor pb-5 experiences-section">
+<div class="container-fluid anchor pb-5 experiences-section mb-5 mt-5">
   
-    <h2 class="text-center">
+    <h2 class="text-center mt-4">
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h2>
 
 
-  <div class="container text-justify align-items-center d-flex flex-row" style="flex-wrap:wrap;">
+  <div class="container text-justify align-items-center d-flex flex-row mb-5 mt-5" style="flex-wrap:wrap;">
 
    {{ $totalExperiences:=  .experiences }}
    {{ range $index,$experience:= .experiences }}

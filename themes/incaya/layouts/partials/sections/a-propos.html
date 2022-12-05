@@ -8,13 +8,13 @@
   {{ $author = (index site.Data site.Language.Lang).author }}
 {{ end }}
 
-<div class="container-fluid anchor pb-5 about-section">
+<div class="container-fluid anchor pb-5 about-section mb-5 mt-5">
   
-      <h2 class="text-center mb-5 mt-5">{{ .titre }}</h2>
+      <h2 class="text-center mb-5 mt-4">{{ .titre }}</h2>
     <div class="container">
 
-      <div class="row pt-sm-2 pt-md-4 align-self-center">
-        <p class="p-1 text-justify">
+      <div class="row pt-sm-2 pt-md-4 text-justify m-4">
+        <p class="p-1">
           {{ .summary | markdownify }}
         </p>
       </div>

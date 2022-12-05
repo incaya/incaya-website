@@ -111,6 +111,18 @@ img {
 
 
 /* gestion manuelle des sections colorées*/
+.experiences-section{
+  background-color: var(--foncé)!important;
+}
+
+
+
+.reference-section{
+  background-color: var(--clair)!important;
+}
+
+
+
 .experiences-section h2{
   color:var(--blanc);
   font-weight: 300;
@@ -131,13 +143,8 @@ img {
   font-weight:400;
 }
 
-.experiences-section{
-  background-color: var(--foncé)!important;
-}
 
-.reference-section{
-  background-color: var(--clair)!important;
-}
+
 
 .card {
   box-shadow: 0px 4px 1px var(--noir);
