@@ -93,14 +93,18 @@ body {
 
 .hero-area {
   margin-top: 3rem;
-  width: 100%;
+  margin-left:auto;
+  margin-right:auto;
+  width: 96%;
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius:0.4rem;
+  border-radius:16px;
   padding-left:0;
   padding-right:0;
+  filter:blur(3px);
+  opacity:calc(80%);
 }
 
 

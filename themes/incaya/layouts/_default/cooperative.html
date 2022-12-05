@@ -13,33 +13,32 @@
     {{ partial "navigators/custom-navbar.html" . }}
 {{ end }}
 
-
-
-
 {{ define "content" }}
 <section class="content-section" id="content-section">
 
+  <div class="page-content">
+    <br>
+    <div class="title">
+      <h1>{{ .Page.Title }}</h1>
+      <h2>{{ .Page.Description  }}</h2>
+    </div>
 
-
-      <div class="page-content">
-        <br>
-        <div class="title">
-          <h1>{{ .Page.Title }}</h1>
-          <h2>{{ .Page.Description  }}</h2>
-        </div>
-
+    <div class="col d-flex">
+        <div class="col" style="flex:2">
         {{ .Page.Content }}
+        </div> 
+        <div class="col" style="flex:1">
+          <img src="/images/equipe.svg" alt="illustration de l'équipe" class="">
+        </div> 
+    </div>
 
-
-            <div class="row" id="primary-skills">
-            {{ range $.Site.Data.sections.cooperative.membres }}
-                {{ partial "cards/cooperative.html" . }}
-            {{ end }}
-            </div>
-
-
-      </div>
-
+        <div class="row" id="primary-skills">
+        {{ range $.Site.Data.sections.cooperative.membres }}
+            {{ partial "cards/cooperative.html" . }}
+        {{ end }}
+        </div>
+    
+  </div>
 </section>
 {{ end }}
 
