@@ -27,7 +27,7 @@
           {{ partial "cards/article.html" . }}
       {{ end }}
     </div>
-    
+    <!-- paginator n'apparait que si il y a plus d'articles que le nombre par page -->
     <div class="paginator">
       {{ template "_internal/pagination.html" . }}
     </div>

@@ -13,6 +13,7 @@
 
 
 {{ define "toc" }}
+<!-- table of content -->
   <section class="toc-section" id="toc-section">
     {{ if site.Params.enableTOC }}
     <div class="toc-holder">
@@ -30,7 +31,7 @@
 <section class="content-section" id="content-section">
   <div class="content">
     <div class="container p-0 read-area">
-      <!--Hero Area-->
+      <!--Hero Area = image en tete -->
       <div class="hero-area col-sm-12" id="hero-area" style='background-image: url({{ strings.TrimSuffix "/" site.BaseURL }}{{ partial "helpers/get-hero.html" . }});'>
       </div>
 
@@ -39,27 +40,14 @@
         <div class="title">
           <h1>{{ .Page.Title }}</h1>
         </div>
-        {{ if site.Params.enableTags }}
-        <div class="taxonomy-terms">
-            <ul>
-            {{ range .Params.tags }}
-            {{ $url:= printf "tags/%s" . }}
-            <li class="rounded"><a href="{{ $url | urlize | relLangURL }}" class="btn, btn-sm">{{ . }}</a></li>
-            {{ end }}
-          </ul>
-        </div>
-        {{ end }}
+        
         <div class="post-content" id="post-content">
           {{ .Page.Content }}
         </div>
       </div>
     </div>
   </div>
-  <!--scroll back to top-->
-  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
-  {{ if .IsTranslated }}
-    {{ partial "navigators/floating-lang-selector.html" . }}
-  {{ end }}
+ 
 </section>
 {{ end }}
 

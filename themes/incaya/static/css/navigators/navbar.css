@@ -10,6 +10,7 @@
   text-align: center;
 }
 
+/* CHECKBOX POUR PALIER A L'ABSENCE DE JAVASCRIPT  */
 #navbar-toggle-cbox {
   display:none;
 }
@@ -23,7 +24,7 @@
     width:240px;
     padding:0.4rem;
 }
-
+/* bidouillage pour gérer le décallage du header sur mobile */
 @media (max-width: 1199.98px){
 .navbar .container {
 margin-top:-8px;
@@ -39,6 +40,7 @@ margin-top:-8px;
   display: none!important;
 } 
 }
+/* fin du bidouillage */
 
 .final-navbar {
   background-color: var(--foncé);

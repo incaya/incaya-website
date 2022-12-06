@@ -5,7 +5,7 @@
 <!--================= custom style overrides =========================-->
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
 
-
+<!-- page single specifique à la page coopérative -->
 
 {{ end }}
 
@@ -22,7 +22,7 @@
       <h1>{{ .Page.Title }}</h1>
       <h2>{{ .Page.Description  }}</h2>
     </div>
-
+<!-- container pour la double colonne texte / illustration -->
     <div class="container text-justify align-items-center d-flex flex-row" style="flex-wrap:wrap;">
         <div class="col-lg-8 col-md-12">
         {{ .Page.Content }}
@@ -31,7 +31,7 @@
           <img src="/images/equipe.svg" alt="illustration de l'équipe" class="illu mx-auto" style="min-width:260px; height:auto;">
         </div> 
     </div>
-
+<!-- appelle les cards de chaque membre de l'équipe -->
         <div class="row" id="primary-skills">
         {{ range $.Site.Data.sections.cooperative.membres }}
             {{ partial "cards/cooperative.html" . }}

@@ -7,7 +7,7 @@
 }
 
 .experiences-section h1 > span{
-  margin-top: -55px;  /* Size of fixed header */
+  margin-top: -55px;
   padding-bottom:55px; 
   display: block; 
 }
