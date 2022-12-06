@@ -18,18 +18,15 @@
 
   <div class="page-content">
     <br>
-    <div class="title">
+    <div class="title text">
       <h1>{{ .Page.Title }}</h1>
       <h2>{{ .Page.Description  }}</h2>
     </div>
 <!-- container pour la double colonne texte / illustration -->
     <div class="container text-justify align-items-center d-flex flex-row" style="flex-wrap:wrap;">
-        <div class="col-lg-8 col-md-12">
+        <div class="col mx-auto">
         {{ .Page.Content }}
-        </div> 
-        <div class="col-lg-4 col-md-12 mx-auto">
-          <img src="/images/equipe.svg" alt="illustration de l'équipe" class="illu mx-auto" style="min-width:260px; height:auto;">
-        </div> 
+        </div>  
     </div>
 <!-- appelle les cards de chaque membre de l'équipe -->
         <div class="row" id="primary-skills">

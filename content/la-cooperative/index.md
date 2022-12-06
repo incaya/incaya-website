@@ -1,17 +1,32 @@
 ---
-title: INCAYA le titre du fichier markdown
+title: La Coopérative INCAYA
 slug: cooperative
-description: "La description du fichier Markdown"
+description: ""
 pageName: "cooperative"
 draft: false
 in_search_index: true
 layout: "cooperative"
 ---
 
-## Un titre issu du fichier markdown
-Incaya est une **SCOP** une Société COopérative et Participative. Chez nous la gouvernance est démocratique, la pérennité des emplois et le projet d’entreprise ont la priorité sur le profit. Pour nous ça veut dire beaucoup.
+### Une coopérative du numérique
 
-Pour vous ce sont surtout des garanties : un prestataire qui privilégie la solidité financière, des interlocuteurs particulièrement impliqués, l’envie de travailler sur le long terme et en confiance.
+Notre entreprise associe des professionnels aux **expertises techniques** et méthodologiques variées, au service de vos idées.
+Si nos principaux savoir-faire s’articulent autour de la donnée et de son usage, notre investissement dans la veille et l'exploration technologique nous permet de vous proposer des prototypes logiciels et matériels originaux, des applications robustes et performantes pour vos projets scientifiques, éducatifs et culturels.
 
-## Un autre titre du markdown
+Grâce à notre expérience de l'**architecture logicielle** et de la **relation client/prestataire** dans le secteur du numérique, nous pouvons également assurer l’Assistance à Maîtrise d’Ouvrage de votre projet de création ou de refonte de système d’information.
 
+<img src="equipe.svg" class="illu" alt="l'équipe incaya" style="max-width:340px; height:auto; margin-bottom:30px;">
+
+
+### L'Assistance à Maîtrise d'Ouvrage en système d'information
+
+A la fois experts techniques et consultants fonctionnels, **nous vous accompagnons** de la définition du besoin à la livraison, en passant par l'appel d'offre, le choix des prestataires, le recrutement et la planification.
+
+Qu'il s'agisse de valoriser des données, de tester une idée, de créer une interface sur mesure ou de produire des communs numériques, **nous mobilisons pour vous les bonnes personnes et les bons outils**.
+
+Nous travaillons sans a priori : parfois la solution est dans les valeurs sûres, parfois elle est dans l'innovation. **Nous explorons avec vous** les meilleures options, matérielles et logicielles, des mieux connues aux plus audacieuses.  
+
+
+----
+
+### Notre équipe : 

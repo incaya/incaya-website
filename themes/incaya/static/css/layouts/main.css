@@ -65,6 +65,10 @@ img {
   height:auto;
 }
 
+.container{
+  padding-right:0px;
+  padding-left:0px;
+}
 
 .btn-dark {
   background-color: var(--foncé)!important;

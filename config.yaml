@@ -42,3 +42,10 @@ params:
   # Currently, you can just hide it from the footer.
   newsletter:
     enable: false
+
+ #autorise le HTML dans les fichiers Markdown
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+

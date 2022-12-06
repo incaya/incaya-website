@@ -46,7 +46,7 @@ margin-top:-8px;
   background-color: var(--foncé);
   color: var(--blanc);
   transition: all 0.3s ease-out;
-  border-bottom:  5px solid var(--clair);
+  border-bottom:  4px solid var(--clair);
 }
 
 .final-navbar .navbar-brand {
