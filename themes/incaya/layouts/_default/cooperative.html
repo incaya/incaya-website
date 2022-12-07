@@ -1,9 +1,12 @@
 {{ define "header" }}
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}" />
+
+<meta name="description" content="Une Société Coopérative et Participative pour vos besoins numériques; c'est une garantie de confiance. C'est une équipe à l'écoute, des techniciens impliqués, et un projet pérenne." />
+<title>INCAYA - La Coopérative</title>
 
 <link rel="stylesheet" href="{{ "/css/layouts/single.css" | relURL }}"/>
 <!--================= custom style overrides =========================-->
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
+
 
 <!-- page single specifique à la page coopérative -->
 
@@ -14,7 +17,8 @@
 {{ end }}
 
 {{ define "content" }}
-<section class="content-section" id="content-section">
+
+<section class="content-section mt-5" id="content-section">
 
   <div class="page-content">
     <br>
@@ -22,18 +26,18 @@
       <h1>{{ .Page.Title }}</h1>
       <h2>{{ .Page.Description  }}</h2>
     </div>
-<!-- container pour la double colonne texte / illustration -->
     <div class="container text-justify align-items-center d-flex flex-row" style="flex-wrap:wrap;">
         <div class="col mx-auto">
         {{ .Page.Content }}
         </div>  
+        <div class="row mx-auto" id="primary-skills">
+          {{ range $.Site.Data.sections.cooperative.membres }}
+              {{ partial "cards/cooperative.html" . }}
+          {{ end }}
+          </div>
     </div>
 <!-- appelle les cards de chaque membre de l'équipe -->
-        <div class="row" id="primary-skills">
-        {{ range $.Site.Data.sections.cooperative.membres }}
-            {{ partial "cards/cooperative.html" . }}
-        {{ end }}
-        </div>
+
     
   </div>
 </section>
