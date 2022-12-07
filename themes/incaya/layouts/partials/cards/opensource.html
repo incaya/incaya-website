@@ -7,6 +7,7 @@
       <a class="card-header" href="{{ if .repo }}{{ .repo }}{{ else if .url }}{{ .url }}{{ else }}javascript:void(0){{ end }}" {{ if or .repo .url }}target="_blank" rel="noopener"{{ end }}>
         <div>
           <div class="d-flex">
+            <!-- si logo dans le fichier YAML -->
             {{ if .logo }}
 
             {{ $logoImage:= resources.Get .logo}}
@@ -23,6 +24,7 @@
           </div>
           <div class="sub-title">
             <span>{{ .role }}</span>
+            <!-- si role et/ou timeline les affiche en sous-titre -->
             <span>{{ .timeline }}</span>
           </div>
         </div>
@@ -31,7 +33,7 @@
         <p>{{ .summary | markdownify }}</p>
         
       </div>
-      <!-- Display project card technology tags -->
+      <!-- si tags les affiche en pied de carte -->
       <div class="card-footer">
         <div class="project-card-footer">
           {{ if .tags }}

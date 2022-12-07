@@ -9,11 +9,11 @@
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
         <br>
  
-
+<!-- une carte par projet opensource -->
   <div class="container filtr-projects">
     <div class="row" id="project-card-holder">
       {{ range .projects }}
-        {{ partial "cards/project" . }}
+        {{ partial "cards/opensource" . }}
       {{ end }}
     </div>
   </div>

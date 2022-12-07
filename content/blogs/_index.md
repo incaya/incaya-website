@@ -1,6 +1,6 @@
 ---
 title: Nos articles
-description: "La description du fichier Markdown"
+description: " "
 pageName: "Blogs"
 draft: false
 in_search_index: true
