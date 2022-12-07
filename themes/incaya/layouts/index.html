@@ -9,17 +9,87 @@
 
     <!--================= custom style overrides =========================-->
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
-    <link rel="stylesheet" href="{{ "/css/sections/experiences.css" | relURL }}"/>
-    <link rel="stylesheet" href="{{ "/css/sections/recent-posts.css" | relURL }}"/>
 
   </head>
-  <body data-spy="scroll" data-target="#top-navbar" data-offset="100">
+<body data-spy="scroll" data-target="#top-navbar" data-offset="100">
 
     <!--- NAVBAR ------------------------->
     {{- partial "navigators/custom-navbar.html" . -}}
 
-    <!--- SECTIONS ------------------------>
+    <!--- HAUT DE PAGE ------------------------>
 
+    <!-- section a propos -->
+    <div class="container-fluid anchor pb-5 about-section mb-5 mt-5">
+      <h2 class="text-center mb-5 mt-4">Vous accompagner pour réussir vos projets numériques</h2>
+      <div class="container">
+        <div class="row pt-sm-2 pt-md-4 text-justify m-4">
+          <p class="p-1">
+            Comprendre votre métier et son quotidien, imaginer ou repenser une architecture technique, trouver les professionnels qualifiés pour développer vos outils et les maintenir au long cours : voici comment nous intervenons régulièrement pour garantir le succès de nos clients. </br></br>
+
+            Forts de nombreuses années d'expérience dans l'accompagnement des projets numériques, nous pouvons vous aider à prendre du recul, à faire les bons choix et à créer un climat de confiance. A la fois techniciens et assistants à maîtrise d'ouvrage (AMOA SI), nous intervenons régulièrement en facilitateurs pour lever les freins et rétablir une communication optimale.
+          </p>
+        </div>
+
+        <div class="text-container ml-auto">
+          <ul class="social-link d-flex">
+            <li><a href="https://fr.linkedin.com/company/scop-incaya" title="Linkedin" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/IncayaScop" title="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://indieweb.social/web/@inkaya" title="Mastodon" target="_blank" rel="noopener"><i class="fab fa-mastodon"></i></a></li>
+            <li><a href="https://github.com/incaya" title="Github" target="_blank" rel="noopener"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- fin de la section a propos -->
+    <!-- section artisans de la donée -->
+    <div class="container-fluid anchor pb-5 experiences-section mb-5 mt-5" style="transform:skewY(3deg)">
+      <h2 class="text-center mt-4" style="transform:skewY(-3deg)">
+          <span id="artisans-donnee"></span>Nous sommes des artisans de la donnée</h2>
+      <div class="container text-justify align-items-center d-flex flex-row mb-5 mt-5" style="flex-wrap:wrap;">
+
+      <!-- Colonne 1 -->
+          <div class="col mx-auto " style="min-width:240px; max-width:300px; height:600px; transform:skewY(-3deg)">
+            <div class="experience-entry-heading">
+                <div class="illu">
+                  <img src="/images/accueil/acquerons.svg" class="illu" alt="nous acquérons la donnée">
+                </div>
+                <h4>Nous acquérons</h4>
+            </div>
+                  <p>Vous avez besoin d'une interface de captation claire, consentie, inclusive ?<br><br>
+                    Des formulaires web aux objets connectés, nous nous engageons à imaginer avec vous les justes modalités d'acquisition de la donnée brute.
+                  </p>
+          </div>
+      <!-- Colonne 2 -->
+          <div class="col mx-auto " style="min-width:240px; max-width:300px; height:600px; transform:skewY(-3deg)">
+            <div class="experience-entry-heading">
+                <div class="illu">
+                  <img src="/images/accueil/transformons.svg" class="illu" alt="nous transformons la donnée">
+                </div>
+                <h4>Nous transformons</h4>
+            </div>
+                  <p>Vous voulez réorganiser, transformer et restructurer des bases de données de tous types grâce à un outillage décisionnel performant ?<br><br>
+                    Si votre projet nécessite une reprise de données, nous en tenons compte et l'anticipons.
+                  </p>
+          </div>
+      <!-- Colonne 3 -->
+          <div class="col mx-auto " style="min-width:240px; max-width:300px; height:600px; transform:skewY(-3deg)">
+            <div class="experience-entry-heading">
+                <div class="illu">
+                  <img src="/images/accueil/restituons.svg" class="illu" alt="nous restituons la donnée">
+                </div>
+                <h4>Nous restituons</h4>
+            </div>
+                  <p>Vous nécessitez une application dédiée, mobile ou web ?<br><br>
+                    Nous prenons le temps de répondre avec vous aux questions de partage, de sécurité et de confidentialité.
+                  </p>
+          </div>
+        <!-- fin des colonnes -->
+      </div>
+    </div>
+    <!-- fin de la section artisans de la donnée -->
+
+    <!--- SECTIONS AUTOMATIQUES ------------------------>
+    
     {{ $sections:= site.Data.sections }}
       {{ range sort $sections "section.weight" }}
         {{ if .section.template }}
@@ -33,5 +103,5 @@
     {{ $footerTemplate:= site.Params.footer.template | default "footer.html" }}
     {{- partial $footerTemplate . -}}
 
-  </body>
+</body>
 </html>

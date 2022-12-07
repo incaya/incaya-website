@@ -15,7 +15,7 @@ Si nos principaux savoir-faire s’articulent autour de la donnée et de son usa
 
 Grâce à notre expérience de l'**architecture logicielle** et de la **relation client/prestataire** dans le secteur du numérique, nous pouvons également assurer l’Assistance à Maîtrise d’Ouvrage de votre projet de création ou de refonte de système d’information.
 
-<img src="equipe.svg" class="illu" alt="l'équipe incaya" style="max-width:340px; height:auto; margin-bottom:30px;">
+<img src="equipe.svg" alt="l'équipe incaya" style="max-width:340px; height:auto; margin-bottom:30px;">
 
 
 ### L'Assistance à Maîtrise d'Ouvrage en système d'information

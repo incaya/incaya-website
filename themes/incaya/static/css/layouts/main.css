@@ -65,6 +65,13 @@ img {
   height:auto;
 }
 
+.illu{
+  margin-left:-2rem;
+  margin-right:2rem;
+  width:120%;
+  height:auto;
+}
+
 .container{
   padding-right:0px;
   padding-left:0px;
@@ -268,6 +275,31 @@ img {
   width:100%;
   margin:auto;
 }
+
+/* Carte specifique derniers articles */
+.recent-posts-section .container {
+  padding-top: 1rem;
+}
+
+.recent-posts-section .card .card-footer span {
+  font-size: 10pt;
+  color: #6c757d !important;
+  padding-top: 5px;
+}
+
+.recent-posts-section .card .card-footer {
+  margin-top: auto;
+}
+
+.post-summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  max-height: 144px; 
+  -webkit-line-clamp: 5; /*nombre de lignes de la description*/
+  -webkit-box-orient: vertical;
+}
+
 /* --- CARD END --- */
 /* --- FOOTER START --- */
 
