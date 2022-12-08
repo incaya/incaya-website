@@ -1,14 +1,10 @@
 {{ define "meta" }}
   <title>INCAYA - La Coopérative</title>
-  <meta name="description" content="Une Société Coopérative et Participative pour vos besoins numériques; c'est une garantie de confiance. C'est une équipe à l'écoute, des techniciens impliqués, et un projet pérenne." />
+  <meta name="description" content={{ .Page.Description  }} />
 {{ end }}
 
 {{ define "main" }}
-
-<section class="content-section mt-5" id="content-section">
-
-  <div class="page-content">
-    <br>
+<div class="container-fluid anchor pb-4 about-section mt-5"></div>
     <div class="title text">
       <h1>{{ .Page.Title }}</h1>
       <h2>{{ .Page.Description  }}</h2>
@@ -23,12 +19,6 @@
           {{ end }}
           </div>
     </div>
-<!-- appelle les cards de chaque membre de l'équipe -->
-
-    
   </div>
-</section>
+</div>
 {{ end }}
-
-
-
