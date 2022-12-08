@@ -1,7 +1,0 @@
-section:
-  name: Derniers articles
-  id: derniers-articles
-  enable: true
-  weight: 5
-  showOnNavbar: false
-  template: sections/recent-posts.html

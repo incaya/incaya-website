@@ -1,0 +1,351 @@
+/*les couleurs sont appelées via des var(--)*/
+:root{
+  --noir : #04141A;
+  --blanc : #FAEDD7;
+  --clair : #E8CC9B;
+  --foncé : #0A3240;
+  --logo : #48c1ee;
+}
+
+body {
+  background-color: var(--blanc);
+  font-family: Helvetica, Arial, Sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--noir);
+  font-weight:500;
+  letter-spacing: 1px;
+}
+
+h2{
+margin-bottom:10px;
+margin-top:10px;
+}
+
+/*permet de scroll vers les ancres de titre en affichant le titre*/
+h2 > span {
+  margin-top: -90px!important;
+  padding-bottom: 90px!important;
+  display: block;
+}
+
+strong {
+  color: var(--noir)!important;
+}
+
+p {
+  color: var(--noir);
+  font-weight:500!important;
+}
+
+/*grossi les liens uniquement dans les paragraphes pour mieux les différencier*/
+p a{
+  font-style:italic;
+  font-weight:600;
+}
+
+a {
+  color: var(--foncé);
+  text-decoration:none!important;
+}
+
+a:hover,
+a:focus {
+  color: var(--logo)!important;
+  text-decoration:none!important;
+}
+
+img {
+  width: 100%;
+  height:auto;
+}
+
+.illu{
+  margin-left:-2rem;
+  margin-right:2rem;
+  width:120%;
+  height:auto;
+}
+
+.container{
+  padding-right:0px;
+  padding-left:0px;
+}
+
+.btn-dark {
+  background-color: var(--foncé)!important;
+  color: var(--blanc)!important;
+  transition: all 0.2s ease-out!important;
+  box-shadow: 0 3px 0px var(--logo);
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+  transition: all 0.2s ease-out!important;
+  color:var(--logo)!important;
+  box-shadow: 0 6px 0px var(--logo);
+  transform: translateY(-4px);
+}
+
+.btn-outline-info {
+  color: var(--noir) !important;
+  border-color: var(--noir) !important;
+}
+
+.btn-outline-info:hover,
+.btn-outline-info:focus {
+  background-color: var(--logo) !important;
+  color: var(--noir) !important;
+}
+
+.btn-info {
+  background-color: var(--foncé) !important;
+  color: var(--blanc) !important;
+}
+
+.btn-info:hover,
+.btn-info:hover {
+  background-color: var(--foncé) !important;
+  color: var(--blanc) !important;
+}
+
+
+.anchor {
+  padding-top: 3.5rem;
+}
+
+
+/* --- SECTION SPECIFIC START --- */
+/* gestion manuelle des sections colorées*/
+.experiences-section{
+  background-color: var(--foncé)!important;
+}
+
+/*stylisation de la section*/
+.experiences-section:after{
+  content:'';
+  display:block;
+  width:100%;
+  height:6px;
+  background-color:var(--foncé);
+  position:absolute;
+  margin-top:54px;
+  left:0;
+  right:0;
+  z-index:-1;
+}
+
+.reference-section{
+  background-color: var(--clair)!important;
+}
+
+.reference-section:before{
+  content:'';
+  display:block;
+  width:100%;
+  height:4px;
+  background-color:var(--clair);
+  position:absolute;
+  margin-top:-66px;
+  left:0;
+  right:0;
+  z-index:-1;
+}
+
+.experiences-section h2{
+  color:var(--blanc);
+  font-weight: 300;
+}
+
+.reference-section h2{
+  color:var(--noir);
+  font-weight: 400;
+}
+
+.experiences-section h4, .reference-section h4{
+  color:var(--blanc);
+  font-weight: 400;
+}
+
+.experiences-section  p, .reference-section p{
+  color:var(--blanc);
+  font-weight:400;
+}
+/* --- SECTION SPECIFIC END --- */
+
+/* --- CARD START --- */
+
+.card {
+  box-shadow: 0px 4px 1px var(--noir);
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+  border-radius:0.4rem;
+  background:var(--blanc);
+  height:100%;
+  min-width:280px;
+  max-width:340px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: 0px 8px 1px var(--logo);
+  transition: all 0.3s ease-out;
+  transform: translateY(-4px);
+}
+
+.card-img{
+  padding: 4px;
+  border-radius:0.4rem;
+}
+
+
+/*traitement spécifique des images des clients*/
+.card-client img{
+  mix-blend-mode:luminosity!important;
+  filter:brightness(100%);
+  max-width:155px;
+  max-height:125px;
+  margin:0rem;
+  }
+  
+  .card-client img:hover{
+    transform: translateY(-4px);
+    transition: all 0.2s ease-out!important;
+    mix-blend-mode:normal;
+  }
+
+.card .card-head {
+  max-height: 172px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.03);
+}
+
+.card-img-top {
+  transition: all 0.3s ease-out !important;
+}
+
+.card:hover .card-head .card-img-top,
+.card:focus .card-head .card-img-top {
+  transition: all 0.3s ease-out;
+  transform: scale(1.2);
+}
+
+.card-body {
+  text-align: justify;
+}
+.card-header{
+  text-decoration: none!important;
+}
+
+.sub-title {
+  color: var(--foncé)!important;
+  font-size: 10pt;
+}
+
+.social-link {
+  list-style: none;
+  padding: 0.2rem;
+}
+
+.social-link a {
+  font-size: 1.5rem;
+  color: var(--noir);
+  padding: 0.5rem;
+}
+
+.social-link a:hover {
+  color: var(--logo);
+  transition: all 0.3s ease-in;
+}
+
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+  width:100%;
+  margin:auto;
+}
+
+/* Carte specifique derniers articles */
+.recent-posts-section .container {
+  padding-top: 1rem;
+}
+
+.recent-posts-section .card .card-footer span {
+  font-size: 10pt;
+  color: #6c757d !important;
+  padding-top: 5px;
+}
+
+.recent-posts-section .card .card-footer {
+  margin-top: auto;
+}
+
+.post-summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  max-height: 144px; 
+  -webkit-line-clamp: 5; /*nombre de lignes de la description*/
+  -webkit-box-orient: vertical;
+}
+
+/* --- CARD END --- */
+/* --- FOOTER START --- */
+
+.footer {
+  margin-top:50px;
+  color: var(--blanc) !important;
+  background-color: var(--foncé);
+  position: relative;
+  z-index: 9999;
+  border-top: 4px solid var(--clair);
+}
+
+.logo-footer {
+  width:100px;
+  height:auto;
+  margin-top:0px;
+}
+
+.footer h5 {
+  color: var(--clair);
+}
+.footer a {
+  color: var(--blanc);
+  transition: all 0.3s ease-out;
+}
+
+.footer a:hover {
+  margin-left: 2px;
+  transition: all 0.3s ease-out;
+  color:var(--logo)!important;
+  text-decoration:none;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  margin-top: 5px;
+}
+
+.footer hr {
+  background-color: var(--clair);
+  width:86%;
+}
+
+/* --- FOOTER END ---- */
+

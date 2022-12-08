@@ -1,0 +1,98 @@
+.wrapper {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.content-section {
+  flex: 80%;
+  padding: 0;
+  position: relative;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.content {
+  padding: 0;
+  position: relative;
+  padding-top: 3rem;
+  min-height: 130vh;
+  max-width:1140px;
+}
+
+.post-card-holder {
+  margin-top: 32px;
+  padding: 0;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.post-card-holder .post-card {
+  width: 90%;
+  display: inline-flex;
+  margin:0.4rem;
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom:32px;
+}
+
+.post-card-holder .card {
+  position: relative;
+}
+
+.post-card-holder .card .card-footer span {
+  font-size: 10pt;
+  color: var(--foncé) !important;
+  padding-top: 5px;
+}
+
+.post-card-holder .card .card-footer {
+  margin-top: auto;
+}
+
+.post-summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  max-height: 144px;
+  /* fallback */
+  -webkit-line-clamp: 5;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.post-card-holder .post-card-link {
+  text-decoration: none;
+}
+
+.paginator {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.page-link{
+  background:transparent!important;
+  color:var(--foncé)!important;
+  border:none;
+}
+
+.paginator .page-item.active > a {
+  color: var(--logo)!important;
+}
+
+.pagination {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.title {
+  text-align: center;
+}

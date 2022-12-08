@@ -1,22 +1,29 @@
-<header class="header">
-    <div class="header__wrapper">
-        <a class="logo" href="/">
-            <img src="/images/logo.png" alt="Logo Incaya" /> INCAYA
-        </a>
-        <nav class="navbar">
-            <div class="navbar-container container">
-                <input type="checkbox" name="" id="">
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-                <ul class="menu-items">
-                    <li><a href="/la-cooperative/">La coopérative</a></li>
-                    <li><a href="/nos-references/">Nos références</a></li>
-                    <li><a href="/atelier/">L'atelier</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</header>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<!-- ============ import common css ========== -->
+<link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | relURL }}"/>
+<link rel="stylesheet" href="{{ "/css/layouts/main.css" | relURL }}"/>
+<link rel="stylesheet" href="{{ "/css/navigators/navbar.css" | relURL }}"/>
+
+<!--=================== icons ==============================-->
+<link rel="stylesheet" href="{{ "/fontawesome/css/all.min.css" | relURL }}"/>
+
+<!--=================== RSS ==============================-->
+<link rel="alternate" type="application/rss+xml" title="Flux RSS du blog Incaya" href="/blogs/index.xml" />
+
+<!--================= fab-icon =========================-->
+{{/* add favicon only if the site author has provided the the favicon */}}
+{{ if site.Params.logo.favicon }}
+  {{ $favicon := site.Params.logo.favicon }}
+
+  {{/* resize the favicon. don't resize svg because it is not supported */}}
+  {{ $favicon = resources.Get $favicon }}
+  {{ if and $favicon (ne $favicon.MediaType.SubType "svg") }}
+    {{ $favicon = $favicon.Resize "42x" }}
+  {{ end }}
+  {{ $favicon = $favicon.RelPermalink}}
+
+  <link rel="icon" type="image/png" href="{{ $favicon }}" />
+{{end}}

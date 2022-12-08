@@ -1,0 +1,18 @@
+{{ $sectionID := replace (lower .section.name) " " "-"  }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+<div class="container-fluid anchor pb-5 reference-section mb-5 mt-5" style="transform:skewY(-3deg)">
+
+    <h2 class="text-center mt-3" style="transform:skewY(3deg)">
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+
+
+    <div class="row scrolling-wrapper-flexbox mb-5" id="primary-skills"  style="transform:skewY(3deg)">
+      {{ range .clients }}
+        {{ partial "cards/client.html" . }}
+      {{ end }}
+    </div>
+
+</div>

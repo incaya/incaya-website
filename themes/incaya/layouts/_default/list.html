@@ -1,36 +1,44 @@
-{{ define "main" }}
-<section id="archive">
-    {{ range .Data.Pages.GroupByDate "2006" }}
-        <div class="group">
-            <h3 class="key">
-                {{ .Key }}
-            </h3>
+{{ define "header" }}
 
-            {{ range .Pages }}
-                <div class="value">
-                  <div class="date">
-                    <time datetime="{{ .PublishDate }}">{{ i18n "publishDateShort" . }}</time>
-                  </div>
-                  <div class="title">
-                      <a href="{{ .Permalink }}">
-                          {{ .Title }}
-                      </a>
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}" />
+<title>INCAYA - {{.Title}}</title>
 
-                      {{ with .Params.tags }}
-                          <div class="tags">
-                              {{ range . }}
-                                  <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
-                              {{ end }}
-                          </div>
-                      {{ end}}
-                  </div>
-                </div>
-            {{ end }}          
-        </div>
-    {{ end }}
-
-
-</section>
-
+    <link rel="stylesheet" href="{{ "/css/layouts/list.css" | relURL }}">
+    <!--================= custom style overrides =========================-->
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
 
 {{ end }}
+
+{{ define "navbar" }}
+    {{ partial "navigators/custom-navbar.html" . }}
+{{ end }}
+
+
+
+{{ define "content" }}
+<section class="content-section mt-5" id="content-section">
+  <div class="content container-fluid" id="content">
+    <div class="title">
+      <br>
+      <h1> {{ .Page.Title }} </h1>
+      <!-- vide si description vide dans fichier MD -->
+      <h3> {{ .Page.Description }}</h3>
+    </div>
+
+    <div class="container-fluid post-card-holder" id="post-card-holder">
+      {{ $blogs := where .RegularPagesRecursive "Layout" "!=" "search" }}
+      <!--gestion du nombre de blog par page-->
+      {{ $paginator := .Paginate $blogs 12 }}
+      {{ range $paginator.Pages }}
+          {{ partial "cards/article.html" . }}
+      {{ end }}
+    </div>
+    <!-- paginator n'apparait que si il y a plus d'articles que le nombre par page -->
+    <div class="paginator">
+      {{ template "_internal/pagination.html" . }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+

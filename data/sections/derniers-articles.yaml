@@ -1,0 +1,7 @@
+section:
+  name: Nos derniers articles
+  id: derniers-articles
+  enable: true
+  weight: 5
+  showOnNavbar: false
+  template: sections/derniers-articles.html

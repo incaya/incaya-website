@@ -1,35 +1,56 @@
-{{ define "main" }}
+{{ define "header" }}
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}" />
+<title>INCAYA - {{.Title}}</title>
 
-<section id="single">
-    <h1 class="title">{{ .Title }}</h1>
-
-    <div class="tip">
-        <time datetime="{{ .PublishDate }}">{{ i18n "publishDateFull" . }}</time>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          {{ i18n "wordCount" . }}
-        </span>
-        <span class="split">
-          ·
-        </span>
-        <span>
-          {{ i18n "minuteRead" . }}
-        </span>
-    </div>
-
-    <div class="content">
-      {{ .Content }}
-    </div>
-
-    {{ with .Params.tags }}
-        <div class="tags">
-            {{ range . }}
-                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
-            {{ end }}
-        </div>
-    {{ end}}
-</section>
+<link rel="stylesheet" href="{{ "/css/layouts/single.css" | relURL }}"/>
+<!--================= custom style overrides =========================-->
+<link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
 
 {{ end }}
+
+{{ define "navbar" }}
+    {{ partial "navigators/custom-navbar.html" . }}
+{{ end }}
+
+
+{{ define "toc" }}
+<!-- table of content -->
+  <section class="toc-section" id="toc-section">
+    {{ if site.Params.enableTOC }}
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">{{ i18n "toc_heading" }}</h5>
+      <hr>
+      <div class="toc">
+        {{ .TableOfContents }}
+      </div>
+    </div>
+    {{ end }}
+  </section>
+{{ end }}
+
+{{ define "content" }}
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      <!--Hero Area = image en tete -->
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url({{ strings.TrimSuffix "/" site.BaseURL }}{{ partial "helpers/get-hero.html" . }});'>
+      </div>
+
+      <!--Content Start-->
+      <div class="page-content">
+        <div class="title">
+          <h1>{{ .Page.Title }}</h1>
+        </div>
+        
+        <div class="post-content" id="post-content">
+          {{ .Page.Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</section>
+{{ end }}
+
+
+
