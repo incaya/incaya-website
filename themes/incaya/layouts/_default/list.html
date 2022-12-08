@@ -1,21 +1,4 @@
-{{ define "header" }}
-
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}" />
-<title>INCAYA - {{.Title}}</title>
-
-    <link rel="stylesheet" href="{{ "/css/layouts/list.css" | relURL }}">
-    <!--================= custom style overrides =========================-->
-    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
-
-{{ end }}
-
-{{ define "navbar" }}
-    {{ partial "navigators/custom-navbar.html" . }}
-{{ end }}
-
-
-
-{{ define "content" }}
+{{ define "main" }}
 <section class="content-section mt-5" id="content-section">
   <div class="content container-fluid" id="content">
     <div class="title">
