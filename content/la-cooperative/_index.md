@@ -1,11 +1,8 @@
 ---
 title: La Coopérative INCAYA
-slug: cooperative
-description: ""
-pageName: "cooperative"
+slug: la-cooperative
+description: "Une Société Coopérative et Participative pour vos besoins numériques; c'est une garantie de confiance. C'est une équipe à l'écoute, des techniciens impliqués, et un projet pérenne."
 draft: false
-in_search_index: true
-layout: "cooperative"
 ---
 
 ### Une coopérative du numérique
