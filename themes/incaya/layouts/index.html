@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <title>INCAYA - Artisans du numérique</title>
-    <meta name="description" content="Comprendre votre métier et son quotidien, imaginer ou repenser une architecture technique, trouver les professionnels qualifiés pour développer vos outils et les maintenir au long cours" />
-
-    <!-- import common headers -->
-    {{- partial "header.html" . -}}
-
-    <!--================= custom style overrides =========================-->
-    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
-
-  </head>
-<body data-spy="scroll" data-target="#top-navbar" data-offset="100">
-
-    <!--- NAVBAR ------------------------->
-    {{- partial "navigators/custom-navbar.html" . -}}
-
-    <!--- HAUT DE PAGE ------------------------>
-
-    <!-- section a propos -->
+{{ define "main" }}
     <div class="container-fluid anchor pb-4 about-section mt-5">
       <h2 class="text-center mb-5 mt-4">Vous accompagner pour réussir vos projets numériques</h2>
       <div class="container">
@@ -104,9 +84,4 @@
         {{ end }}
       {{ end }}
     
-    <!--- ADD FOOTER ----------------------->
-    {{ $footerTemplate:= site.Params.footer.template | default "footer.html" }}
-    {{- partial $footerTemplate . -}}
-
-</body>
-</html>
+{{ end }}

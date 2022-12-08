@@ -1,22 +1,9 @@
-{{ define "header" }}
-
-<meta name="description" content="Une Société Coopérative et Participative pour vos besoins numériques; c'est une garantie de confiance. C'est une équipe à l'écoute, des techniciens impliqués, et un projet pérenne." />
-<title>INCAYA - La Coopérative</title>
-
-<link rel="stylesheet" href="{{ "/css/layouts/single.css" | relURL }}"/>
-<!--================= custom style overrides =========================-->
-<link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
-
-
-<!-- page single specifique à la page coopérative -->
-
+{{ define "meta" }}
+  <title>INCAYA - La Coopérative</title>
+  <meta name="description" content="Une Société Coopérative et Participative pour vos besoins numériques; c'est une garantie de confiance. C'est une équipe à l'écoute, des techniciens impliqués, et un projet pérenne." />
 {{ end }}
 
-{{ define "navbar" }}
-    {{ partial "navigators/custom-navbar.html" . }}
-{{ end }}
-
-{{ define "content" }}
+{{ define "main" }}
 
 <section class="content-section mt-5" id="content-section">
 

@@ -1,20 +1,5 @@
-{{ define "header" }}
-<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Title }}{{ end }}" />
-<title>INCAYA - {{.Title}}</title>
-
-<link rel="stylesheet" href="{{ "/css/layouts/single.css" | relURL }}"/>
-<!--================= custom style overrides =========================-->
-<link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
-
-{{ end }}
-
-{{ define "navbar" }}
-    {{ partial "navigators/custom-navbar.html" . }}
-{{ end }}
-
-
-{{ define "toc" }}
-<!-- table of content -->
+{{ define "main" }}
+<div class="container-fluid bg-dimmed wrapper">
   <section class="toc-section" id="toc-section">
     {{ if site.Params.enableTOC }}
     <div class="toc-holder">
@@ -26,9 +11,7 @@
     </div>
     {{ end }}
   </section>
-{{ end }}
 
-{{ define "content" }}
 <section class="content-section" id="content-section">
   <div class="content">
     <div class="container p-0 read-area">
@@ -50,6 +33,7 @@
   </div>
  
 </section>
+</div>
 {{ end }}
 
 
