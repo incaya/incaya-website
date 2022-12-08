@@ -1,0 +1,45 @@
+{{ define "meta" }}
+  <title>{{ .Page.Title }}</title>
+  <meta name="description" content={{ .Page.Description  }} />
+{{ end }}
+
+{{ define "main" }}
+<div class="container-fluid bg-dimmed wrapper">
+  <section class="toc-section" id="toc-section">
+    {{ if site.Params.enableTOC }}
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Sommaire</h5>
+      <hr>
+      <div class="toc">
+        {{ .TableOfContents }}
+      </div>
+    </div>
+    {{ end }}
+  </section>
+
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      <!--Hero Area = image en tete -->
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url({{ strings.TrimSuffix "/" site.BaseURL }}{{ partial "helpers/get-hero.html" . }});'>
+      </div>
+
+      <!--Content Start-->
+      <div class="page-content">
+        <div class="title">
+          <h1>{{ .Page.Title }}</h1>
+        </div>
+        
+        <div class="post-content" id="post-content">
+          {{ .Page.Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</section>
+</div>
+{{ end }}
+
+
+

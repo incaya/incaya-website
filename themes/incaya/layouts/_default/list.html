@@ -1,26 +1,7 @@
 {{ define "main" }}
-<section class="content-section" id="content-section">
-  <div class="content container-fluid" id="content">
-    <div class="title">
-      <br>
-      <h1> {{ .Page.Title }} </h1>
-      <!-- vide si description vide dans fichier MD -->
-      <h3> {{ .Page.Description }}</h3>
-    </div>
 
-    <div class="container-fluid post-card-holder" id="post-card-holder">
-      {{ $blogs := where .RegularPagesRecursive "Layout" "!=" "search" }}
-      <!--gestion du nombre de blog par page-->
-      {{ $paginator := .Paginate $blogs 12 }}
-      {{ range $paginator.Pages }}
-          {{ partial "cards/article.html" . }}
-      {{ end }}
-    </div>
-    <!-- paginator n'apparait que si il y a plus d'articles que le nombre par page -->
-    <div class="paginator">
-      {{ template "_internal/pagination.html" . }}
-    </div>
-  </div>
+<section>
+  <h1>liste par defaut</h1>
 </section>
 {{ end }}
 
