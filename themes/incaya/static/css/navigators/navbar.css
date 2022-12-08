@@ -20,8 +20,9 @@ li {
 .brand {
   margin-left:5%;
   color:var(--blanc);
-  font-weight:600;
+  font-weight:400;
   margin-top:-4px; 
+  font-family:'Grotesk', Helvetica,Arial, Sans-serif;
 }
 
 .menu {

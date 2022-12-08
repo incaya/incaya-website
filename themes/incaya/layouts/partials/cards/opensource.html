@@ -37,7 +37,7 @@
       <div class="card-footer">
         <div class="project-card-footer">
           {{ if .tags }}
-            <div class="project-tags-holder">
+            <div class="project-tags-holder float-left">
               {{ range $index,$tag:= .tags }}
                   <span class="badge btn-info">
                     {{ $tag }}
@@ -45,7 +45,7 @@
               {{ end }}
             </div>
           {{ end }}
-          
+          <a href="{{ .RelPermalink }}" title="{{ i18n "read" }}" class="float-right btn btn-outline-info btn-sm">Voir</a>
         </div>
       </div>
     
