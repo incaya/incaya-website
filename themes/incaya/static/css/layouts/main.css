@@ -2,9 +2,15 @@
 :root{
   --noir : #04141A;
   --blanc : #FAEDD7;
+  --cards : #fff8ec;
   --clair : #E8CC9B;
   --foncé : #0A3240;
   --logo : #48c1ee;
+}
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("/fontgrotesk/SpaceGrotesk-Medium.woff2")format('woff2');
 }
 
 body {
@@ -18,13 +24,14 @@ h3,
 h4,
 h5 {
   color: var(--noir);
-  font-weight:500;
+  font-weight:400;
   letter-spacing: 1px;
 }
 
-h2{
+h1, h2{
 margin-bottom:10px;
 margin-top:10px;
+font-family: "Grotesk", Helvetica, Arial, Sans-serif;
 }
 
 /*permet de scroll vers les ancres de titre en affichant le titre*/
@@ -127,14 +134,14 @@ img {
 }
 
 /*stylisation de la section*/
-.experiences-section:after{
+.experiences-section:before{
   content:'';
   display:block;
   width:100%;
-  height:6px;
+  height:4px;
   background-color:var(--foncé);
   position:absolute;
-  margin-top:54px;
+  margin-top:-64px;
   left:0;
   right:0;
   z-index:-1;
@@ -144,14 +151,14 @@ img {
   background-color: var(--clair)!important;
 }
 
-.reference-section:before{
+.reference-section:after{
   content:'';
   display:block;
   width:100%;
   height:4px;
   background-color:var(--clair);
   position:absolute;
-  margin-top:-66px;
+  margin-top:54px;
   left:0;
   right:0;
   z-index:-1;
@@ -159,22 +166,22 @@ img {
 
 .experiences-section h2{
   color:var(--blanc);
-  font-weight: 300;
+
 }
 
 .reference-section h2{
   color:var(--noir);
-  font-weight: 400;
+
 }
 
 .experiences-section h4, .reference-section h4{
   color:var(--blanc);
-  font-weight: 400;
+
 }
 
 .experiences-section  p, .reference-section p{
   color:var(--blanc);
-  font-weight:400;
+
 }
 /* --- SECTION SPECIFIC END --- */
 
@@ -185,7 +192,7 @@ img {
   transition: all 0.3s ease-out;
   overflow: hidden;
   border-radius:0.4rem;
-  background:var(--blanc);
+  background:var(--cards);
   height:100%;
   min-width:280px;
   max-width:340px;
@@ -226,7 +233,6 @@ img {
   -o-object-fit: cover;
   object-fit: cover;
   overflow: hidden;
-  background-color: rgba(0,0,0,.03);
 }
 
 .card-img-top {
@@ -283,7 +289,7 @@ img {
 
 .recent-posts-section .card .card-footer span {
   font-size: 10pt;
-  color: #6c757d !important;
+  color: var(--foncé) !important;
   padding-top: 5px;
 }
 
@@ -315,7 +321,6 @@ img {
 .logo-footer {
   width:100px;
   height:auto;
-  margin-top:0px;
 }
 
 .footer h5 {
