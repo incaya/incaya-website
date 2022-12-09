@@ -1,16 +1,16 @@
 {{ define "meta" }}
-  <title>{{ .Page.Title }}</title>
+  <title>INCAYA - {{ .Page.Title }}</title>
   <meta name="description" content={{ .Page.Description  }} />
 {{ end }}
 
 {{ define "main" }}
-<section class="content-section mt-5" id="content-section">
+<section class="content-section mt-5 blog" id="content-section">
   <div class="content container-fluid" id="content">
     <div class="title">
       <br>
       <h1> {{ .Page.Title }} </h1>
       <!-- vide si description vide dans fichier MD -->
-      <h3> {{ .Page.Description }}</h3>
+      <h3> </h3>
     </div>
 
     <div class="container-fluid post-card-holder" id="post-card-holder">
