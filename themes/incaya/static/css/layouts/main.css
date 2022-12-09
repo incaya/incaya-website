@@ -179,7 +179,7 @@ img {
 
 }
 
-.experiences-section h4, .reference-section h4{
+.experiences-section h3, .reference-section h3{
   color:var(--blanc);
 
 }
@@ -450,7 +450,7 @@ img {
   height:auto;
 }
 
-.footer h5 {
+.footer h4 {
   color: var(--clair);
 }
 .footer a {
