@@ -36,6 +36,7 @@ Parfois, quand la quantité d'étapes de transformation, et leur complexe imbric
 
 ![architecture ETL/ELT](blog-data-scheme.png "Archi ETL/ELT")
 
+
 L'open source et le libre répondent par une large [galaxie d'outils](data-opensource-galaxy.png) (liste non exhaustive incluant des logiciels propriétaires).
 
 C'est dans le domaine de la [BI](https://fr.wikipedia.org/wiki/Informatique_d%C3%A9cisionnelle) que cet outillage est systématiquement utilisé, néanmoins il nous semble que le monde du développement web gagnerait à s'en emparer notamment pour étendre des architectures [CQRS](https://fr.wikipedia.org/wiki/S%C3%A9paration_commande-requ%C3%AAte).

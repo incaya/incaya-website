@@ -3,8 +3,9 @@
 
 
 
-  {{ $heroImage := $heroImage.Fill "900x400 q90" }}
+
+  {{ $heroImage := $heroImage.Fill "450x200 Center" }}
 
 
-
+{{/*  return the hero image  */}}
 {{ return $heroImage.RelPermalink }}
