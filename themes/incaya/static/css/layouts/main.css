@@ -32,6 +32,7 @@ h1, h2{
 margin-bottom:10px;
 margin-top:10px;
 font-family: "Grotesk", Helvetica, Arial, Sans-serif;
+font-size:2rem;
 }
 
 /*permet de scroll vers les ancres de titre en affichant le titre*/
@@ -273,6 +274,10 @@ img {
   text-decoration: none!important;
 }
 
+.card-title{
+  padding-top:20px;
+}
+
 .sub-title {
   color: var(--foncé)!important;
   font-size: 10pt;
@@ -385,6 +390,7 @@ img {
 .menu-icon {
   display: none;
   margin-top:-4px; 
+  filter: invert(88%) sepia(11%) saturate(617%) hue-rotate(335deg) brightness(109%) contrast(96%);
 }
 
 /* MENU MOBIL A PARTIR DE 768px */
@@ -392,7 +398,7 @@ img {
   .menu {
       width: 100%;
       height: auto;
-      padding-top:18px;
+      padding-top:12px;
       margin-right:0%;
   }
   .menu ul {
@@ -435,7 +441,7 @@ img {
 }
 
 .menu-icon:hover{
-  color:var(--logo);
+  filter: invert(65%) sepia(93%) saturate(879%) hue-rotate(164deg) brightness(98%) contrast(91%);
 }
 
   .menu-icon i {
@@ -458,13 +464,17 @@ img {
   color: var(--blanc) !important;
   background-color: var(--foncé);
   position: relative;
-  z-index: 9999;
+  z-index: 200;
   border-top: 4px solid var(--clair);
 }
 
 .logo-footer {
   width:100px;
   height:auto;
+}
+
+.footer .logo-footer-link:hover{ /*empeche le logo de bouger lors du survol*/
+  margin-left: 0px;
 }
 
 .footer h4 {

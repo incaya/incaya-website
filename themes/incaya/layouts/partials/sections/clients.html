@@ -9,7 +9,7 @@
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
 
 
-    <div class="row scrolling-wrapper-flexbox mb-5 pb-5" id="primary-skills"  style="transform:skewY(3deg)">
+    <div class="row scrolling-wrapper-flexbox mb-4 pb-5" id="primary-skills"  style="transform:skewY(3deg)">
       {{ range .clients }}
         {{ partial "cards/client.html" . }}
       {{ end }}
