@@ -1,8 +1,4 @@
-{{ define "navbar" }}
-    {{ partial "navigators/custom-navbar.html" (dict "baseURL" site.BaseURL "title" site.Title "hasToggleButton" false) }}
-{{ end }}
-
-{{ define "content" }}
+{{ define "main" }}
 <div class="container mt-5 mb-5">
     <div class="notFound" style="height:auto; max-width:700px; margin:auto;">
        <a href="/"><img src="\images\error404.svg" alt="Page Not Found"></a>
