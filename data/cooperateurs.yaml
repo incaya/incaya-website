@@ -1,22 +1,4 @@
-# section information
-section:
-  name: Notre Coopérative
-  id: cooperative
-  enable: true
-  weight: 3
-  showOnNavbar: true
-  template: sections/cooperative.html
-  # Can optionally hide the title in sections
-  # hideTitle: true
-  overview: |
-      INCAYA est une SCOP : une Société COopérative et Participative.
-      Chez nous la gouvernance est démocratique, la pérennité des emplois et le projet d’entreprise ont la priorité sur le profit. Pour nous ça veut dire beaucoup. 
-      
-      Pour vous ce sont surtout des garanties : un prestataire qui privilégie la solidité financière, des interlocuteurs particulièrement impliqués, l’envie de travailler sur le long terme et en confiance.
-
-# Your Skills.
-# Give a summary of you each skill in the summary section.
-membres:
+personnes:
 - name: Thomas Berriot
   # logo: "/images/thomasberriot.png"
   summary: |

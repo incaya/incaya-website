@@ -1,18 +1,3 @@
-# section information
-section:
-  name: Open-Source
-  id: open-source
-  enable: true
-  weight: 6
-  showOnNavbar: false
-  template: sections/opensource.html
-  # Can optionally hide the title in sections
-  # hideTitle: true
-
-# filter buttons
-
-
-# your projects
 projects:
 - name: Incaya documentation 
   # logo: /images/sections/projects/kubernetes.png

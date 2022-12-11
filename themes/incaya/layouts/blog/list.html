@@ -1,30 +1,27 @@
 {{ define "meta" }}
-  <title>{{ .Page.Title }}</title>
-  <meta name="description" content={{ .Page.Description  }} />
+<title>{{ .Page.Title }}</title>
+<meta name="description" content={{ .Page.Description }} />
 {{ end }}
 
 {{ define "main" }}
-<section class="content-section mt-5" id="content-section">
-  <div class="content container-fluid" id="content">
-    <div class="title">
-      <a class="float-right" href="/blog/index.xml" title="RSS"><img src="/icons/rss-solid.svg" class="svg svgfonce" alt="icone du flux rss"></i></a>
-      <h1> {{ .Page.Title }} </h1>
-      <!-- vide si description vide dans fichier MD -->
-      <h3> {{ .Page.Description }}</h3>
+<div class="container-fluid anchor pb-5 recent-posts-section">
+
+  <div class="title">
+    <a class="float-right" href="/blog/index.xml" title="RSS"><img src="/icons/rss-solid.svg" class="svg svgfonce"
+        alt="icone du flux rss"></i></a>
+    <h1> {{ .Page.Title }} </h1>
+    <!-- vide si description vide dans fichier MD -->
+    <h3> {{ .Page.Description }}</h3>
 
 
-    </div>
+  </div>
 
-    <div class="container-fluid post-card-holder" id="post-card-holder">
-      {{ $blogs := where .RegularPagesRecursive "Layout" "!=" "search" }}
-      <!--gestion du nombre de blog par page-->
-      {{ $paginator := .Paginate $blogs 12 }}
-      {{ range $paginator.Pages }}
-          {{ partial "cards/article.html" . }}
+  <div class="container">
+    <div class="row" id="recent-post-cards">
+      {{ range (where site.RegularPages.ByDate.Reverse "Type" "in" "blog" )}}
+      {{ partial "cards/article.html" . }}
       {{ end }}
     </div>
   </div>
-</section>
+</div>
 {{ end }}
-
-
