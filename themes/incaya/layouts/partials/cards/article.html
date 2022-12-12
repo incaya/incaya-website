@@ -11,7 +11,17 @@
         <p class="card-text post-summary"> {{ .Description }}</p>
       </div>
       <div class="card-footer">
-        <span class="float-left">{{ .Date | time.Format ":date_medium" }}</span>
+        <time datetime="{{ .Date | time.Format ":date_short"}}" class="float-left">{{ .Date | time.Format ":date_medium" }}</time>
+         
+        <div class="project-tags-holder">   
+ 
+              <span class="badge btn-info">
+
+              </span>
+
+        </div>
+          
+
         <a href="{{ .RelPermalink }}" title="Lire plus" class="float-right btn btn-outline-info btn-sm">Lire</a>
       </div>
     </div>

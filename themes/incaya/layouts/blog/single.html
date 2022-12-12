@@ -4,8 +4,8 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="container-fluid bg-dimmed wrapper">
-  <section class="toc-section" id="toc-section">
+<article class="container-fluid bg-dimmed wrapper">
+  <aside class="toc-section" id="toc-section">
     {{ if site.Params.enableTOC }}
     <div class="toc-holder">
       <h5 class="text-center pl-3">Sommaire</h5>
@@ -15,7 +15,7 @@
       </div>
     </div>
     {{ end }}
-  </section>
+  </aside>
 
 <section class="content-section" id="content-section">
   <div class="content">
@@ -37,7 +37,7 @@
     </div>
   </div>
  
-</section>
+</article>
 </div>
 {{ end }}
 
