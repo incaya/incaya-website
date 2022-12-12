@@ -258,3 +258,4 @@ Pour ce projet précis nous sommes tombés sur un os : le module implémentait S
 Notre choix final s'est porté sur un ESP32 (une carte [Wipy 3.0 de Pycom](https://pycom.io/product/wipy-3-0/ "carte Wipy 3.0 Pycom"), précisément) qui permet de s'affranchir de l'Arduino et de tout implémenter en [micropython](http://micropython.org/ "micropython").
 
 Ceci fera l'objet d'un prochain billet !
+

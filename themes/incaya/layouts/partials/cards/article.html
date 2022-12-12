@@ -1,5 +1,5 @@
 <div class="col mb-4">
-  <a href="{{ .RelPermalink }}" title="{{ .Title }}" class="post-card-link">
+
     <div class="card">
       <div class="card-head">
         <img class="card-img" src='{{ partial "helpers/get-small-hero.html" . }}'
@@ -11,19 +11,14 @@
         <p class="card-text post-summary"> {{ .Description }}</p>
       </div>
       <div class="card-footer">
+        <div class="project-tags-holder">   
+          {{ partial "tags.html" .}}
+        </div>
+
         <time datetime="{{ .Date | time.Format ":date_short"}}" class="float-left">{{ .Date | time.Format ":date_medium" }}</time>
          
-        <div class="project-tags-holder">   
- 
-              <span class="badge btn-info">
-
-              </span>
-
-        </div>
-          
-
         <a href="{{ .RelPermalink }}" title="Lire plus" class="float-right btn btn-outline-info btn-sm">Lire</a>
       </div>
     </div>
-  </a>
+
 </div>

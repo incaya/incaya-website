@@ -80,7 +80,7 @@ mark{ /* utilisation de balise MARK  pour mettre en gras dans les textes */
 }
 
 img {
-  width: 100%;
+  max-width:100%;
   height:auto;
 }
 
@@ -317,11 +317,7 @@ img {
   padding-top: 1rem;
 }
 
-.recent-posts-section .card .card-footer span {
-  font-size: 10pt;
-  color: var(--foncé) !important;
-  padding-top: 5px;
-}
+
 
 .recent-posts-section .card .card-footer {
   margin-top: auto;

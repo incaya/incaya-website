@@ -43,9 +43,12 @@ params:
   newsletter:
     enable: false
 
- #autorise le HTML dans les fichiers Markdown
+ # autorize raw HTML in Markdown files
 markup:
   goldmark:
     renderer:
       unsafe: true
-
+      
+# configurate tags
+taxonomies:
+  tag: tags

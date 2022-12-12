@@ -2,19 +2,15 @@
 <title>INCAYA - Nos Références </title>
 <meta name="description" content={{ .Page.Description }} />
 {{ end }}
-
 {{ define "main" }}
 <article class="container-fluid anchor pb-4 mt-5">
-
   <h1 class="title text pb-5" >Ils ont travaillé avec nous</h1>
-
     <div class="container">
         <div class="row mb-5">
           {{ range first 4 $.Site.Data.clients.structures }}
           {{ partial "cards/client-highlighted.html" . }}
           {{ end }}
         </div>
-
       <div class="row scrolling-wrapper-flexbox mb-5 ">
         {{ range $elem_index, $elem_val := $.Site.Data.clients.structures }}
         {{ if gt $elem_index 3 }}
