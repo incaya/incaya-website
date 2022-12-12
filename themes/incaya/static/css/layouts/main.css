@@ -118,7 +118,7 @@ img {
   transition: all 0.2s ease-out!important;
   color:var(--logo)!important;
   box-shadow: 0 6px 0px var(--logo);
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 .btn-outline-info {
@@ -225,7 +225,7 @@ img {
 .card:focus {
   box-shadow: 0px 8px 1px var(--logo);
   transition: all 0.3s ease-out;
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 .card-img{
@@ -244,7 +244,7 @@ img {
   }
   
   .card-client img:hover{
-    transform: translateY(-4px);
+    transform: translateY(-2px);
     transition: all 0.2s ease-out!important;
     mix-blend-mode:normal;
   }

@@ -1,33 +1,23 @@
-<div class="col pt-2 mt-5">
-    <div class="card">
-      <div class="card-head d-flex justify-content-center align-items-center">
-        {{ if .logo }}
-          {{ $logoImage := resources.Get .logo }}
-          {{/*  svg don't support "Fit" operation   */}}
-          {{ if ne $logoImage.MediaType.SubType "svg" }}
-            {{ $logoImage = $logoImage.Fit "60x60" }}
-          {{ end }}
-        
-          <img class="card-img-m" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" style="margin: 0.2rem 0 0.5rem 0.2rem"/>
-          <h3 class="card-title  text-center" style="text-align: center; width: 100%">{{ .name }}</h3>
-        {{ else if .icon }}
-          {{ $iconName := .icon }}
-          <h5 class="card-title"><span class="{{ $iconName }}"> {{ .name }}</span></h5>
-        {{ else }}
-          <h5 class="card-title">{{ .name }}</h5>
-        {{ end }}
+<div class="col mb-4">
+  <div class="card">
+      <div class="card-header">
+        <div class="d-flex">
+          <h5 class="card-title mb-0">{{ .name }}</h5>
+        </div>
       </div>
-      <div class="card-body">
-        <p class="card-text">{{ .summary | markdownify }}</p>
-      </div>
-      <div class="card-footer">
-        <ul class="social-link d-flex">
-          {{ range .socialLinks }}
-          <li>
-              <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener"><img src="{{ .image }}" alt="icone {{ .name }}" class="svg svgfonce"></a>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
+    <div class="card-body text-justify pt-1 pb-1">
+      <p>{{ .summary | markdownify }}</p>
     </div>
-</div> 
+    <!-- si tags les affiche en pied de carte -->
+    <div class="card-footer">
+      <ul class="social-link d-flex">
+        {{ range .socialLinks }}
+        <li>
+            <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener"><img src="{{ .image }}" alt="icone {{ .name }}" class="svg svgfonce"></a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+

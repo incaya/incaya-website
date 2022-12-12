@@ -3,7 +3,9 @@
       <div class="card-client" style="text-align: center">
                 
         <div class="card-body">
-          <p class="card-text" style="text-align: center">{{ .image | markdownify }}</p>
+          <p class="card-text" style="text-align: center">
+            <img src="{{ .logo }}" alt="{{ .name }}" />
+          </p>
         </div>
       </div>
     </a>

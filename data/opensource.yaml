@@ -1,0 +1,18 @@
+projects:
+- name: Incaya documentation 
+  role: Mainteneurs
+  repo: https://github.com/incaya/incaya-documentation
+  summary: Image Docker pour gérer la documentation de projets .
+  tags: ["documentation"]
+
+- name: Farmbot School frontend application
+  role: Mainteneurs
+  repo: https://github.com/incaya/farmbot-school-frontend
+  summary: Une application permettant d'utiliser le [farmbot](https://farmbot.fr/) dans les écoles.
+  tags: ["science participative"]
+
+- name: Nature watch CameraServer
+  role: Contributeurs
+  repo: https://github.com/incaya/NaturewatchCameraServer
+  summary: A Python / OpenCV camera server to stream Pi camera content to a remote client through a website. .
+  tags: ["science participative"]
