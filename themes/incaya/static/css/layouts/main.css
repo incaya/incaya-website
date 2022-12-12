@@ -102,9 +102,7 @@ img {
 }
 
 .illu{
-  margin-left:-2rem;
-  margin-right:2rem;
-  width:120%;
+  max-width:120%;
   height:auto;
 }
 
@@ -254,7 +252,7 @@ img {
   }
 
   .card-client-highlighted{ /*traitement specifique des clients détaillés sur la page référence*/
-  width:380px!important;
+  max-width:380px!important;
   }
 
 .card .card-head {
