@@ -1,19 +1,23 @@
-<div class="card-client" style="text-align: center">
-  <div class="card-header">
-    <div class="d-flex">
-      <h5 class="card-title mb-0">{{ .name }}</h5>
+<div class="col mb-4">
+  <div class="card card-client-highlighted" style="text-align: center">
+
+    <div class="card-body">
+      <p class="text-center d-flex mt-3" style="height:90px; align-items:center; justify-content:center;">
+        <img class="pb-4" src="{{ .logo }}" alt="{{ .name }}" title="{{ .name }}" style="width:240px;"/>
+      </p>
+      <p>{{ .description | markdownify }}</p>
     </div>
-  </div>
-  <div class="card-body">
-    <p class="card-text" style="text-align: center">
-      <img src="{{ .logo }}" alt="{{ .name }}" />
-    </p>
-    <p>{{ .description | markdownify }}</p>
-  </div>
-  <div class="card-footer">
-    <p>intervention: {{ .intervention }}</p>
-    <p>lien: {{ .lien }}</p>
-    <p>post de blog: {{ .blog }}</p>
+    <div class="card-footer">
+      <div class="project-tags-holder float-left">   
+        <span class="badge btn-info">
+          {{ .intervention }}
+        </span>
+      </div>
+      <!-- possibilité de mettre leur site ci-dessous -->
+      {{ if .lien }}
+      <a href="{{ .lien }}" title="Leur site" class="float-right btn btn-outline-info btn-sm" target="_blank" rel="noopener">Leur site</a> 
+      {{ end }}
+    </div>
   </div>
 </div>
 <br />

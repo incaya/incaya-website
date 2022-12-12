@@ -243,8 +243,6 @@ img {
 
 /*traitement spécifique des images des clients*/
 .card-client img{
-  mix-blend-mode:luminosity!important;
-  filter:brightness(100%);
   max-width:155px;
   max-height:125px;
   margin:0rem;
@@ -253,7 +251,10 @@ img {
   .card-client img:hover{
     transform: translateY(-2px);
     transition: all 0.2s ease-out!important;
-    mix-blend-mode:normal;
+  }
+
+  .card-client-highlighted{ /*traitement specifique des clients détaillés sur la page référence*/
+  width:380px!important;
   }
 
 .card .card-head {

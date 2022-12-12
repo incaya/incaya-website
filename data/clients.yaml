@@ -1,18 +1,21 @@
 structures:
   - name: Arte
-    logo: /images/clients/arte.png
+    logo: /images/clients/arte.svg
     description: Arte, acronyme d’Association relative à la télévision européenne, est une chaîne franco-allemande de service public et à vocation européenne, diffusant depuis le 30 mai 1992.
     intervention: Développement
+    lien : https://www.arte.tv/fr/
 
   - name: Amnesty International
-    logo: /images/clients/amnesty.png
+    logo: /images/clients/amnesty.svg
     description: Amnesty International est une organisation non gouvernementale internationale qui promeut la défense des droits de l'Homme et le respect de la Déclaration universelle des droits de l'Homme.
     intervention: AMO
+    lien : https://www.amnesty.fr/
 
   - name: Region Normandie
-    logo: /images/clients/region-normandie.png
+    logo: /images/clients/normandie.svg
     description: La Normandie est une région administrative française. Située au nord-ouest de la France, elle est bordée par la Manche.
     intervention: R&D
+    lien : 
 
 
   - name: Réseau d'Epidémio-Surveillance en Pathologie Equine
