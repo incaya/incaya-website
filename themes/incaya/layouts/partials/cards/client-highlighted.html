@@ -1,0 +1,19 @@
+<div class="card-client" style="text-align: center">
+  <div class="card-header">
+    <div class="d-flex">
+      <h5 class="card-title mb-0">{{ .name }}</h5>
+    </div>
+  </div>
+  <div class="card-body">
+    <p class="card-text" style="text-align: center">
+      <img src="{{ .logo }}" alt="{{ .name }}" />
+    </p>
+    <p>{{ .description | markdownify }}</p>
+  </div>
+  <div class="card-footer">
+    <p>intervention: {{ .intervention }}</p>
+    <p>lien: {{ .lien }}</p>
+    <p>post de blog: {{ .blog }}</p>
+  </div>
+</div>
+<br />
