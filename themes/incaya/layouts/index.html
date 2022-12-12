@@ -1,89 +1,10 @@
 {{ define "main" }}
 
-    <div class="container-fluid anchor pb-4 about-section mt-4 accueil">
-      <h1 class="text-center mb-5">Vous accompagner pour réussir vos projets numériques</h1>
+  {{ partial "home/introduction.html" . }}
+  {{ partial "home/artisans.html" . }}
+  {{ partial "home/cooperative.html" . }}
+  {{ partial "home/clients.html" . }}
+  {{ partial "home/blog.html" . }}
+  {{ partial "home/open-source.html" . }}
 
-      <div class="container">
-        <div class="row pt-sm-2 pt-md-4 text-justify m-4 justify-content-center">
-          <div class="col-md-12 col-lg-5 mx-2">
-            <p>
-            Comprendre votre métier et son quotidien, imaginer ou repenser une <b>architecture technique</b>, trouver les professionnels qualifiés pour <b>développer</b> vos outils et les <b>maintenir</b> au long cours : 
-            voici comment nous intervenons régulièrement pour garantir le succès de nos clients.
-            </p>
-          </div>
-          <div class="col-md-12 col-lg-5 mx-2">
-          <p>
-            Forts de nombreuses années d'expérience dans l'<b>accompagnement des projets numériques</b>, nous pouvons vous aider à prendre du recul, à faire les bons choix et à créer un climat de confiance. 
-            A la fois techniciens et <b>assistants à maîtrise d'ouvrage</b> (AMOA SI), nous intervenons régulièrement en <b>facilitateurs</b> pour lever les freins et rétablir une communication optimale.
-          </p>
-
-            <div class="col text-right mt-5">
-              <img src="/images/laptopincaya.svg" alt="laptop incaya" style="max-height:60px; width:auto;">
-            </div>
-          
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-    <!-- fin de la section a propos -->
-    <!-- section artisans de la donée -->
-    <div class="container-fluid anchor pb-5 experiences-section  " style="transform:skewY(3deg)">
-      <h2 class="text-center" style="transform:skewY(-3deg)">
-          <span id="artisans-donnee"></span>Nous sommes des artisans de la donnée</h2>
-      <div class="container text-justify align-items-center d-flex flex-row pb-5 mb-5" style="flex-wrap:wrap;">
-
-      <!-- Colonne 1 -->
-          <div class="col mx-auto " style="min-width:240px; max-width:300px; height:600px; transform:skewY(-3deg)">
-            <div class="experience-entry-heading">
-                <div class="illu">
-                  <img src="/images/accueil/acquerons.svg" class="illu" alt="nous acquérons la donnée">
-                </div>
-                <h3>Nous acquérons</h3>
-            </div>
-                  <p>Vous avez besoin d'une <b>interface de captation</b> claire, consentie, inclusive ?<br><br>
-                    Des formulaires web aux objets connectés, nous nous engageons à imaginer avec vous les justes modalités d'acquisition de la donnée brute.
-                  </p>
-          </div>
-      <!-- Colonne 2 -->
-          <div class="col mx-auto " style="min-width:240px; max-width:300px; height:600px; transform:skewY(-3deg)">
-            <div class="experience-entry-heading">
-                <div class="illu">
-                  <img src="/images/accueil/transformons.svg" class="illu" alt="nous transformons la donnée">
-                </div>
-                <h3>Nous transformons</h3>
-            </div>
-                  <p>Vous voulez réorganiser, transformer et <b>restructurer des bases de données</b> de tous types grâce à un outillage décisionnel performant ?<br><br>
-                    Si votre projet nécessite une reprise de données, nous en tenons compte et l'anticipons.
-                  </p>
-          </div>
-      <!-- Colonne 3 -->
-          <div class="col mx-auto " style="min-width:240px; max-width:300px; height:600px; transform:skewY(-3deg)">
-            <div class="experience-entry-heading">
-                <div class="illu">
-                  <img src="/images/accueil/restituons.svg" class="illu" alt="nous restituons la donnée">
-                </div>
-                <h3>Nous restituons</h3>
-            </div>
-                  <p>Vous nécessitez une <b>application dédiée</b>, mobile ou web ?<br><br>
-                    Nous prenons le temps de répondre avec vous aux questions de partage, de sécurité et de confidentialité.
-                  </p>
-          </div>
-        <!-- fin des colonnes -->
-      </div>
-    </div>
-    <!-- fin de la section artisans de la donnée -->
-
-    <!--- SECTIONS AUTOMATIQUES ------------------------>
-    
-    {{ $sections:= site.Data.sections }}
-      {{ range sort $sections "section.weight" }}
-        {{ if .section.template }}
-              {{- partial .section.template . -}}
-            {{ else }}
-              {{- partial (printf "sections/%s.html" (replace (lower .section.id) " " "-")) . -}}
-        {{ end }}
-      {{ end }}
-    
 {{ end }}

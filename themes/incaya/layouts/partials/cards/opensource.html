@@ -1,53 +1,30 @@
-<div
-  class="col mb-4"
-  data-category='all, {{ delimit  .tags ","}}'
->
+<div class="col mb-4" data-category='all, {{ delimit  .tags ","}}'>
   <div class="card">
-    
-      <a class="card-header" href="{{ if .repo }}{{ .repo }}{{ else if .url }}{{ .url }}{{ else }}javascript:void(0){{ end }}" {{ if or .repo .url }}target="_blank" rel="noopener"{{ end }}>
-        <div>
-          <div class="d-flex">
-            <!-- si logo dans le fichier YAML -->
-            {{ if .logo }}
-
-            {{ $logoImage:= resources.Get .logo}}
-            {{ if $logoImage }}
-            {{/*  svg don't support "Fit" operation   */}}
-            {{ if ne $logoImage.MediaType.SubType "svg" }}
-              {{ $logoImage = $logoImage.Fit "24x24" }}
-            {{ end }}
-
-            <img class="card-img-xs" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" />
-            {{ end }}
-            {{ end }}
-            <h5 class="card-title mb-0">{{ .name }}</h5>
-          </div>
-          <div class="sub-title">
-            <span>{{ .role }}</span>
-            <!-- si role et/ou timeline les affiche en sous-titre -->
-            <span>{{ .timeline }}</span>
-          </div>
+      <div class="card-header">
+        <div class="d-flex">
+          <h5 class="card-title mb-0">{{ .name }}</h5>
         </div>
-      </a>
-      <div class="card-body text-justify pt-1 pb-1">
-        <p>{{ .summary | markdownify }}</p>
-        
+        <div class="sub-title">
+          <span>{{ .role }}</span>
+        </div>
       </div>
-      <!-- si tags les affiche en pied de carte -->
-      <div class="card-footer">
-        <div class="project-card-footer">
-          {{ if .tags }}
-            <div class="project-tags-holder float-left">
-              {{ range $index,$tag:= .tags }}
-                  <span class="badge btn-info">
-                    {{ $tag }}
-                  </span>
-              {{ end }}
-            </div>
+    <div class="card-body text-justify pt-1 pb-1">
+      <p>{{ .summary | markdownify }}</p>
+    </div>
+    <!-- si tags les affiche en pied de carte -->
+    <div class="card-footer">
+      <div class="project-card-footer">
+        {{ if .tags }}
+        <div class="project-tags-holder float-left">
+          {{ range $index,$tag:= .tags }}
+          <span class="badge btn-info">
+            {{ $tag }}
+          </span>
           {{ end }}
-          <a href="{{ .RelPermalink }}" title="lire plus" class="float-right btn btn-outline-info btn-sm">Voir</a>
         </div>
+        {{ end }}
+        <a href="{{ .repo }}" title="Voir le projet sur Github" class="float-right btn btn-outline-info btn-sm" target="_blank" rel="noopener">Voir</a>
       </div>
-    
+    </div>
   </div>
 </div>

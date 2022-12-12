@@ -77,6 +77,23 @@ img {
   height:auto;
 }
 
+.svg{ /*classe pour tous les icones svg*/
+  max-width:40px;
+}
+.svgclair{ /*class des icones clairs sur fonds foncés*/
+  width:20px;
+  filter: invert(88%) sepia(11%) saturate(617%) hue-rotate(335deg) brightness(109%) contrast(96%);
+}
+
+.svgfonce{  /*class des icones foncés sur fonds clairs*/
+ width:24px;
+ filter: invert(13%) sepia(21%) saturate(3177%) hue-rotate(160deg) brightness(98%) contrast(92%);
+}
+
+.svg:hover{  /*icones au survol*/
+  filter: invert(65%) sepia(93%) saturate(879%) hue-rotate(164deg) brightness(98%) contrast(91%);
+}
+
 .illu{
   margin-left:-2rem;
   margin-right:2rem;
@@ -101,7 +118,7 @@ img {
   transition: all 0.2s ease-out!important;
   color:var(--logo)!important;
   box-shadow: 0 6px 0px var(--logo);
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 .btn-outline-info {
@@ -208,7 +225,7 @@ img {
 .card:focus {
   box-shadow: 0px 8px 1px var(--logo);
   transition: all 0.3s ease-out;
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 .card-img{
@@ -227,7 +244,7 @@ img {
   }
   
   .card-client img:hover{
-    transform: translateY(-4px);
+    transform: translateY(-2px);
     transition: all 0.2s ease-out!important;
     mix-blend-mode:normal;
   }
@@ -412,14 +429,14 @@ img {
   }
 
 .menu-icon {
-    width: 100px;
+    width: 20px;
     height: inherit;
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    line-height: 60px;
-    margin-right:2%;
+    line-height: 55px;
+    margin-right:6%;
     cursor:pointer;
 }
 

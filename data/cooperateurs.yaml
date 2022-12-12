@@ -1,22 +1,4 @@
-# section information
-section:
-  name: Notre Coopérative
-  id: cooperative
-  enable: true
-  weight: 3
-  showOnNavbar: true
-  template: sections/cooperative.html
-  # Can optionally hide the title in sections
-  # hideTitle: true
-  overview: |
-      INCAYA est une SCOP : une Société COopérative et Participative.
-      Chez nous la gouvernance est démocratique, la pérennité des emplois et le projet d’entreprise ont la priorité sur le profit. Pour nous ça veut dire beaucoup. 
-      
-      Pour vous ce sont surtout des garanties : un prestataire qui privilégie la solidité financière, des interlocuteurs particulièrement impliqués, l’envie de travailler sur le long terme et en confiance.
-
-# Your Skills.
-# Give a summary of you each skill in the summary section.
-membres:
+personnes:
 - name: Thomas Berriot
   # logo: "/images/thomasberriot.png"
   summary: |
@@ -28,13 +10,13 @@ membres:
     **Passion** : la pratique de la musique
   socialLinks:
   - name: Linkedin
-    icon: "fab fa-linkedin"
+    image : /icons/linkedin.svg
     url: "https://fr.linkedin.com/in/thomas-berriot-5a420513"
   - name: Twitter
-    icon: "fab fa-twitter"
+    image : /icons/twitter.svg
     url: "https://twitter.com/tberriot"
   - name: Github
-    icon: "fab fa-github"
+    image : /icons/github.svg
     url: "https://github.com/tberriot"
 
 - name: Alexis Janvier
@@ -48,13 +30,13 @@ membres:
     **Passion** : le tir à l'arc
   socialLinks:
   - name: Blog
-    icon: "fab fa-blogger"
+    image : /icons/blogger-b.svg
     url: "https://alexisjanvier.net/curriculum-vitae/"
   - name: Mastodon
-    icon: "fab fa-mastodon"
+    image : /icons/mastodon.svg
     url: "https://mamot.fr/web/@alexisjanvier"
   - name: Github
-    icon: "fab fa-github"
+    image : /icons/github.svg
     url: "https://github.com/alexisjanvier"
 
 - name: Thomas Maziere
@@ -68,11 +50,11 @@ membres:
     **Passion** : la sculpture du bois
   socialLinks:
     - name: Linkedin
-      icon: "fab fa-linkedin"
+      image : /icons/linkedin.svg
       url: "https://fr.linkedin.com/in/thomasmaziere"
     - name: Twitter
-      icon: "fab fa-twitter"
+      image : /icons/twitter.svg
       url: "https://twitter.com/thomasmaziere"
     - name: Github
-      icon: "fab fa-github"
+      image : /icons/github.svg
       url: "https://github.com/tmaziere"
