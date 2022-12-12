@@ -3,6 +3,7 @@ title: La Coopérative INCAYA
 slug: la-cooperative
 description: "Une Société Coopérative et Participative pour vos besoins numériques; c'est une garantie de confiance. C'est une équipe à l'écoute, des techniciens impliqués, et un projet pérenne."
 draft: false
+linkTitle: cooperative #permet de donner une class à la page courante
 ---
 
 ### Une coopérative du numérique

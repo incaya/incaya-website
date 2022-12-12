@@ -1,4 +1,5 @@
 {{ define "meta" }}
+
 <title>{{ .Page.Title }}</title>
 <meta name="description" content={{ .Page.Description }} />
 {{ end }}
@@ -13,6 +14,7 @@
     <div class="row" id="recent-post-cards">
       {{ range (where site.RegularPages.ByDate.Reverse "Type" "in" "blog" )}}
       {{ partial "cards/article.html" . }}
+
       {{ end }}
     </div>
   </div>

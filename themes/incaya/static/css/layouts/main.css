@@ -352,6 +352,12 @@ img {
   font-size:20px;
 }
 
+.INCAYA a.accueil,
+.cooperative a.cooperative,
+.blog a.blog{
+  color:var(--logo);
+}
+
 .menu {
   margin-right:5%;
   width: 60%;
