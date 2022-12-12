@@ -2,9 +2,8 @@
 
     <div class="card">
       <div class="card-head">
-        <img class="card-img" src='{{ partial "helpers/get-small-hero.html" . }}'
-          alt="Card image cap"
-        />
+        <a href="{{ .RelPermalink }}" title="Lire plus"><img class="card-img" src='{{ partial "helpers/get-small-hero.html" . }}'
+          alt="Card image cap"/></a>
       </div>
       <div class="card-body">
         <h5 class="card-title">{{ .Title }}</h5>

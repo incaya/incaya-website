@@ -3,7 +3,9 @@
 
     <div class="card-body">
       <p class="text-center d-flex mt-3" style="height:90px; align-items:center; justify-content:center;">
+        <a href="{{ .lien }}" title="Leur site">
         <img class="pb-4" src="{{ .logo }}" alt="{{ .name }}" title="{{ .name }}" style="width:240px;"/>
+        </a>
       </p>
       <p>{{ .description | markdownify }}</p>
     </div>
