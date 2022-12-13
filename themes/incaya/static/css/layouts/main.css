@@ -84,6 +84,12 @@ img {
   height:auto;
 }
 
+figcaption{
+  font-size:14px;
+  font-style: italic;
+  margin-left:32px;
+}
+
 .svg{ /*classe pour tous les icones svg*/
   max-width:40px;
 }
@@ -385,6 +391,7 @@ img {
   height: inherit;
   color: var(--blanc);
   display: inline-block;
+  margin-top:-1px; /* comble les trous sur certains écrans mobiles */
 }
 .menu ul a:hover {
   color: var(--logo);

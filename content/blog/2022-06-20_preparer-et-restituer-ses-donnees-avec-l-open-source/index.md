@@ -71,7 +71,7 @@ Justement, pour avoir le libre choix entre une intallation propre et du cloud, s
 
 PS: pour l'offre cloud, voir chez [Preset](https://preset.io/product/) qui se trouve être l'initiateur du projet Superset avant l'incubation chez Apache.
 
-![](superset_dashboard.png)
+![Administration Superset](superset_dashboard.png)
 
 *Image piochée [ici](https://developer.ascend.io/docs/superset)*
 
