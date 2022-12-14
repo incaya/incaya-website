@@ -2,7 +2,9 @@
   <div class="card">
       <div class="card-header">
         <div class="d-flex">
-          <h5 class="card-title mb-0">{{ .name }}</h5>
+          <a href="{{ .repo }}" title="Voir le projet sur Github" target="_blank" rel="noopener">
+          <h4 class="card-title mb-0">{{ .name }}</h4>
+          </a>
         </div>
         <div class="sub-title">
           <span>{{ .role }}</span>

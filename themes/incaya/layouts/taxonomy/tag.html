@@ -1,0 +1,16 @@
+{{ define "meta" }}
+<title> INCAYA - Catégorie {{ .Title }}</title>
+<meta name="description" content="Tous nos blogs avec les tags {{ .Title }}" />
+{{ end }}
+{{ define "main" }}
+<article class="container-fluid anchor pb-4 mt-5">
+        <h1 class="title text pb-5">Tous nos blogs avec les tags {{ .Page.Title }}</h1>
+        <div class="container">
+                <div class="row" id="recent-post-cards">
+                {{ range .Data.Pages }}
+                                {{ partial "cards/article.html" . }}
+                {{ end }}
+                </div>
+        </div>
+</article>
+{{ end }}

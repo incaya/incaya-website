@@ -1,31 +1,23 @@
 {{ define "meta" }}
-<title>{{ .Page.Title }}</title>
+<title>INCAYA - Nos Références </title>
 <meta name="description" content={{ .Page.Description }} />
 {{ end }}
-
 {{ define "main" }}
-<div class="container-fluid anchor pb-4 about-section mt-5">
-  <div class="title text">
-    <h1>{{ .Page.Title }}</h1>
-  </div>
-  <div class="title text">
-    <div class="container-fluid anchor pb-5 projects-section">
-      <h2>Les clients détaillés</h2>
-      {{ range first 4 $.Site.Data.clients.structures }}
-      {{ partial "cards/client-highlighted.html" . }}
-      {{ end }}
+<article class="container-fluid anchor pb-4 mt-5">
+  <h1 class="title text pb-5" >Ils ont travaillé avec nous</h1>
+    <div class="container">
+        <div class="row mb-5">
+          {{ range first 6 $.Site.Data.clients.structures }}
+          {{ partial "cards/client-highlighted.html" . }}
+          {{ end }}
+        </div>
+      <div class="row scrolling-wrapper-flexbox mb-5 ">
+        {{ range $elem_index, $elem_val := $.Site.Data.clients.structures }}
+        {{ if gt $elem_index 5 }}
+        {{ partial "cards/client.html" $elem_val }}
+        {{ end }}
+        {{ end }}
+      </div>
     </div>
-  </div>
-  <div class="title text">
-    <div class="container-fluid anchor pb-5 projects-section">
-      <h2>Les autres références</h2>
-      {{ range $elem_index, $elem_val := $.Site.Data.clients.structures }}
-      {{ if gt $elem_index 3 }}
-      {{ partial "cards/client.html" $elem_val }}
-      {{ end }}
-      {{ end }}
-    </div>
-  </div>
-
-</div>
+</article>
 {{ end }}

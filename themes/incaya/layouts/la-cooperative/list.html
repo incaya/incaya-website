@@ -2,17 +2,12 @@
 <title>INCAYA - La Coopérative</title>
 <meta name="description" content={{ .Page.Description }} />
 {{ end }}
-
 {{ define "main" }}
-
-<div class="container-fluid anchor pb-4 about-section mt-5">
-  <div class="title text">
-    <h1>{{ .Page.Title }}</h1>
-  </div>
+<article class="container-fluid anchor pb-4 mt-5">
+  <h1 class="title text pb-5">{{ .Page.Title }}</h1>
   <div class="container text-justify align-items-center d-flex flex-row" style="flex-wrap:wrap;">
-    <div class="col mx-auto">
+    <div class="col mx-auto pb-5">
       {{ .Page.Content }}
-
     </div>
     <div class="row mx-auto" id="primary-skills">
       {{ range $.Site.Data.cooperateurs.personnes }}
@@ -20,5 +15,5 @@
       {{ end }}
     </div>
   </div>
-</div>
+</article>
 {{ end }}

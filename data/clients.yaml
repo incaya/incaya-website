@@ -1,16 +1,18 @@
 structures:
   - name: Arte
-    logo: /images/clients/arte.png
+    logo: /images/clients/arte.svg
     description: Arte, acronyme d’Association relative à la télévision européenne, est une chaîne franco-allemande de service public et à vocation européenne, diffusant depuis le 30 mai 1992.
     intervention: Développement
+    lien : https://www.arte.tv/fr/
 
   - name: Amnesty International
-    logo: /images/clients/amnesty.png
+    logo: /images/clients/amnesty.svg
     description: Amnesty International est une organisation non gouvernementale internationale qui promeut la défense des droits de l'Homme et le respect de la Déclaration universelle des droits de l'Homme.
     intervention: AMO
+    lien : https://www.amnesty.fr/
 
   - name: Region Normandie
-    logo: /images/clients/region-normandie.png
+    logo: /images/clients/normandie.svg
     description: La Normandie est une région administrative française. Située au nord-ouest de la France, elle est bordée par la Manche.
     intervention: R&D
 
@@ -18,7 +20,7 @@ structures:
   - name: Réseau d'Epidémio-Surveillance en Pathologie Equine
     logo: /images/clients/respe.png
     description: Le RESPE, association au service de l'ensemble de filières équines, surveille les maladies rencontrées chez les équidés grâce à un réseau de vétérinaires sentinelles.
-    intervention: AMO, TMA, BI et développement
+    intervention: AMO, TMA, BI et Dev
     lien: https://www.vigirespe.net/
 
   - name: Le Dôme
@@ -26,11 +28,13 @@ structures:
     description: Le Dôme, anciennement Maison de la recherche et de l'imagination, est un centre de culture scientifique, technique et industrielle situé à Caen à proximité du Cargö.
     intervention: AMO et BI
     blog: preparer-et-restituer-ses-donnees-avec-le-libre-et-l-open-source
+    lien : https://ledome.info/event
 
   - name: Confédération Générale des Scop
     logo: /images/clients/cgscop.png
     description: La confédération générale des SCOP est le réseau des Sociétés coopératives et participatives, des Sociétés coopératives d'intérêt collectif et des Coopératives d'activité et d'emploi en France.
     intervention: AMO et BI
+    lien : https://www.les-scop.coop/
 
   - name: DecideOm
     logo: /images/clients/decideom.png

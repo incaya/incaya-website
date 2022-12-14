@@ -1,0 +1,26 @@
+<!-- {{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
+
+  {{ range $index, $tag := . }} 
+
+  <span class="badge btn-info">
+  {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+    <a href="{{ .Permalink }}">{{ $tag }}</a>
+  </span>
+  {{- end -}} {{- end -}}
+
+{{ end }} 
+
+fin version AVEC lien cliquable -->
+
+<!-- version SANS lien cliquable-->
+{{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
+
+  {{ range $index, $tag := . }} 
+
+  <span class="badge btn-info">
+    {{ $tag }}
+  </span>
+  {{- end -}} 
+
+{{ end }} 
+

@@ -1,0 +1,34 @@
+{{ $src := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL))  }}
+{{ $alt := .PlainText | safeHTML }}
+
+{{/* So for posts that aren't setup in the page bundles, it doesn't fail  */}}
+
+{{ if $src }}
+
+{{ $mediumw := default "1100x q90 webp" }}
+
+{{/* resize the src image to the given sizes */}}
+{{/* We create a a temp scratch because it's not available in this context */}}
+
+{{ $data := newScratch }}
+
+{{ $data.Set "medium" ($src.Resize $mediumw) }}
+
+
+{{/* add the processed images to the scratch */}}
+
+
+{{ $medium := $data.Get "medium" }}
+
+{{/* only use images smaller than or equal to the src (original) 
+image size, as Hugo will upscale small images */}}
+
+
+
+    <figure>
+    <img alt="{{ $alt }}" title="{{ $alt }}" src="{{ $medium.RelPermalink }}" loading="lazy">
+    <figcaption>{{ $alt }}</figcaption>
+    </figure>
+
+
+  {{ end }}

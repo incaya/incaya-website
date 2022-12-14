@@ -5,7 +5,7 @@ description: "Incaya pose ses valises au Dôme, sur la presqu'île de Caen, pour
 date: 2019-09-16
 draft: false
 in_search_index: true
-tags:
+tags: 
 - incaya
 projects:
 - second-projet

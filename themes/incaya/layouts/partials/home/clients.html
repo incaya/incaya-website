@@ -1,16 +1,16 @@
-<div class="container-fluid anchor pb-5 reference-section mb-5 mt-5" style="transform:skewY(-3deg)">
+<section class="container-fluid anchor pb-5 reference-section" style="transform:skewY(-3deg)">
 
     <h2 class="text-center" style="transform:skewY(3deg)">
         Ils nous font confiance
     </h2>
 
-    <div class="row scrolling-wrapper-flexbox mb-5 pb-5" id="primary-skills" style="transform:skewY(3deg)">
+    <div class="row scrolling-wrapper-flexbox mb-5 " id="primary-skills" style="transform:skewY(3deg)">
         {{ range first 6 $.Site.Data.clients.structures }}
         {{ partial "cards/client.html" . }}
         {{ end }}
     </div>
 
-    <div class="container d-flex-block text-center mt-5">
-        <a href="/nos-references/" class="btn btn-dark">Voir nos références</a>
+    <div class="container d-flex-block text-center mt-5 pb-5 mb-3" style="transform:skewY(3deg)">
+        <a href="/nos-references/" class="btn btn-dark">Découvrez nos références</a>
     </div>
-</div>
+</section>
