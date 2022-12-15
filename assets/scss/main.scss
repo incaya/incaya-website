@@ -1,8 +1,10 @@
 @import "single";
+
 @font-face {
 	font-family: "Grotesk";
 	src: url("/fontgrotesk/SpaceGrotesk-Medium.woff2")format('woff2');
 }
+
 /*les couleurs sont appelées via des variables*/
 
 $noir: #04141A;
@@ -16,6 +18,7 @@ body {
 	background-color: $blanc;
 	font-family: Helvetica, Arial, Sans-serif;
 }
+
 h1 {
 	color: $noir;
 	font-weight: 400;
@@ -25,6 +28,7 @@ h1 {
 	font-family: "Grotesk", Helvetica, Arial, Sans-serif;
 	font-size: 2rem;
 }
+
 h2 {
 	color: $noir;
 	font-weight: 400;
@@ -33,101 +37,126 @@ h2 {
 	margin-top: 10px;
 	font-family: "Grotesk", Helvetica, Arial, Sans-serif;
 	font-size: 2rem;
-	>span { /*permet de scroll vers les ancres de titre en affichant le titre*/
+
+	>span {
+		/*permet de scroll vers les ancres de titre en affichant le titre*/
 		margin-top: -90px !important;
 		padding-bottom: 90px !important;
 		display: block;
 	}
 }
+
 h3 {
 	color: $noir;
 	font-weight: 400;
 	letter-spacing: 1px;
 	font-size: 1.5rem !important;
 }
+
 h4 {
 	color: $noir;
 	font-weight: 400;
 	letter-spacing: 1px;
 	font-size: 1.25rem !important;
 }
+
 h5 {
 	color: $noir;
 	font-weight: 400;
 	letter-spacing: 1px;
 	font-size: 1.25rem !important;
 }
+
 strong {
 	color: $noir !important;
 }
+
 p {
 	color: $noir;
 	font-weight: 500 !important;
-	a { /*grossi les liens uniquement dans les paragraphes pour mieux les différencier*/
+
+	a {
+		/*grossi les liens uniquement dans les paragraphes pour mieux les différencier*/
 		font-style: italic;
 		font-weight: 600;
 	}
 }
+
 li {
 	list-style: none;
 }
+
 a {
 	color: $foncé;
 	text-decoration: none !important;
+
 	&:hover {
 		color: $logo !important;
 	}
+
 	&:focus {
 		color: $logo !important;
 	}
 }
+
 mark {
 	padding: 0;
-	background-color: transparent!important;
+	background-color: transparent !important;
 	font-weight: bolder;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
 }
+
 figcaption {
 	font-size: 14px;
 	font-style: italic;
 	margin-left: 32px;
 }
+
 .svg {
 	max-width: 40px;
+
 	&:hover {
 		filter: invert(65%) sepia(93%) saturate(879%) hue-rotate(164deg) brightness(98%) contrast(91%);
 	}
 }
+
 .svgclair {
 	width: 20px;
 	filter: invert(88%) sepia(11%) saturate(617%) hue-rotate(335deg) brightness(109%) contrast(96%);
 }
+
 .svgfonce {
 	width: 24px;
 	filter: invert(13%) sepia(21%) saturate(3177%) hue-rotate(160deg) brightness(98%) contrast(92%);
 }
+
 .illu {
 	max-width: 120%;
 	height: auto;
 }
+
 .container {
 	padding-right: 0px;
 	padding-left: 0px;
 }
+
 .btn-dark {
 	background-color: $foncé !important;
 	color: $blanc !important;
 	transition: all 0.2s ease-out !important;
 	box-shadow: 0 3px 0px $logo;
+
 	&:hover {
 		transition: all 0.2s ease-out !important;
 		color: $logo !important;
 		box-shadow: 0 6px 0px $logo;
 		transform: translateY(-2px);
 	}
+
 	&:focus {
 		transition: all 0.2s ease-out !important;
 		color: $logo !important;
@@ -135,21 +164,26 @@ figcaption {
 		transform: translateY(-2px);
 	}
 }
+
 .btn-outline-info {
 	color: $noir !important;
 	border-color: $noir !important;
+
 	&:hover {
 		background-color: $logo !important;
 		color: $noir !important;
 	}
+
 	&:focus {
 		background-color: $logo !important;
 		color: $noir !important;
 	}
 }
+
 .btn-info {
 	background-color: $foncé !important;
 	color: $blanc !important;
+
 	&:hover {
 		background-color: $foncé !important;
 		background-color: $foncé !important;
@@ -157,13 +191,16 @@ figcaption {
 		color: $blanc !important;
 	}
 }
+
 .anchor {
 	padding-top: 3.5rem;
 }
 
 /* --- SECTION SPECIFIC START --- */
 .experiences-section {
-	background-color: $foncé !important; /* gestion manuelle de la section Artisans*/
+	background-color: $foncé !important;
+
+	/* gestion manuelle de la section Artisans*/
 	&:before {
 		content: '';
 		display: block;
@@ -176,18 +213,24 @@ figcaption {
 		right: 0;
 		z-index: -1;
 	}
+
 	h2 {
 		color: $blanc;
 	}
+
 	h3 {
 		color: $blanc;
 	}
+
 	p {
 		color: $blanc;
 	}
 }
+
 .reference-section {
-	background-color: $clair !important; /* gestion manuelle de la section Nos clients*/
+	background-color: $clair !important;
+
+	/* gestion manuelle de la section Nos clients*/
 	&:after {
 		content: '';
 		display: block;
@@ -200,12 +243,15 @@ figcaption {
 		right: 0;
 		z-index: -1;
 	}
+
 	h2 {
 		color: $noir;
 	}
+
 	h3 {
 		color: $blanc;
 	}
+
 	p {
 		color: $blanc;
 	}
@@ -224,10 +270,12 @@ figcaption {
 	width: 300px;
 	margin-right: auto;
 	margin-left: auto;
+
 	&:hover {
 		box-shadow: 0px 8px 1px $logo;
 		transition: all 0.3s ease-out;
 		transform: translateY(-2px);
+
 		.card-head {
 			.card-img-top {
 				transition: all 0.3s ease-out;
@@ -235,10 +283,12 @@ figcaption {
 			}
 		}
 	}
+
 	&:focus {
 		box-shadow: 0px 8px 1px $logo;
 		transition: all 0.3s ease-out;
 		transform: translateY(-2px);
+
 		.card-head {
 			.card-img-top {
 				transition: all 0.3s ease-out;
@@ -246,6 +296,7 @@ figcaption {
 			}
 		}
 	}
+
 	.card-head {
 		max-height: 172px;
 		-o-object-fit: cover;
@@ -253,6 +304,7 @@ figcaption {
 		overflow: hidden;
 	}
 }
+
 .card-img {
 	padding: 4px;
 	border-radius: 0.4rem;
@@ -263,43 +315,94 @@ figcaption {
 	img {
 		margin: 0rem;
 		width: 140px;
+
 		&:hover {
 			transform: translateY(-2px);
 			transition: all 0.2s ease-out !important;
 		}
 	}
 }
+
 .card-client-highlighted {
 	max-width: 380px !important;
+
+	.badge {
+		position: relative;
+		display: inline-block;
+
+		&:hover {
+			.tooltiptext {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+
+		.tooltiptext {
+			visibility: hidden;
+			width: 200px;
+			background-color: #555;
+			color: #fff;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px 0;
+			position: absolute;
+			z-index: 10;
+			bottom: 125%;
+			left: 50%;
+			margin-left: -35px;
+			opacity: 0;
+			transition: opacity 0.3s;
+
+			// &::after {
+			// 	content: "";
+			// 	position: absolute;
+			// 	top: 100%;
+			// 	left: 50%;
+			// 	margin-left: -5px;
+			// 	border-width: 5px;
+			// 	border-style: solid;
+			// 	border-color: #555 transparent transparent transparent;
+			// }
+		}
+	}
 }
+
 .card-img-top {
 	transition: all 0.3s ease-out !important;
 }
+
 .card-body {
 	text-align: justify;
 }
+
 .card-header {
 	text-decoration: none !important;
 }
+
 .sub-title {
 	color: $foncé !important;
 	font-size: 10pt;
 }
+
 .card-footer {
 	margin-top: auto;
 }
+
 .social-link {
 	list-style: none;
 	padding-left: 0px;
 	margin-top: 6px;
 	margin-bottom: 6px;
+
 	a {
 		padding-left: 0.8rem;
+
 		&:hover {
 			transition: all 0.3s ease-in;
 		}
 	}
 }
+
 .scrolling-wrapper-flexbox {
 	display: flex;
 	flex-wrap: wrap;
@@ -308,20 +411,24 @@ figcaption {
 	width: 100%;
 	margin: auto;
 }
+
 .recent-posts-section {
 	.container {
 		padding-top: 1rem;
 	}
+
 	.card {
 		.card-footer {
 			margin-top: auto;
 		}
 	}
 }
+
 .project-tags-holder {
 	margin-top: 6px;
 	margin-bottom: 10px;
 }
+
 .post-summary {
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -347,40 +454,47 @@ figcaption {
 	color: $blanc;
 	display: flex;
 }
+
 .brand {
 	margin-left: 5%;
 	color: $blanc;
 	font-weight: 400;
 	margin-top: -4px;
-	font-family: 'Grotesk', Helvetica,Arial, Sans-serif;
+	font-family: 'Grotesk', Helvetica, Arial, Sans-serif;
 	font-size: 20px;
 }
+
 .INCAYA {
 	a.accueil {
 		color: $logo;
 	}
 }
+
 .cooperative {
 	a.cooperative {
 		color: $logo;
 	}
 }
+
 .blog {
 	a.blog {
 		color: $logo;
 	}
 }
+
 .references {
 	a.references {
 		color: $logo;
 	}
 }
+
 .menu {
 	margin-right: 5%;
 	width: 60%;
 	align-items: center;
 	margin-top: -4px;
 	display: flex;
+
 	ul {
 		justify-content: end;
 		width: 100%;
@@ -392,11 +506,13 @@ figcaption {
 		display: -ms-flexbox;
 		display: -webkit-flex;
 		display: flex;
+
 		a {
 			height: inherit;
 			color: $blanc;
 			display: inline-block;
 			margin-top: -1px;
+
 			&:hover {
 				color: $logo;
 			}
@@ -407,21 +523,25 @@ figcaption {
 
 /* MENU MOBIL A PARTIR DE 768px */
 @media screen and (max-width: 768px) {
-.menu{
-	width:100%;
-	margin:auto;
-	margin-top:-4px;
-	ul {
-		justify-content:center;
+	.menu {
+		width: 100%;
+		margin: auto;
+		margin-top: -4px;
+
+		ul {
+			justify-content: center;
+		}
+	}
+
+	.brand {
+		display: none;
+	}
+
+	.nav-link {
+		padding: 0.5rem;
 	}
 }
-.brand {
-		display:none;
-}
-.nav-link{
-	padding:0.5rem;
-}
-}
+
 /* --- NAVBAR ENDS --- */
 /* --- FOOTER START --- */
 .footer {
@@ -431,12 +551,15 @@ figcaption {
 	position: relative;
 	z-index: 200;
 	border-top: 4px solid $clair;
+
 	h4 {
 		color: $clair;
 	}
+
 	a {
 		color: $blanc;
 		transition: all 0.3s ease-out;
+
 		&:hover {
 			margin-left: 2px;
 			transition: all 0.3s ease-out;
@@ -444,23 +567,28 @@ figcaption {
 			text-decoration: none;
 		}
 	}
+
 	.logo-footer-link {
 		&:hover {
 			margin-left: 0px;
 		}
 	}
+
 	ul {
 		list-style: none;
 		padding-left: 0;
 	}
+
 	li {
 		margin-top: 5px;
 	}
+
 	hr {
 		background-color: $clair;
 		width: 86%;
 	}
 }
+
 .logo-footer {
 	width: 100px;
 	height: auto;

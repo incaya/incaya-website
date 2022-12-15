@@ -5,7 +5,7 @@
     </h2>
 
     <div class="row scrolling-wrapper-flexbox mb-5 " id="primary-skills" style="transform:skewY(3deg)">
-        {{ range first 6 $.Site.Data.clients.structures }}
+        {{ range first 6 $.Site.Data.clients.current }}
         {{ partial "cards/client.html" . }}
         {{ end }}
     </div>
