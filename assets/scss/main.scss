@@ -543,6 +543,8 @@ figcaption {
 }
 
 /* --- NAVBAR ENDS --- */
+
+
 /* --- FOOTER START --- */
 .footer {
 	margin-top: 50px;
@@ -551,6 +553,11 @@ figcaption {
 	position: relative;
 	z-index: 200;
 	border-top: 4px solid $clair;
+
+	.footer-title{
+		font-size:1.50rem;
+		color:$clair;
+	}
 
 	h4 {
 		color: $clair;

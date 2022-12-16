@@ -12,7 +12,9 @@ Mais c'est aussi une société coopérative et participative (Scop). Si cela cha
 
 ## Une bonne communication *by design*
 
+
 Une Scop appartient à ses salariés puisqu’ils détiennent au moins 51 % du capital social et 65 % des droits de vote. Chez INCAYA, les salariés possèdent 100 % de ce capital.
+
 
 <mark>Chacun des salariés associés disposant d’une voix lors des assemblées générales</mark>, nous sommes tous responsables à parts égales du projet de l’entreprise : de son fonctionnement quotidien aux projets d’avenir en passant par la politique salariale. Il faut donc que chacun de nous soit suffisamment informé des données liées à la vie de la société et à la vision de chacun. Cela implique <mark>une communication ouverte et transparente</mark> contribuant à une meilleure compréhension et à une meilleure résolution des problèmes pouvant survenir.
 
@@ -20,7 +22,7 @@ Cette qualité de communication, nous la mettons naturellement au service des pr
 
 <mark>C'est sans doute l'un de nos plus gros atouts.</mark>
 
-<center><img src="equipe2.svg" alt="l'équipe incaya" style="width:auto; max-height:360px; margin-bottom:50px; margin-top:40px;"></center>
+<center><img src="equipe5.svg" alt="l'équipe incaya" style="width:auto; max-height:360px; margin-bottom:50px; margin-top:40px;"></center>
 
 ## Une structure pensée pour le long terme
 

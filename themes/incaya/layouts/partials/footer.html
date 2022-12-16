@@ -3,7 +3,7 @@
       <div class="row text-center">
         
         <div class="col-md-3 col-sm-12 text-left ml-5">
-          <h4>Navigation</h4>
+          <span class="footer-title">Navigation</span>
           <nav arial-label="menu du pieds de page">
             <ul>
                 <li class="nav-item">
@@ -23,17 +23,17 @@
         </div>
 
         <div class="col-md-4 col-sm-12 text-left ml-5">
-          <h4>Contactez-nous</h4>
+          <span class="footer-title">Contactez-nous</span>
           <ul>
                 <li><a href="mailto:contact@incaya.fr">
                   <span><img src="/icons/envelope-solid.svg" class="svg svgclair" alt="icone email" style="margin-top:-2px;"> contact@incaya.fr</span></a></li>
+                  {{ range .Site.Menus.footer }}
 
-                <li><a href="https://indieweb.social/web/@inkaya" title="Mastodon" target="_blank" rel="noopener">
-                  <span><img src="/icons/mastodon.svg" class="svg svgclair" alt="icone mastodon" style="margin-top:-2px;"> Mastodon</span></a></li>
+                <li><a href=" {{ .URL }} " title=" {{ .Name }} " target="_blank" rel="noopener">
+                  <span><img src=" {{ .Pre }} " class="svg svgclair" alt="lien vers {{ .Name }}" style="margin-top:-2px;"> {{ .Name }} </span></a></li>
 
-                <li><a href="https://github.com/incaya" title="github" target="_blank" rel="noopener">
-                  <span><img src="/icons/github.svg" class="svg svgclair" alt="icone github" style="margin-top:-2px;"> Github</span></a></li>
-          </ul>
+                  {{ end }}
+            </ul>
         </div>
 
 
