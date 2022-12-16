@@ -8,24 +8,24 @@ current:
 
   - name: Amnesty International
     logo: /images/clients/amnesty.svg
-    description: Organisation non gouvernementale internationale qui promeut la défense des droits de l'Homme.
+    description: Organisation non gouvernementale internationale de défense des droits humains.
     interventions:
-    - tag: AMO
-      label: Assistance à Maitrise d'Ouvrage
+    - tag: AMOA
+      label: Assistance à Maîtrise d'Ouvrage
 
   - name: Region Normandie
     logo: /images/clients/normandie.svg
-    description: La Normandie est une région administrative française.
+    description: La Région Normandie nous soutient dans le cadre de l'appel à projet "Booster IA 2022".
     interventions:
-    - tag: R&D
-      label: Recherche et Développement
+    - tag: IA
+      label: Intelligence artificielle
 
   - name: Réseau d'Epidémio-Surveillance en Pathologie Equine
     logo: /images/clients/respe.png
-    description: Association surveillant les maladies rencontrées chez les équidés grâce à un réseau de vétérinaires sentinelles.
+    description: Réseau d'Epidémio-Surveillance en Pathologie Equine.
     interventions:
-    - tag: AMO
-      label: Assistance à Maitrise d'Ouvrage
+    - tag: AMOA
+      label: Assistance à Maîtrise d'Ouvrage
     - tag: TMA
       label: Tierce Maintenance Applicative
     - tag: BI
@@ -37,18 +37,18 @@ current:
     logo: /images/clients/ledome.png
     description: Centre de culture scientifique, technique et industrielle situé à Caen.
     interventions:
-    - tag: AMO
-      label: Assistance à Maitrise d'Ouvrage
+    - tag: AMOA
+      label: Assistance à Maîtrise d'Ouvrage
     - tag: BI
       label: Business Intelligence
     blog: /blog/preparer-et-restituer-ses-donnees-avec-le-libre-et-l-open-source
 
-  - name: Confédération Générale des Scop
+  - name: Confédération générale des SCOP
     logo: /images/clients/cgscop.png
-    description: Réseau des Scop, des Scic et des CAE en France.
+    description: Confédération générale des SCOP, des SCIC et des CAE en France.
     interventions: 
-    - tag: AMO
-      label: Assistance à Maitrise d'Ouvrage
+    - tag: AMOA
+      label: Assistance à Maîtrise d'Ouvrage
     - tag: BI
       label: Business Intelligence
 
