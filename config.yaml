@@ -48,7 +48,29 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-      
+
+# menu footer 
+menu:
+  footer: 
+  - name: Github
+    url: /https://github.com/incaya/
+    pre: /icons/github.svg
+    weight: 10
+  - name: Mastodon
+    url: https://indieweb.social/web/@inkaya
+    weight: 20
+    pre: /icons/mastodon.svg
+  #- name : Matrix
+  #  url: 
+  #  pre: /icons/matrix.svg
+  #  weight: 30
+  #- name : Twitter
+  #  url: 
+  #  pre: /icons/twitter.svg
+  #  weight: 40
+
+
+
 # configure tags
 taxonomies:
   tag: tags
