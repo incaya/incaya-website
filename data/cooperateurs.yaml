@@ -49,9 +49,9 @@ personnes:
     **Outils favoris** : JavaScript, Python et Processing      
     **Passion** : la sculpture du bois
   socialLinks:
-    - name: Linkedin
-      image : /icons/linkedin.svg
-      url: "https://fr.linkedin.com/in/thomasmaziere"
+    - name: Mastodon
+      image : /icons/mastodon.svg
+      url: "https://piaille.fr/@tmaz"
     - name: Twitter
       image : /icons/twitter.svg
       url: "https://twitter.com/thomasmaziere"

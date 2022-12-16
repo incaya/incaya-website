@@ -19,7 +19,7 @@ linkTitle : mentionslegales
 ## Hébergeur
 <br>
 
-Le site incaya.fr est herbergé par .... à tel endroit de la planète.
+Le site incaya.fr est herbergé par Scaleway SAS, 8 rue de la Ville l’Evêque, 75008 Paris, France.
 
 ## Données personnelles et cookies
 <br>

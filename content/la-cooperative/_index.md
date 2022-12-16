@@ -16,7 +16,7 @@ Une Scop appartient à ses salariés puisqu’ils détiennent au moins 51 % du 
 
 <mark>Chacun des salariés associés disposant d’une voix lors des assemblées générales</mark>, nous sommes tous responsables à parts égales du projet de l’entreprise : de son fonctionnement quotidien aux projets d’avenir en passant par la politique salariale. Il faut donc que chacun de nous soit suffisamment informé des données liées à la vie de la société et à la vision de chacun. Cela implique <mark>une communication ouverte et transparente</mark> contribuant à une meilleure compréhension et à une meilleure résolution des problèmes pouvant survenir.
 
-Cette qualité de communication, nous les mettons naturellement aux services des projets de nos clients.
+Cette qualité de communication, nous la mettons naturellement au service des projets de nos clients.
 
 <mark>C'est sans doute l'un de nos plus gros atouts.</mark>
 
@@ -24,10 +24,10 @@ Cette qualité de communication, nous les mettons naturellement aux services des
 
 ## Une structure pensée pour le long terme
 
-Une Scop se doit légalement de consacrer au minimum 15% du son profit (c'est 50% chez INCAYA) aux réserves de l’entreprise. Si ces réserves contribuent à assurer notre pérennité, elles ont la particularité d'être <mark>indivisibles</mark>, c'est-à-dire qu'elles ne peuvent pas être divisées entre nous. Autrement dit, aucun de nous ne peut prétendre à une part de ces réserves dans le cas ou il déciderait de quitter l'entreprise.
+Une SCOP se doit légalement de consacrer au minimum 15% de ses bénéfices (c'est 50% chez INCAYA) aux réserves de l’entreprise. Si ces réserves contribuent à assurer notre pérennité, elles ont la particularité d'être <mark>impartageables</mark>, c'est-à-dire qu'elles ne peuvent pas être divisées entre nous. Autrement dit, aucun de nous ne peut prétendre à une part de ces réserves dans le cas ou il déciderait de quitter l'entreprise.
 
-Et cela change tout ! On ne s'associe pas dans une Scop dans l'espoir de s'enrichir grace à des part que l'on pourrait revendre. Au contraire, on s'associe dans une Scop dans l'idée d'investir dans son outil de travail. On a donc tout intérêt à ce qu'il soit de qualité, qu'il soit bien entretenu et qu'il dure le plus longtemps possible.
+Et cela change tout ! On ne s'associe pas dans une SCOP dans l'espoir de s'enrichir grace à des parts que l'on pourrait revendre. Au contraire, on s'associe dans une SCOP dans l'idée d'investir dans son outil de travail. On a donc tout intérêt à ce qu'il soit de qualité, qu'il soit sain et qu'il dure le plus longtemps possible.
 
-<mark>Lorsque nous entamons une relation avec un client, il peut donc être assuré qu'elle pourra se faire sur la durée avec une équipe stable.</mark>
+<mark>Lorsque nous entamons une relation avec un client, il peut donc être assuré qu'elle pourra se faire sur la durée, avec une équipe stable.</mark>
 
 ## L'équipe des salariés associés
