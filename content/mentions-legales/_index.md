@@ -5,30 +5,32 @@ description: "Mentions légales"
 draft: false 
 linkTitle : mentionslegales
 ---
-## Informations légales
+## Editeur
 <br>
 
-- <mark>INCAYA</mark>
-- <mark>Société Coopérative et Participative</mark> à Responsabilité Limitée au Capital Variable de 1000 euros
-- <mark>Siège social</mark> : 14 rue Ambroise Bully 77100 MEAUX France 
-- <mark>SIRET</mark> : 819 989 971 00018
-- <mark>RCS</mark> : 819 989 971  
-- <mark>N° de TVA</mark> intracommunautaire : FR67 819989971
-- <mark>Directeur de publication</mark> : M. Thomas BERRIOT.
+- **INCAYA**
+- Société Coopérative et Participative à Responsabilité Limitée au Capital Variable de 1000 euros
+- **Siège social** : 14 rue Ambroise Bully 77100 MEAUX France 
+- **SIRET** : 819 989 971 00018
+- **RCS** : 819 989 971  
+- **N° de TVA** intracommunautaire : FR67 819989971
+- **Directeur de publication** : M. Thomas BERRIOT.
 
 ## Hébergeur
 <br>
 
-Le site incaya.fr est herbergé par Scaleway SAS, 8 rue de la Ville l’Evêque, 75008 Paris, France.
+- **SCALEWAY SAS**
+- **Siège social** : BP 438 75366 Paris CEDEX 08 France
+- **Site web** : https://www.scaleway.com/fr/a-propos/
 
 ## Données personnelles et cookies
 <br>
 
-Aucune donnée personnelle n'est collectée lors de votre visite sur "incaya.fr" et aucun cookie n'est stocké sur votre appareil. 
+<mark>Aucune donnée personnelle n'est collectée lors de votre visite sur "incaya.fr" et aucun cookie n'est stocké sur votre appareil.</mark>
 
 En revanche il est impossible d'assurer qu'il en est de même pour les sites externes (clients, informations ...) accessibles depuis les liens contenus sur le site "incaya.fr". La société Incaya décline donc toute responsabilité quand aux risques éventuels de contenus illicites et/ou de collecte de données personnelles.
 
-Pour plus d'informations : un cookie est défini [ici](https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies/que-dit-la-loi) par la CNIL; qui fournit aussi une traduction de la réglementation sur la protection des données ( [RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees) ) 
+Pour plus d'informations : vous pouvez consulter la [définition d'un cookie]((https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies/que-dit-la-loi)) par la CNIL ou la traduction de la réglementation sur la protection des données ( [RGPD](https://www.cnil.fr/fr/reglement-europeen-protection-donnees) ) 
 
 ## License
 <br>
