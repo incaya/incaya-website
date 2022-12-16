@@ -24,7 +24,7 @@ Cette qualité de communication, nous la mettons naturellement au service des pr
 
 ## Une structure pensée pour le long terme
 
-Une SCOP se doit légalement de consacrer au minimum 15% de ses bénéfices (c'est 50% chez INCAYA) aux réserves de l’entreprise. Si ces réserves contribuent à assurer notre pérennité, elles ont la particularité d'être <mark>impartageables</mark>, c'est-à-dire qu'elles ne peuvent pas être divisées entre nous. Autrement dit, aucun de nous ne peut prétendre à une part de ces réserves dans le cas ou il déciderait de quitter l'entreprise.
+Une SCOP se doit légalement de consacrer au minimum 15% de ses bénéfices aux réserves de l’entreprise. Si ces réserves contribuent à assurer notre pérennité, elles ont la particularité d'être <mark>impartageables</mark>, c'est-à-dire qu'elles ne peuvent pas être divisées entre nous. Autrement dit, aucun de nous ne peut prétendre à une part de ces réserves dans le cas ou il déciderait de quitter l'entreprise.
 
 Et cela change tout ! On ne s'associe pas dans une SCOP dans l'espoir de s'enrichir grace à des parts que l'on pourrait revendre. Au contraire, on s'associe dans une SCOP dans l'idée d'investir dans son outil de travail. On a donc tout intérêt à ce qu'il soit de qualité, qu'il soit sain et qu'il dure le plus longtemps possible.
 
