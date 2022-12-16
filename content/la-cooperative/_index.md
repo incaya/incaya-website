@@ -6,28 +6,28 @@ draft: false
 linkTitle: cooperative #permet de donner une class à la page courante
 ---
 
-### Une coopérative du numérique
+Fondée en 2016, INCAYA est une SARL de service informatique, comme beaucoup d'autres entreprises de ce secteur. Elle a donc le même statut juridique et le même rapport contractuel avec ses clients que n'importe quelle société commerciale.
 
-Notre entreprise associe des professionnels aux <mark> expertises techniques </mark> et méthodologiques variées, au service de vos idées.
-Si nos principaux savoir-faire s’articulent autour de la donnée et de son usage, notre investissement dans la veille et l'exploration technologique nous permet de vous proposer des prototypes logiciels et matériels originaux, des applications robustes et performantes pour vos projets scientifiques, éducatifs et culturels.
+Mais c'est aussi une société coopérative et participative (Scop). Si cela change beaucoup de choses pour ses salariés associés, cela a aussi un impact intéressant pour ses clients.
 
-Grâce à notre expérience de l' <mark>architecture logicielle</mark> et de la <mark>relation client/prestataire</mark> dans le secteur du numérique, nous pouvons également assurer l’Assistance à Maîtrise d’Ouvrage de votre projet de création ou de refonte de système d’information.
+## Une bonne communication *by design*
 
-<img src="equipe2.svg" alt="l'équipe incaya" style="width:auto; max-height:360px; margin-bottom:50px; margin-top:40px;">
+Une Scop appartient à ses salariés puisqu’ils détiennent au moins 51 % du capital social et 65 % des droits de vote. Chez INCAYA, les salariés possèdent 100 % de ce capital.
 
+<mark>Chacun des salariés associés disposant d’une voix lors des assemblées générales</mark>, nous sommes tous responsables à parts égales du projet de l’entreprise : de son fonctionnement quotidien aux projets d’avenir en passant par la politique salariale. Il faut donc que chacun de nous soit suffisamment informé des données liées à la vie de la société et à la vision de chacun. Cela implique <mark>une communication ouverte et transparente</mark> contribuant à une meilleure compréhension et à une meilleure résolution des problèmes pouvant survenir.
 
-### L'Assistance à Maîtrise d'Ouvrage en système d'information
+Cette qualité de communication, nous les mettons naturellement aux services des projets de nos clients.
 
-A la fois experts techniques et consultants fonctionnels, <mark>nous vous accompagnons</mark> de la définition du besoin à la livraison, en passant par l'appel d'offre, le choix des prestataires, le recrutement et la planification.
+<mark>C'est sans doute l'un de nos plus gros atouts.</mark>
 
-Qu'il s'agisse de valoriser des données, de tester une idée, de créer une interface sur mesure ou de produire des communs numériques, <mark>nous mobilisons pour vous les bonnes personnes et les bons outils</mark>.
+<center><img src="equipe2.svg" alt="l'équipe incaya" style="width:auto; max-height:360px; margin-bottom:50px; margin-top:40px;"></center>
 
-Nous travaillons sans a priori : parfois la solution est dans les valeurs sûres, parfois elle est dans l'innovation. <mark>Nous explorons avec vous</mark> les meilleures options, matérielles et logicielles, des mieux connues aux plus audacieuses.  
+## Une structure pensée pour le long terme
 
-<br>
+Une Scop se doit légalement de consacrer au minimum 15% du son profit (c'est 50% chez INCAYA) aux réserves de l’entreprise. Si ces réserves contribuent à assurer notre pérennité, elles ont la particularité d'être <mark>indivisibles</mark>, c'est-à-dire qu'elles ne peuvent pas être divisées entre nous. Autrement dit, aucun de nous ne peut prétendre à une part de ces réserves dans le cas ou il déciderait de quitter l'entreprise.
 
-----
+Et cela change tout ! On ne s'associe pas dans une Scop dans l'espoir de s'enrichir grace à des part que l'on pourrait revendre. Au contraire, on s'associe dans une Scop dans l'idée d'investir dans son outil de travail. On a donc tout intérêt à ce qu'il soit de qualité, qu'il soit bien entretenu et qu'il dure le plus longtemps possible.
 
-<br>
+<mark>Lorsque nous entamons une relation avec un client, il peut donc être assuré qu'elle pourra se faire sur la durée avec une équipe stable.</mark>
 
-### Notre équipe : 
+## L'équipe des salariés associés
