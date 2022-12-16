@@ -3,21 +3,22 @@
 
     <div class="card-body">
       <p class="text-center d-flex mt-3" style="height:90px; align-items:center; justify-content:center;">
-        <a href="{{ .lien }}" title="Leur site">
         <img class="pb-4" src="{{ .logo }}" alt="{{ .name }}" title="{{ .name }}" style="width:240px;"/>
-        </a>
       </p>
       <p>{{ .description | markdownify }}</p>
     </div>
     <div class="card-footer">
-      <div class="project-tags-holder float-left">   
+      <div class="project-tags-holder float-left">
+        {{ range .interventions }}
         <span class="badge btn-info">
-          {{ .intervention }}
+          {{ .tag }}
+          <span class="tooltiptext" role="tooltip">{{ .label }}</span>
         </span>
+        {{ end }}
       </div>
       <!-- possibilité de mettre leur site ci-dessous -->
-      {{ if .lien }}
-      <a href="{{ .lien }}" title="Leur site" class="float-right btn btn-outline-info btn-sm" target="_blank" rel="noopener">Leur site</a> 
+      {{ if .blog }}
+      <a href="{{ .blog }}" title="Plus d'informations sur notre intervention" class="float-right btn btn-outline-info btn-sm">Quelques détails</a> 
       {{ end }}
     </div>
   </div>
