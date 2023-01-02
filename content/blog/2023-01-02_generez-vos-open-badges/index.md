@@ -35,7 +35,7 @@ Le modèle peut être sélectionné de trois façons différentes :
 
 Elle permet de donner sa touche personnelle au badge, et de l'adapter au mieux à son contexte.
 
-Il est en particulier en particulier **modifier les couleurs, les textes et les pictogrammes** grâce à une interface graphique facile d'accès.
+Il est en particulier possible de **modifier les couleurs, les textes et les pictogrammes** grâce à une interface graphique facile d'accès.
 
 ## Votre propre générateur
 
