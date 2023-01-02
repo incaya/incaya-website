@@ -2,8 +2,14 @@ projects:
 - name: Incaya documentation 
   role: Mainteneurs
   repo: https://github.com/incaya/incaya-documentation
-  summary: Image Docker pour gérer la documentation de projets .
+  summary: Image Docker pour gérer la documentation de projets.
   tags: ["documentation"]
+
+- name: Générateur d'Open badge pour l'enseignement agricole
+  role: Mainteneurs
+  repo: https://github.com/incaya/generateur-graphique-open-badge-ea
+  summary: Un générateur de visuel pour open badge dédié à l'enseignement agricole.
+  tags: ["openbadges"]
 
 - name: Farmbot School frontend application
   role: Mainteneurs
@@ -14,5 +20,5 @@ projects:
 - name: Nature watch CameraServer
   role: Contributeurs
   repo: https://github.com/incaya/NaturewatchCameraServer
-  summary: A Python / OpenCV camera server to stream Pi camera content to a remote client through a website. .
+  summary: A Python / OpenCV camera server to stream Pi camera content to a remote client through a website.
   tags: ["science participative"]
