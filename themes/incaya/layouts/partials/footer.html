@@ -26,13 +26,15 @@
           <span class="footer-title">Contactez-nous</span>
           <ul>
                 <li><a href="mailto:contact@incaya.fr">
-                  <span><img src="/icons/envelope-solid.svg" class="svg svgclair" alt="icone email" style="margin-top:-2px;"> contact@incaya.fr</span></a></li>
-                  {{ range .Site.Menus.footer }}
-
-                <li><a href=" {{ .URL }} " title=" {{ .Name }} " target="_blank" rel="noopener">
-                  <span><img src=" {{ .Pre }} " class="svg svgclair" alt="lien vers {{ .Name }}" style="margin-top:-2px;"> {{ .Name }} </span></a></li>
-
-                  {{ end }}
+                  <span><img src="/icons/envelope-solid.svg" class="svg svgclair" alt="icone email" style="margin-top:-2px;"> contact@incaya.fr</span></a>
+                </li>
+                {{ range .Site.Menus.footer }}
+                <li>
+                  <a rel="me" href="{{.URL }}" title="Aller sur notre page {{ .Name }}">
+                    <span><img src="{{ .Pre }}" class="svg svgclair" alt="lien vers {{ .Name }}" style="margin-top:-2px;margin-right:3px">{{ .Name }}</span>
+                  </a>
+                </li>
+                {{ end }}
             </ul>
         </div>
 
