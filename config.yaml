@@ -57,7 +57,7 @@ menu:
     pre: /icons/github.svg
     weight: 10
   - name: Mastodon
-    url: https://indieweb.social/web/@inkaya
+    url: https://mastodon.scop.coop/@incaya
     weight: 20
     pre: /icons/mastodon.svg
   #- name : Matrix
