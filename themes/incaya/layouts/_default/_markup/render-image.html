@@ -5,14 +5,14 @@
 
 {{ if $src }}
 
-{{ $mediumw := default "x500 q90 webp" }}
+<!-- {{ $mediumw := default "x500 q90 webp" }} -->
 
 {{/* resize the src image to the given sizes */}}
 {{/* We create a a temp scratch because it's not available in this context */}}
 
-{{ $data := newScratch }}
+<!-- {{ $data := newScratch }} -->
 
-{{ $data.Set "medium" ($src.Resize $mediumw) }}
+<!-- {{ $data.Set "medium" ($src.Resize $mediumw) }} -->
 
 
 {{/* add the processed images to the scratch */}}
@@ -26,7 +26,7 @@ image size, as Hugo will upscale small images */}}
 
 
     <figure>
-    <img alt="{{ $alt }}" title="{{ $alt }}" src="{{ $medium.RelPermalink }}" loading="lazy">
+    <img alt="{{ $alt }}" title="{{ $alt }}" src="{{ $medium.RelPermalink }}" loading="lazy" width="{{ $src.Width }}" height="{{ $src.Height }}">
     <figcaption>{{ $alt }}</figcaption>
     </figure>
 
