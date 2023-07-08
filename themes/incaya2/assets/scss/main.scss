@@ -1,0 +1,44 @@
+/*les couleurs sont appelées via des variables*/
+
+$noir: #04141a;
+$blanc: #faedd7;
+$cards: #fff8ec;
+$clair: #e8cc9b;
+$foncé: #0a3240;
+$logo: #48c1ee;
+
+body {
+  background-color: $blanc;
+  font-family: Helvetica, Arial, Sans-serif;
+  margin: 0;
+}
+
+svg {
+  max-width: 40px;
+  margin-right: 3px;
+  &:hover {
+    filter: invert(65%) sepia(93%) saturate(879%) hue-rotate(164deg)
+      brightness(98%) contrast(91%);
+  }
+}
+
+.svg {
+  max-width: 40px;
+
+  &:hover {
+    filter: invert(65%) sepia(93%) saturate(879%) hue-rotate(164deg)
+      brightness(98%) contrast(91%);
+  }
+}
+
+.svgclair {
+  width: 20px;
+  filter: invert(88%) sepia(11%) saturate(617%) hue-rotate(335deg)
+    brightness(109%) contrast(96%);
+}
+
+.svgfonce {
+  width: 24px;
+  filter: invert(13%) sepia(21%) saturate(3177%) hue-rotate(160deg)
+    brightness(98%) contrast(92%);
+}

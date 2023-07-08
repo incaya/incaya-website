@@ -2,7 +2,7 @@ baseURL: https://incaya.fr
 defaultContentLanguage: fr
 languageCode: fr-fr
 title: "INCAYA"
-theme: "incaya"
+theme: "incaya2"
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
@@ -24,8 +24,8 @@ enableEmoji: false
 outputs:
   home:
   - HTML
-  - RSS
-  - JSON
+  # - RSS
+  # - JSON
 
 # Site parameters
 params:

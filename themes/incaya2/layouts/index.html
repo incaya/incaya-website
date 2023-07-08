@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>INCAYA - Artisans du numérique</title>
+    <meta
+      name="description"
+      content="Comprendre votre métier et son quotidien, imaginer ou repenser une architecture technique, trouver les professionnels qualifiés pour développer vos outils et les maintenir au long cours"
+    />
+    <!-- ============ décompose le SCSS en CSS ========== -->
+    {{ $options := (dict "targetPath" "incaya.css" "enableSourceMap" (not hugo.IsProduction)) }}
+    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  </head>
+  <body>
+    <header>
+      <a href="/">INCAYA</a>
+      <nav aria-label="menu de navigation">
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li>
+            <a href="/la-cooperative">Coopérative</a>
+          </li>
+          <li>
+            <a href="/nos-references">Références</a>
+          </li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>
+          Travaillons ensemble à la réussite de vos projets numériques
+        </h1>
+        <div>
+            <div>
+              <p>
+                <mark>Comprendre</mark> votre métier et son quotidien, imaginer
+                ou repenser une architecture technique,
+                <mark>développer</mark> vos outils - ou trouver les
+                professionnels qualifiés pour les réaliser - mais aussi les
+                <mark>maintenir</mark> au long cours : voici comment nous
+                intervenons régulièrement pour garantir le succès des projets de
+                nos clients.
+              </p>
+            </div>
+            <div>
+              <p>
+                Forts de nombreuses années d'expérience dans le
+                <mark>développement informatique et l'accompagnement</mark>,
+                nous pouvons vous aider à prendre du recul, à faire les bons
+                choix et à créer un climat de confiance.
+              </p>
+              <p>
+                A la fois <mark>techniciens</mark> et
+                <mark>assistants à maîtrise d'ouvrage</mark>, nous intervenons
+                régulièrement en <mark>facilitateurs</mark> pour lever les
+                freins et rétablir une communication optimale.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      id="footer"
+      class="container-fluid text-center align-content-center footer pb-2"
+    >
+      <div class="container pt-5">
+        <div class="row text-center">
+          <div class="col-md-3 col-sm-12 text-left ml-5">
+            <span class="footer-title">Navigation</span>
+            <nav arial-label="menu du pieds de page">
+              <ul>
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="/">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="/la-cooperative/"
+                    >Coopérative</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="/nos-references">Références</a>
+                </li>
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="/blog/">Blog</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-md-4 col-sm-12 text-left ml-5">
+            <span class="footer-title">Contactez-nous</span>
+            <ul>
+              <li>
+                <a href="mailto:contact@incaya.fr">
+                  <span
+                    ><img
+                      src="/icons/envelope-solid.svg"
+                      class="svg svgclair"
+                      alt="icone email"
+                    />
+                    contact@incaya.fr</span
+                  >
+                </a>
+                <a href="https://github.com">
+                  <span
+                    ><img
+                      src="/icons/github.svg"
+                      class="svg svgclair"
+                      alt="lien vers Github"
+                    />Github</span
+                  >
+                </a>
+              </li>
+
+              <li>
+                <a
+                  rel="me"
+                  href="https://mastodon.scop.coop/@incaya"
+                  title="Aller sur notre page Mastodon"
+                >
+                  <span
+                    ><img
+                      src="/icons/mastodon.svg"
+                      class="svg svgclair"
+                      alt="lien vers Mastodon"
+                    />Mastodon</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-12 text-center mt-3">
+            <a
+              href="/"
+              class="logo-footer-link"
+              aria-label="Logo du footer Incaya retour en haut de page"
+              ><img
+                src="/images/logo-mobile.svg"
+                alt="logo incaya"
+                class="logo-footer"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container">
+        <div class="row text-center mb-2">
+          <div class="col">
+            <a
+              href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"
+              title="Creative Commons"
+              rel="noopener"
+              target="_blank"
+              class="logo-footer-link"
+            >
+              <img
+                src="/icons/cc.svg"
+                alt="logo creative commons"
+                class="svg svgclair"
+            /></a>
+            2016-2023 INCAYA •
+            <a
+              href="/mentions-legales/"
+              title="mentions légales"
+              rel="noopener"
+              class="logo-footer-link"
+              >Mentions Légales</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
