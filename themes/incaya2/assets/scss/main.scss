@@ -7,38 +7,79 @@ $clair: #e8cc9b;
 $foncé: #0a3240;
 $logo: #48c1ee;
 
+/* HTML */
 body {
   background-color: $blanc;
   font-family: Helvetica, Arial, Sans-serif;
   margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
-svg {
-  max-width: 40px;
-  margin-right: 3px;
-  &:hover {
-    filter: invert(65%) sepia(93%) saturate(879%) hue-rotate(164deg)
-      brightness(98%) contrast(91%);
+a {
+  color: $foncé;
+  text-decoration: none !important;
+}
+
+main {
+  margin-top: 50px;
+}
+
+/* Classe globales */
+
+/* Classes spécifiques */
+
+/* Menu principal */
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-family: helvetica, arial, sans-serif;
+  background-color: $foncé;
+  border-bottom: 4px solid $clair;
+  color: $blanc;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  .brand {
+    margin-left: 5%;
+    color: $blanc;
+    font-weight: 600;
+    margin-top: -4px;
+    font-size: 20px;
   }
-}
-
-.svg {
-  max-width: 40px;
-
-  &:hover {
-    filter: invert(65%) sepia(93%) saturate(879%) hue-rotate(164deg)
-      brightness(98%) contrast(91%);
+  nav {
+    margin-right: 5%;
+    width: 60%;
+    align-items: center;
+    margin-top: -4px;
+    display: flex;
+    ul {
+      justify-content: end;
+      width: 100%;
+      height: inherit;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      a {
+        height: inherit;
+        color: $blanc;
+        display: inline-block;
+        margin-top: -1px;
+        padding: 0.5rem 1rem;
+      }
+      .active {
+        color: $logo !important;
+      }
+    }
   }
-}
-
-.svgclair {
-  width: 20px;
-  filter: invert(88%) sepia(11%) saturate(617%) hue-rotate(335deg)
-    brightness(109%) contrast(96%);
-}
-
-.svgfonce {
-  width: 24px;
-  filter: invert(13%) sepia(21%) saturate(3177%) hue-rotate(160deg)
-    brightness(98%) contrast(92%);
 }
