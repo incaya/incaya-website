@@ -10,9 +10,10 @@
       content="Comprendre votre métier et son quotidien, imaginer ou repenser une architecture technique, trouver les professionnels qualifiés pour développer vos outils et les maintenir au long cours"
     />
     <!-- ============ décompose le SCSS en CSS ========== -->
-    {{ $options := (dict "targetPath" "incaya.css" "enableSourceMap" (not hugo.IsProduction)) }}
-    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{ $options := (dict "targetPath" "incaya.css" "enableSourceMap" (not
+    hugo.IsProduction)) }} {{ $style := resources.Get "scss/main.scss" |
+    resources.ToCSS $options }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
   </head>
   <body>
     <header>
@@ -29,14 +30,12 @@
           <li><a href="/blog/">Blog</a></li>
         </ul>
       </nav>
-    </div>
     </header>
     <main>
       <section>
-        <h1>
-          Travaillons ensemble à la réussite de vos projets numériques
-        </h1>
-        <div>
+        <div class="container about-section">
+          <h1>Travaillons ensemble à la réussite de vos projets numériques</h1>
+          <div class="two-columns">
             <div>
               <p>
                 <mark>Comprendre</mark> votre métier et son quotidien, imaginer
@@ -77,9 +76,7 @@
                   <a href="/">Accueil</a>
                 </li>
                 <li class="nav-item">
-                  <a href="/la-cooperative/"
-                    >Coopérative</a
-                  >
+                  <a href="/la-cooperative/">Coopérative</a>
                 </li>
                 <li class="nav-item">
                   <a href="/nos-references">Références</a>
@@ -95,21 +92,21 @@
             <ul>
               <li>
                 <a href="mailto:contact@incaya.fr">
-                    <img
-                      src="/icons/envelope-solid.svg"
-                      alt="icone email"
-                      class="icon"
-                    />
-                    contact@incaya.fr
+                  <img
+                    src="/icons/envelope-solid.svg"
+                    alt="icone email"
+                    class="icon"
+                  />
+                  contact@incaya.fr
                 </a>
               </li>
               <li>
                 <a href="https://github.com">
-<img
-                      src="/icons/github.svg"
-                      alt="lien vers Github"
-                      class="icon"
-                    />Github
+                  <img
+                    src="/icons/github.svg"
+                    alt="lien vers Github"
+                    class="icon"
+                  />Github
                 </a>
               </li>
               <li>
@@ -118,11 +115,11 @@
                   href="https://mastodon.scop.coop/@incaya"
                   title="Aller sur notre page Mastodon"
                 >
-<img
-                      src="/icons/mastodon.svg"
-                      alt="lien vers Mastodon"
-                      class="icon"
-                    />Mastodon
+                  <img
+                    src="/icons/mastodon.svg"
+                    alt="lien vers Mastodon"
+                    class="icon"
+                  />Mastodon
                 </a>
               </li>
             </ul>
@@ -137,28 +134,23 @@
                 class="logo"
             /></a>
           </div>
-      </div>
+        </div>
       </div>
       <hr />
       <div class="container">
-          <div class="cc-footer">
-            <a
-              href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"
-              title="Creative Commons"
-              rel="noopener"
-            >
-              <img
-                src="/icons/cc.svg"
-                alt="logo creative commons"
-                class="icon"
-            /></a>
-              2016-2023 INCAYA • <a
-              href="/mentions-legales/"
-              title="mentions légales"
-              rel="noopener"
-              >Mentions Légales</a
-            >
-          </div>
+        <div class="cc-footer">
+          <a
+            href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"
+            title="Creative Commons"
+            rel="noopener"
+          >
+            <img src="/icons/cc.svg" alt="logo creative commons" class="icon"
+          /></a>
+          2016-2023 INCAYA •
+          <a href="/mentions-legales/" title="mentions légales" rel="noopener"
+            >Mentions Légales</a
+          >
+        </div>
       </div>
     </footer>
   </body>
