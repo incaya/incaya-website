@@ -20,6 +20,12 @@ body {
 a {
   color: $foncé;
   text-decoration: none !important;
+  transition: color 0.3s ease-out;
+  &:hover {
+    transition: color 0.3s ease-out;
+    color: $logo !important;
+    text-decoration: none;
+  }
 }
 
 main {
@@ -86,6 +92,19 @@ header {
       }
     }
   }
+  @media screen and (max-width: 768px) {
+    nav {
+      width: 100%;
+      margin-top: -2px;
+      font-size: 0.9rem;
+      ul {
+        justify-content: center;
+      }
+    } 
+    .brand {
+      display: none;
+    }
+  }
 }
 
 /* fooder */
@@ -107,7 +126,6 @@ footer {
 
   a {
     color: $blanc;
-    transition: all 0.3s ease-out;
   }
 
   hr {
@@ -124,10 +142,6 @@ footer {
     margin-right: 5px;
     filter: invert(88%) sepia(11%) saturate(617%) hue-rotate(335deg)
       brightness(109%) contrast(96%);
-    &:hover {
-      filter: invert(65%) sepia(93%) saturate(879%) hue-rotate(164deg)
-        brightness(98%) contrast(91%);
-    }
   }
 
   .top-footer {
@@ -137,6 +151,9 @@ footer {
     justify-content: space-around;
     padding-top: 3rem !important;
     line-height: 1.8rem;
+    div {
+      margin: 0 1rem;
+    }
     ul {
       list-style: none;
       padding-left: 0;
@@ -145,11 +162,6 @@ footer {
       li a {
         display: flex;
         align-items: center;
-        &:hover {
-          transition: color 0.3s ease-out;
-          color: $logo !important;
-          text-decoration: none;
-        }
       }
     }
     .logo {
@@ -173,6 +185,12 @@ footer {
         transition: color 0.3s ease-out;
         color: $logo !important;
         text-decoration: none;
+      }
+    }
+    .icon {
+      &:hover {
+        filter: invert(65%) sepia(93%) saturate(879%) hue-rotate(164deg)
+          brightness(98%) contrast(91%);
       }
     }
   }
