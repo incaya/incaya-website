@@ -226,6 +226,11 @@ footer {
     justify-content: space-around;
     padding-top: 3rem !important;
     line-height: 1.8rem;
+    @media only screen and (max-width: 576px) {
+      flex-direction: column;
+      align-items: start;
+      margin-left: 5%;
+    }
     div {
       margin: 0 1rem;
     }
@@ -243,6 +248,9 @@ footer {
       margin-top: 1rem !important;
       width: 100px;
       height: auto;
+      @media only screen and (max-width: 576px) {
+        display: none;
+      }
     }
   }
 
@@ -393,16 +401,6 @@ footer {
 
   /* gestion manuelle de la section Nos clients*/
   &:after {
-    content: "";
-    // display: block;
-    // width: 100%;
-    // height: 4px;
-    // background-color: $clair !important;
-    // position: absolute;
-    // margin-bottom: 54px;
-    // left: 0;
-    // right: 0;
-    // z-index: -1;
     content: "";
     display: block;
     width: 100%;
