@@ -1,0 +1,9 @@
+<section class="floss-section">
+  <div class="container">
+    <h2>Free/Libre and Open Source Software</h2>
+    <div class="card-container">
+      {{ range $.Site.Data.opensource.projects }} {{ partial "cards/floss"
+      . }} {{ end }}
+    </div>
+  </div>
+</section>

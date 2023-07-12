@@ -1,0 +1,14 @@
+<!-- ============ décompose le SCSS en CSS ========== -->
+{{ $options := (dict "targetPath" "incaya.css" "enableSourceMap" (not
+hugo.IsProduction)) }} {{ $style := resources.Get "scss/main.scss" |
+resources.ToCSS $options }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+
+<!-- RSS -->
+<!-- META -->
+<!-- SEO -->
+<!-- JSON-LD -->
+<!-- Open Graph -->
+<!-- Twitter Cards -->
+<!-- FAVICON -->
+<!-- CSS -->

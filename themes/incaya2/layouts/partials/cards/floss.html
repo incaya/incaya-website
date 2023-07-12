@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-head">
+    <a
+      href="{{ .repo }}"
+      title="Voir le dépôt du projet dans un nouvel onglet"
+      target="_blank"
+      rel="noopener"
+    >
+      <h3>{{ .name }}</h3>
+      <h4>{{ .role }}</h4>
+    </a>
+  </div>
+  <div class="card-body">
+    <p class="card-text">{{ .summary | markdownify }}</p>
+  </div>
+  <div class="card-footer">
+    {{ if .tags }}
+    <div class="tags-holder">
+      {{ range $index,$tag:= .tags }}
+      <span class="tag"> {{ $tag }} </span>
+      {{ end }}
+    </div>
+    {{ end }}
+    <a
+      href="{{ .repo }}"
+      title="Voir le dépôt du projet dans un nouvel onglet"
+      target="_blank"
+      rel="noopener"
+      class="btn-more"
+      >Voir</a
+    >
+  </div>
+</div>

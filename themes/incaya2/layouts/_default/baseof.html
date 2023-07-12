@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
+<html lang="fr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      {{ block "meta" . }}
+        <title>INCAYA - Artisans du numérique</title>
+        <meta name="description" content="Comprendre votre métier et son quotidien, imaginer ou repenser une architecture technique, trouver les professionnels qualifiés pour développer vos outils et les maintenir au long cours" />
+      {{ end }}
+      {{- partial "head.html" . -}}
+    </head>
+    <body class="{{ .LinkTitle }}">
         {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
+        <main>
+          {{ block "main" . }} {{ end }}
+        </main>
         {{- partial "footer.html" . -}}
     </body>
 </html>

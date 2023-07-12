@@ -1,0 +1,8 @@
+{{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
+  {{ range $index, $tag := . }} 
+  <span class="tag">
+    {{ $tag }}
+  </span>
+  {{- end -}} 
+{{ end }} 
+
