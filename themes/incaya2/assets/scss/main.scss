@@ -39,12 +39,14 @@ h1 {
 
 h2 {
   color: $noir;
-  font-weight: 400;
   letter-spacing: 1px;
-  margin-bottom: 10px;
   margin-top: 10px;
   font-family: Helvetica, Arial, Sans-serif;
-  font-size: 2rem;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
 }
 
 h3,
@@ -114,17 +116,22 @@ mark {
   }
 }
 
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .card {
   box-shadow: 0px 4px 1px $noir;
   transition: all 0.3s ease-out;
   overflow: hidden;
   border-radius: 0.4rem;
   background: $cards;
-  min-height: 580px;
   width: 300px;
-  margin-right: auto;
-  margin-left: auto;
-
+  margin: 0.5rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -164,6 +171,21 @@ mark {
     overflow: hidden;
     word-wrap: break-word;
     padding: 4px;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    h3 {
+      color: $noir;
+      font-weight: 400;
+      letter-spacing: 1px;
+      font-size: 1.5rem !important;
+      margin: 0;
+      padding: 0;
+    }
+    h4 {
+      color: $foncé !important;
+      font-size: 10pt !important;
+      margin: 0;
+      padding: 0;
+    }
   }
   .card-img {
     border-radius: 0.4rem;
@@ -245,7 +267,7 @@ mark {
       background-color: $logo !important;
       color: $noir !important;
     }
-  
+
     &:focus {
       background-color: $logo !important;
       color: $noir !important;
@@ -472,8 +494,8 @@ footer {
 
   h2 {
     color: $blanc;
-    text-align: center;
     padding-top: 2rem;
+    font-size: 2rem;
   }
 
   h3 {
@@ -513,15 +535,7 @@ footer {
 .cooperative-section {
   margin-top: 3rem;
   padding-bottom: 6rem;
-
-  h2 {
-    text-align: center;
-    padding-top: 1rem;
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-bottom: 3rem;
-  }
-
+  
   p {
     line-height: 1.5rem;
     width: 80%;
@@ -555,14 +569,6 @@ footer {
     z-index: -1;
   }
 
-  h2 {
-    text-align: center;
-    padding-top: 1rem;
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-bottom: 3rem;
-  }
-
   .reference-logo {
     display: flex;
     flex-direction: row;
@@ -585,19 +591,29 @@ footer {
 }
 
 .recent-posts-section {
-  h2 {
-    text-align: center;
-    padding-top: 1rem;
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-bottom: 3rem;
-  }
-
   .card-container {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: center;
-    flex-wrap: wrap;
+    .card {
+      min-height: 580px;
+    }
+  }
+}
+
+.floss-section {
+  .card-container {
+    .card {
+      min-height: 350px;
+      .card-head {
+        background-color: rgba(0, 0, 0, 0.03);
+        padding: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        h3 {
+          line-height: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+      .tags-holder {
+        float: left !important;
+      }
+    }
   }
 }
