@@ -1,0 +1,23 @@
+<!-- ============ décompose le SCSS en CSS ========== -->
+{{ $options := (dict "targetPath" "style.css" "enableSourceMap" (not hugo.IsProduction)) }}
+{{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options }}
+
+<!-- ======= appelle bootstrap ======== -->
+<link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | relURL }}"/>
+<link rel="stylesheet" href="{{ "/css/style.css" | relURL }}"/>
+<!-- ======= appelle le main.scss ======= -->
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+
+
+<!--=================== RSS ==============================-->
+<link rel="alternate" type="application/rss+xml" title="Flux RSS du blog Incaya" href="/blogs/index.xml" />
+
+<!-- META -->
+<!-- SEO -->
+<!-- JSON-LD -->
+<!-- Open Graph -->
+<!-- Twitter Cards -->
+<!-- FAVICON -->
+<!-- CSS -->
+

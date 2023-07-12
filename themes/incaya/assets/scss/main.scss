@@ -1,0 +1,122 @@
+/*les couleurs sont appelées via des variables*/
+
+$noir: #04141a;
+$blanc: #faedd7;
+$cards: #fff8ec;
+$clair: #e8cc9b;
+$foncé: #0a3240;
+$logo: #48c1ee;
+
+/* HTML */
+body {
+  background-color: $blanc;
+  font-family: Helvetica, Arial, Sans-serif;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+main {
+  margin-top: 50px;
+}
+
+section {
+  padding-top: 2rem;
+}
+
+h1 {
+  color: $noir;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  color: $noir;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-family: Helvetica, Arial, Sans-serif;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+h3,
+h4,
+h5 {
+  color: $noir;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.5rem !important;
+}
+
+a {
+  color: $foncé;
+  text-decoration: none !important;
+  transition: color 0.3s ease-out;
+  &:hover {
+    transition: color 0.3s ease-out;
+    color: $logo !important;
+    text-decoration: none;
+  }
+}
+
+mark {
+  padding: 0;
+  background-color: transparent !important;
+  font-weight: bolder;
+}
+
+/* Classe globales */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+.dark-button-link {
+  background-color: $foncé !important;
+  color: $blanc !important;
+  transition: all 0.2s ease-out !important;
+  box-shadow: 0 3px 0px $logo;
+
+  &:hover {
+    transition: all 0.2s ease-out !important;
+    color: $logo !important;
+    box-shadow: 0 6px 0px $logo;
+    transform: translateY(-2px);
+  }
+
+  &:focus {
+    transition: all 0.2s ease-out !important;
+    color: $logo !important;
+    box-shadow: 0 6px 0px $logo;
+    transform: translateY(-2px);
+  }
+}
+
+@import "header";
+@import "footer";
+@import "card";
+@import "home";

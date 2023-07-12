@@ -1,0 +1,172 @@
+.intro-section {
+  padding-top: 3rem;
+}
+
+.about-section {
+  h1 {
+    line-height: 2.8rem;
+  }
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+    div {
+      width: 40%;
+    }
+    @media only screen and (max-width: 576px) {
+      h1 {
+        width: 90%;
+      }
+      div {
+        width: 90%;
+      }
+    }
+  }
+}
+
+.craft-section {
+  margin-top: 3rem;
+  padding-bottom: 6rem;
+  background-color: $foncé !important;
+
+  /* gestion manuelle de la section Artisans*/
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $foncé;
+    position: absolute;
+    margin-top: -40px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  h2 {
+    color: $blanc;
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+
+  h3 {
+    color: $blanc;
+    margin: 0;
+  }
+
+  p {
+    color: $blanc;
+    line-height: 1.5rem;
+  }
+
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+    div {
+      width: 30%;
+    }
+    img {
+      max-width: 120%;
+      height: auto;
+    }
+    @media only screen and (max-width: 768px) {
+      h2 {
+        width: 90%;
+      }
+      div {
+        width: 90%;
+      }
+    }
+  }
+}
+
+.cooperative-section {
+  margin-top: 3rem;
+  padding-bottom: 6rem;
+
+  p {
+    line-height: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+}
+
+.reference-section {
+  background-color: $clair !important;
+  padding: 5rem 0 0 0;
+
+  /* gestion manuelle de la section Nos clients*/
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $clair;
+    position: absolute;
+    margin-top: 5px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .reference-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+      margin: 1rem;
+      width: 140px;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.recent-posts-section {
+  .card-container {
+    .card {
+      min-height: 580px;
+    }
+  }
+}
+
+.floss-section {
+  .card-container {
+    .card {
+      min-height: 350px;
+      .card-head {
+        background-color: rgba(0, 0, 0, 0.03);
+        padding: 1rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        h3 {
+          line-height: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+      .tags-holder {
+        float: left !important;
+      }
+    }
+  }
+}
