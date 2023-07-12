@@ -33,28 +33,13 @@
               contact@incaya.fr
             </a>
           </li>
-          <li>
-            <a href="https://github.com">
-              <img
-                src="/icons/github.svg"
-                alt="lien vers Github"
-                class="icon"
-              />Github
-            </a>
-          </li>
-          <li>
-            <a
-              rel="me"
-              href="https://mastodon.scop.coop/@incaya"
-              title="Aller sur notre page Mastodon"
-            >
-              <img
-                src="/icons/mastodon.svg"
-                alt="lien vers Mastodon"
-                class="icon"
-              />Mastodon
-            </a>
-          </li>
+          {{ range .Site.Menus.footer }}
+            <li>
+              <a rel="me" href="{{.URL }}" title="Aller sur notre page {{ .Name }}">
+                <img src="{{ .Pre }}" class="icon" alt="lien vers {{ .Name }}">{{ .Name }}
+              </a>
+            </li>
+          {{ end }}
         </ul>
       </div>
       <div>
