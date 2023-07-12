@@ -1,0 +1,23 @@
+{{ define "meta" }}
+<title>INCAYA - La Coopérative</title>
+<meta name="description" content="{{ .Page.Description }}" />
+{{ end }} {{ define "main" }}
+<div class="container">
+  <article>
+    <h1>{{ .Page.Title }}</h1>
+    {{ .Page.Content }}
+    <h2>L’équipe</h2>
+    <div class="card-container">
+      {{ range $.Site.Data.cooperateurs.personnes }}
+      {{ partial "cards/cooperateur.html" . }}
+      {{ end }}
+    </div>
+    <h3>Ils ne sont plus là, mais ils ont fait partie de l'équipe</h2>
+    <div class="card-container">
+      {{ range $.Site.Data.collaborateurs.personnes }}
+      {{ partial "cards/cooperateur.html" . }}
+      {{ end }}
+    </div>
+  </article>
+</div>
+{{ end }}

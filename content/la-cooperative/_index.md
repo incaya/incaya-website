@@ -31,5 +31,3 @@ Une SCOP se doit légalement de consacrer au minimum 15% de ses bénéfices aux 
 Et cela change tout ! On ne s'associe pas dans une SCOP dans l'espoir de s'enrichir grace à des parts que l'on pourrait revendre. Au contraire, on s'associe dans une SCOP dans l'idée d'investir dans son outil de travail. On a donc tout intérêt à ce qu'il soit de qualité, qu'il soit sain et qu'il dure le plus longtemps possible.
 
 <mark>Lorsque nous entamons une relation avec un client, il peut donc être assuré qu'elle pourra se faire sur la durée, avec une équipe stable.</mark>
-
-## L'équipe des salariés associés

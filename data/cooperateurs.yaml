@@ -1,10 +1,8 @@
 personnes:
 - name: Thomas Berriot
-  # logo: "/images/thomasberriot.png"
+  position: Co-fondateur de la SCOP en 2016.
   summary: |
-    Co-fondateur de la SCOP en 2016.
-
-    **Experience** : 21 ans    
+    **Experience** : 22 ans    
     **Spécialité** : le triturage de données   
     **Outils favoris** : Apache Superset, PostgreSQL, Python  
     **Passion** : la pratique de la musique
@@ -19,32 +17,10 @@ personnes:
     image : /icons/github.svg
     url: "https://github.com/tberriot"
 
-- name: Alexis Janvier
-  # logo: "/images/alexisjanvier.png"
-  summary: |
-    Sociétaire de la SCOP depuis 2022.
-
-    **Experience** : 20 ans    
-    **Spécialité** : l'architecture web  
-    **Outils favoris** : Git, Vim et Elixir    
-    **Passion** : le tir à l'arc
-  socialLinks:
-  - name: Blog
-    image : /icons/blogger-b.svg
-    url: "https://alexisjanvier.net/curriculum-vitae/"
-  - name: Mastodon
-    image : /icons/mastodon.svg
-    url: "https://mamot.fr/web/@alexisjanvier"
-  - name: Github
-    image : /icons/github.svg
-    url: "https://github.com/alexisjanvier"
-
 - name: Thomas Maziere
-  # logo: "/images/thomasmaziere.png"
+  position: Co-fondateur de la SCOP en 2016.
   summary: |
-    Co-fondateur de la SCOP en 2016.
-
-    **Experience** : 17 ans    
+    **Experience** : 18 ans    
     **Spécialité** : l'AMOA et le brainstorming    
     **Outils favoris** : JavaScript, Python et Processing      
     **Passion** : la sculpture du bois
@@ -58,3 +34,39 @@ personnes:
     - name: Github
       image : /icons/github.svg
       url: "https://github.com/tmaziere"
+
+- name: Alexis Janvier
+  position: Sociétaire de la SCOP depuis 2022.
+  summary: |
+    **Experience** : 21 ans    
+    **Spécialité** : l'architecture web  
+    **Outils favoris** : Git, JavaScript et Docker    
+    **Passion** : la Low-tech et les livres
+  socialLinks:
+  - name: Blog
+    image : /icons/rss-solid.svg
+    url: "https://alexisjanvier.net/curriculum-vitae/"
+  - name: Mastodon
+    image : /icons/mastodon.svg
+    url: "https://mamot.fr/web/@alexisjanvier"
+  - name: Codeberg
+    image : /icons/codeberg.svg
+    url: "https://codeberg.org/alexisjanvier"
+
+- name: Jean-Baptiste Oellers
+  position: Salarié depuis 2023.
+  summary: |
+    **Experience** : ? ans    
+    **Spécialité** : ?     
+    **Outils favoris** : ?    
+    **Passion** : ?
+  socialLinks:
+
+- name: Mohamed
+  position: Stagière depuis juillet 2023.
+  summary: |
+    **Experience** : ? ans    
+    **Spécialité** : ?     
+    **Outils favoris** : ?    
+    **Passion** : ?
+  socialLinks:
