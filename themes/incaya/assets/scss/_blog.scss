@@ -1,0 +1,35 @@
+.rss-icon {
+  width: 24px;
+  height: auto;
+  &:hover {
+    filter: invert(65%) sepia(93%) saturate(879%) hue-rotate(164deg)
+      brightness(98%) contrast(91%);
+  }
+}
+.hero {
+  margin: 2rem auto;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 9px;
+  padding-left: 0;
+  padding-right: 0;
+  @media only screen and (max-width: 576px) {
+    height: 200px;
+  }
+}
+
+.intro {
+  font-size: 1.1rem;
+  font-style: italic;
+  text-align: center;
+}
+
+h1.blog-title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 2.5rem;
+  padding-top: 1rem;
+}

@@ -1,0 +1,15 @@
+{{ define "meta" }}
+  <title>{{ .Page.Title }}</title>
+  <meta name="description" content="{{ .Page.Description  }}" />
+{{ end }}
+
+{{ define "main" }}
+<div class="container">
+    <article>
+        <h1>{{ .Page.Title }}</h1>
+        <div class="intro">{{ .Page.Description }}</div>
+        <div class="hero" style='background-image: url({{ strings.TrimSuffix "/" site.BaseURL }}{{ partial "helpers/get-hero.html" . }});'></div>
+        {{ .Page.Content }}
+    </article>
+</div>
+{{ end }}

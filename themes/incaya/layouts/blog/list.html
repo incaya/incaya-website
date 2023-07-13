@@ -1,0 +1,17 @@
+{{ define "meta" }}
+<title>Le blog INCAYA - Nos articles</title>
+<meta name="description" content="{{ .Page.Description }}" />
+{{ end }}
+{{ define "main" }}
+<section class="recent-posts-section">
+  <div class="container">
+    <h1 class="blog-title">{{ .Page.Title }} <a href="/blog/index.xml" title="RSS"><img src="/icons/rss-solid.svg"
+      class="rss-icon" alt="icone du flux rss"></a></h1>
+    <div class="card-container">
+      {{ range (where site.RegularPages.ByDate.Reverse "Type" "in" "blog" )}}
+      {{ partial "cards/blog-post.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
