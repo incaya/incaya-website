@@ -1,5 +1,5 @@
 personnes:
-- name: Thomas Berriot
+- name: Thomas B.
   position: Co-fondateur de la SCOP en 2016.
   summary: |
     **Experience** : 22 ans    
@@ -17,25 +17,7 @@ personnes:
     image : /icons/github.svg
     url: "https://github.com/tberriot"
 
-- name: Thomas Maziere
-  position: Co-fondateur de la SCOP en 2016.
-  summary: |
-    **Experience** : 18 ans    
-    **Spécialité** : l'AMOA et le brainstorming    
-    **Outils favoris** : JavaScript, Python et Processing      
-    **Passion** : la sculpture du bois
-  socialLinks:
-    - name: Mastodon
-      image : /icons/mastodon.svg
-      url: "https://piaille.fr/@tmaz"
-    - name: Twitter
-      image : /icons/twitter.svg
-      url: "https://twitter.com/thomasmaziere"
-    - name: Github
-      image : /icons/github.svg
-      url: "https://github.com/tmaziere"
-
-- name: Alexis Janvier
+- name: Alexis J.
   position: Sociétaire de la SCOP depuis 2022.
   summary: |
     **Experience** : 21 ans    
@@ -53,7 +35,25 @@ personnes:
     image : /icons/codeberg.svg
     url: "https://codeberg.org/alexisjanvier"
 
-- name: Jean-Baptiste Oellers
+- name: Thomas M.
+  position: Co-fondateur de la SCOP en 2016.
+  summary: |
+    **Experience** : 18 ans    
+    **Spécialité** : l'AMOA et le brainstorming    
+    **Outils favoris** : JavaScript, Python et Processing      
+    **Passion** : la sculpture du bois
+  socialLinks:
+    - name: Mastodon
+      image : /icons/mastodon.svg
+      url: "https://piaille.fr/@tmaz"
+    - name: Twitter
+      image : /icons/twitter.svg
+      url: "https://twitter.com/thomasmaziere"
+    - name: Github
+      image : /icons/github.svg
+      url: "https://github.com/tmaziere"
+
+- name: Jean-Baptiste O.
   position: Salarié depuis 2023.
   summary: |
     **Experience** : ? ans    
@@ -62,7 +62,7 @@ personnes:
     **Passion** : ?
   socialLinks:
 
-- name: Mohamed
+- name: Mohamed ?.
   position: Stagière depuis juillet 2023.
   summary: |
     **Experience** : ? ans    

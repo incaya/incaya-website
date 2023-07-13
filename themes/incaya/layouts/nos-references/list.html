@@ -1,0 +1,26 @@
+{{ define "meta" }}
+<title>INCAYA - Nos Références </title>
+<meta name="description" content="{{ .Page.Description }}" />
+{{ end }}
+{{ define "main" }}
+<section class="current-references-section">
+  <div class="container">
+    <h1>Ils nous font confiance</h1>
+    <div class="card-container">
+      {{ range $.Site.Data.clients.current }}
+      {{ partial "cards/reference.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+<section class="other-references-section">
+  <div class="container">
+    <h2>Ainsi que</h2>
+    <div class="reference-logo">
+      {{ range $.Site.Data.clients.past }}
+      <img src="{{ .logo }}" alt="{{ .name }}" title="{{ .name }}" />
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

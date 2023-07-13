@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-head">
+    <img
+        class="card-img"
+        src="{{ .logo }}"
+        alt="{{ .name }}"
+        title="{{ .name }}"
+    />
+  </div>
+  <div class="card-body">
+    <h3 class="card-title">{{ .Title }}</h3>
+    <p class="card-text">{{ .description | markdownify }}</p>
+  </div>
+  <div class="card-footer">
+    <div class="tags-holder">
+        {{ range .interventions }}
+        <span class="tag" title="{{ .label }}">
+          {{ .tag }}
+        </span>
+        {{ end }}
+    </div>
+    {{ if .blog }}
+      <a href="{{ .blog }}" title="Plus d'informations sur notre intervention" class="btn-more">Quelques détails</a> 
+    {{ end }}
+  </div>
+</div>
