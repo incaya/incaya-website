@@ -1,5 +1,5 @@
 personnes:
-- name: Thomas B.
+- name: Thomas Berriot
   position: Co-fondateur de la SCOP en 2016.
   summary: |
     **Experience** : 22 ans    
@@ -17,7 +17,7 @@ personnes:
     image : /icons/github.svg
     url: "https://github.com/tberriot"
 
-- name: Alexis J.
+- name: Alexis Janvier
   position: Sociétaire de la SCOP depuis 2022.
   summary: |
     **Experience** : 21 ans    
@@ -35,7 +35,7 @@ personnes:
     image : /icons/codeberg.svg
     url: "https://codeberg.org/alexisjanvier"
 
-- name: Thomas M.
+- name: Thomas Maziere
   position: Co-fondateur de la SCOP en 2016.
   summary: |
     **Experience** : 18 ans    
@@ -53,20 +53,3 @@ personnes:
       image : /icons/github.svg
       url: "https://github.com/tmaziere"
 
-- name: Jean-Baptiste O.
-  position: Salarié depuis 2023.
-  summary: |
-    **Experience** : ? ans    
-    **Spécialité** : ?     
-    **Outils favoris** : ?    
-    **Passion** : ?
-  socialLinks:
-
-- name: Mohamed ?.
-  position: Stagière depuis juillet 2023.
-  summary: |
-    **Experience** : ? ans    
-    **Spécialité** : ?     
-    **Outils favoris** : ?    
-    **Passion** : ?
-  socialLinks:

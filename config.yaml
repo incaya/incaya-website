@@ -56,10 +56,10 @@ menu:
     url: https://github.com/incaya/
     pre: /icons/github.svg
     weight: 10
-  - name: Codeberg
-    url: https://codeberg.org/INCAYA
-    pre: /icons/codeberg.svg
-    weight: 20
+  # - name: Codeberg
+  #   url: https://codeberg.org/INCAYA
+  #   pre: /icons/codeberg.svg
+  #   weight: 20
   - name: Mastodon
     url: https://mastodon.scop.coop/@incaya
     weight: 30

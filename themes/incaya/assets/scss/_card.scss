@@ -80,7 +80,7 @@
     height: auto;
   }
   .card-body {
-    text-align: justify;
+    text-align: left;
     flex: 1 1 auto;
     padding: 1.25rem;
     h3 {
@@ -101,8 +101,6 @@
     margin-bottom: 0;
     margin-top: 0;
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
     max-height: 144px;
   }
   .card-footer {
