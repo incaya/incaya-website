@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install -y \
 
 Ensuite, on écrit un petit script `bash` pour lancer le serveur (`node server.js`), puis `inotifwait` sur le répertoire contenant notre code à observer (`api` dans l'exemple à suivre):
 
-```sh
+```bash
 // in watch.sh
 #!/bin/sh
 node server.js &

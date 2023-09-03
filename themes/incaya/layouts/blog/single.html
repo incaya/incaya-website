@@ -1,15 +1,24 @@
 {{ define "meta" }}
-  <title>{{ .Page.Title }}</title>
-  <meta name="description" content="{{ .Page.Description  }}" />
-{{ end }}
-
-{{ define "main" }}
+<title>{{ .Page.Title }}</title>
+<meta name="description" content="{{ .Page.Description  }}" />
+{{ end }} {{ define "prismcss" }}
+<link
+  rel="stylesheet"
+  href="/css/prism-accessible.css"
+  media="none"
+  onload="this.media='all';"
+/>
+{{ end }} {{ define "main" }}
 <div class="container">
-    <article>
-        <h1>{{ .Page.Title }}</h1>
-        <div class="intro">{{ .Page.Description }}</div>
-        <div class="hero" style='background-image: url({{ strings.TrimSuffix "/" site.BaseURL }}{{ partial "helpers/get-hero.html" . }});'></div>
-        {{ .Page.Content }}
-    </article>
+  <article>
+    <h1>{{ .Page.Title }}</h1>
+    <div class="intro">{{ .Page.Description }}</div>
+    <div
+      class="hero"
+      style='background-image: url({{ strings.TrimSuffix "/" site.BaseURL }}{{ partial "helpers/get-hero.html" . }});'
+    ></div>
+    {{ .Page.Content }}
+  </article>
 </div>
+<script src="/js/prism.js"></script>
 {{ end }}
