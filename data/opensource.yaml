@@ -1,24 +1,24 @@
 projects:
 - name: Incaya documentation 
   role: Mainteneurs
-  repo: https://github.com/incaya/incaya-documentation
+  repo: https://codeberg.org/INCAYA/incaya-documentation
   summary: Image Docker pour gérer la documentation de projets.
   tags: ["documentation"]
 
 - name: Générateur d'Open badge pour l'enseignement agricole
   role: Mainteneurs
-  repo: https://github.com/incaya/generateur-graphique-open-badge-ea
+  repo: https://codeberg.org/INCAYA/generateur-graphique-open-badge-ea
   summary: Un générateur de visuel pour open badge dédié à l'enseignement agricole.
   tags: ["openbadges"]
 
 - name: Farmbot School frontend application
   role: Mainteneurs
-  repo: https://github.com/incaya/farmbot-school-frontend
+  repo: https://codeberg.org/INCAYA/farmbot-school-frontend
   summary: Une application permettant d'utiliser le [farmbot](https://farmbot.fr/) dans les écoles.
   tags: ["science participative"]
 
-- name: Nature watch CameraServer
-  role: Contributeurs
-  repo: https://github.com/incaya/NaturewatchCameraServer
-  summary: A Python / OpenCV camera server to stream Pi camera content to a remote client through a website.
-  tags: ["science participative"]
+- name: incadiff
+  role: Mainteneurs
+  repo: https://codeberg.org/INCAYA/incadiff
+  summary: Inkscape extension which applies successive difference operations on superimposed paths. Useful for plotter addicts as it removes hidden strokes.
+  tags: ["extension Inkscape"]
