@@ -7,4 +7,6 @@ draft: true
 in_search_index: true
 tags:
 - un tag
+images:
+- /blog/#SLUG/hero.jpg
 ---

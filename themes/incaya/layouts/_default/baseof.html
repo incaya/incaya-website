@@ -15,8 +15,24 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    {{- partial "head.html" . -}} {{ block "jsonld" . }}{{ end }} {{ block
-    "prismcss" . }}{{ end }}
+    <!--=================== RSS ==============================-->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Flux RSS du blog Incaya"
+      href="https://incaya.fr/blogs/index.xml"
+    />
+    <!-- ============ CSS ========== -->
+    {{ $options := (dict "targetPath" "incaya.css" "enableSourceMap" (not
+    hugo.IsProduction)) }} {{ $style := resources.Get "scss/main.scss" |
+    resources.ToCSS $options }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+    <!-- ============ Prism.js css ========== -->
+    {{ block "prismcss" . }}{{ end }}
+    <!-- ============ OpenGraph ========== -->
+    {{ template "_internal/opengraph.html" . }}
+    <!-- ============ JSON-LD ========== -->
+    {{block "jsonld" . }}{{ end }}
   </head>
   <body>
     {{- partial "header.html" . -}}

@@ -5,6 +5,8 @@ description: "Retour sur une preuve de concept : le deep learning pour mieux con
 date: 2023-06-30
 draft: false
 in_search_index: true
+images:
+- /blog/edgedatacam-ia-papillons/hero.jpg
 tags: 
 - hétérocères
 - papillons

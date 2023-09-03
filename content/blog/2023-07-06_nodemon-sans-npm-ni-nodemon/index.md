@@ -8,6 +8,8 @@ in_search_index: true
 tags: 
 - javascript
 - anti-npm-npm-club
+images:
+- /blog/nodemon-sans-npm-ni-nodemon/hero.jpg
 ---
 
 `npm` n'est pas en odeur de sainteté ces jours-ci chez INCAYA (cela mériterait un post à part entière pour l'expliquer). Mais comme on aime tout de même JavaScript, nous venons de commencer un projet s'appuyant sur un serveur tournant sur Node.js. L'une des questions classiques en phase de démarrage technique de ce type de projet est la suivante : comment faire pour relancer automatiquement le processus node lorsque le code est modifié ?
