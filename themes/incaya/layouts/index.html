@@ -1,10 +1,16 @@
-{{ define "main" }}
-
-  {{ partial "home/introduction.html" . }}
-  {{ partial "home/artisans.html" . }}
-  {{ partial "home/cooperative.html" . }}
-  {{ partial "home/references.html" . }}
-  {{ partial "home/blog.html" . }}
-  {{ partial "home/floss.html" . }}
-
-{{ end }}
+{{ define "jsonld" }}
+<script type="application/ld+json">
+  {
+    "description": "Comprendre votre métier et son quotidien, imaginer ou repenser une architecture technique, trouver les professionnels qualifiés pour développer vos outils et les maintenir au long cours.",
+    "url": "https://incaya.fr",
+    "@type": "WebSite",
+    "headline": "Une coopérative d'artisans du numérique",
+    "name": "INCAYA",
+    "image": "https://incaya.fr/images/logo.png",
+    "@context": "https://schema.org"
+  }
+</script>
+{{ end }} {{ define "main" }} {{ partial "home/introduction.html" . }} {{
+partial "home/artisans.html" . }} {{ partial "home/cooperative.html" . }} {{
+partial "home/references.html" . }} {{ partial "home/blog.html" . }} {{ partial
+"home/floss.html" . }} {{ end }}
