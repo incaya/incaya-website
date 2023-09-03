@@ -2,14 +2,28 @@
   <a class="brand" href="/">INCAYA</a>
   <nav aria-label="menu de navigation">
     <ul>
-      <li><a class="active" href="/">Accueil</a></li>
+      <li><a id="main-nav-home" href="/">Accueil</a></li>
       <li>
-        <a href="/la-cooperative">Coopérative</a>
+        <a id="main-nav-scop" href="/la-cooperative">Coopérative</a>
       </li>
       <li>
-        <a href="/nos-references">Références</a>
+        <a id="main-nav-ref" href="/nos-references">Références</a>
       </li>
-      <li><a href="/blog/">Blog</a></li>
+      <li><a id="main-nav-blog" href="/blog/">Blog</a></li>
     </ul>
   </nav>
+  <script type="text/javascript">
+    window.addEventListener("load", function () {
+      const path = window.location.href;
+      if (path.includes("la-cooperative")) {
+        document.getElementById("main-nav-scop").classList.add("active");
+      } else if (path.includes("nos-references")) {
+        document.getElementById("main-nav-ref").classList.add("active");
+      } else if (path.includes("blog")) {
+        document.getElementById("main-nav-blog").classList.add("active");
+      } else {
+        document.getElementById("main-nav-home").classList.add("active");
+      }
+    });
+  </script>
 </header>
