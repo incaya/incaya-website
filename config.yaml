@@ -52,26 +52,23 @@ markup:
 # menu footer 
 menu:
   footer: 
+  - name: Mastodon
+    url: https://mastodon.scop.coop/@incaya
+    weight: 10
+    pre: /icons/mastodon.svg
+  - name: Linkedin
+    url: https://www.linkedin.com/company/scop-incaya
+    pre: /icons/linkedin.svg
+    weight: 20
+  footerlinks: 
+  - name: Codeberg
+    url: https://codeberg.org/INCAYA
+    pre: /icons/codeberg.svg
+    weight: 10
   - name: Github
     url: https://github.com/incaya/
     pre: /icons/github.svg
-    weight: 10
-  # - name: Codeberg
-  #   url: https://codeberg.org/INCAYA
-  #   pre: /icons/codeberg.svg
-  #   weight: 20
-  - name: Mastodon
-    url: https://mastodon.scop.coop/@incaya
-    weight: 30
-    pre: /icons/mastodon.svg
-  #- name : Matrix
-  #  url: 
-  #  pre: /icons/matrix.svg
-  #  weight: 30
-  #- name : Twitter
-  #  url: 
-  #  pre: /icons/twitter.svg
-  #  weight: 40
+    weight: 20
 
 
 
