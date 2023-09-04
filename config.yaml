@@ -2,56 +2,21 @@ baseURL: https://incaya.fr
 defaultContentLanguage: fr
 languageCode: fr-fr
 title: "INCAYA"
-theme: "incaya"
+disableHugoGeneratorInject: true
 
-# Manage languages
-# For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
-languages:
-  fr:
-    languageName: French
-    weight: 1
-
-# Control TOC depth
-markup:
-  tableOfContents:
-    startLevel: 2
-    endLevel: 6
-    ordered: false
-
-# Enable global emoji support
-enableEmoji: false
-
-outputs:
-  home:
-  - HTML
-  # - RSS
-  # - JSON
-
-# Site parameters
-params:
-  # GitHub repo URL of your site
-  gitRepo: https://github.com/incaya/incaya-website.io
-
-  # specify whether you want to write some blog posts or not
-  enableBlogPost: true
-
-  # specify whether you want to show Table of Contents in reading page
-  enableTOC: true
-
-  # Provide newsletter configuration. This feature hasn't been implemented yet.
-  # Currently, you can just hide it from the footer.
-  newsletter:
-    enable: false
-
- # autorize raw HTML in Markdown files
+# autorize raw HTML in Markdown files
 markup:
   goldmark:
     renderer:
       unsafe: true
 
-# menu footer 
+# configure tags
+taxonomies:
+  tag: tags
+
+# Menus footer 
 menu:
-  footer: 
+  footer_contact: 
   - name: Mastodon
     url: https://mastodon.scop.coop/@incaya
     weight: 10
@@ -60,7 +25,7 @@ menu:
     url: https://www.linkedin.com/company/scop-incaya
     pre: /icons/linkedin.svg
     weight: 20
-  footerlinks: 
+  footer_web: 
   - name: Codeberg
     url: https://codeberg.org/INCAYA
     pre: /icons/codeberg.svg
@@ -69,25 +34,3 @@ menu:
     url: https://github.com/incaya/
     pre: /icons/github.svg
     weight: 20
-
-
-
-# configure tags
-taxonomies:
-  tag: tags
-
-# garanty privacy of users
-
-privacy:
-  disqus:
-    disable: true
-  googleAnalytics:
-    disable: true
-  instagram:
-    disable: true
-  twitter:
-    disable: true
-  vimeo:
-    disable: true
-  youtube:
-    disable: true

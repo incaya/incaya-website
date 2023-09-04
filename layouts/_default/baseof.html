@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- ============ META ============ -->
     {{ block "meta" . }}
     <title>INCAYA - Une coopérative d'artisans du numérique</title>
     <meta
@@ -11,11 +12,16 @@
       content="Comprendre votre métier et son quotidien, imaginer ou repenser une architecture technique, trouver les professionnels qualifiés pour développer vos outils et les maintenir au long cours"
     />
     {{ end }}
+    <!-- ============ OpenGraph ========= -->
+    {{ template "_internal/opengraph.html" . }}
+    <!-- ============ JSON-LD ========= -->
+    {{block "jsonld" . }}{{ end }}
+    <!--============ Favicon ============ -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <!--=================== RSS ==============================-->
+    <!--============ RSS ============ -->
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -27,12 +33,8 @@
     hugo.IsProduction)) }} {{ $style := resources.Get "scss/main.scss" |
     resources.ToCSS $options }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-    <!-- ============ Prism.js css ========== -->
+    <!-- ============ Prism.js css ============ -->
     {{ block "prismcss" . }}{{ end }}
-    <!-- ============ OpenGraph ========== -->
-    {{ template "_internal/opengraph.html" . }}
-    <!-- ============ JSON-LD ========== -->
-    {{block "jsonld" . }}{{ end }}
   </head>
   <body>
     {{- partial "header.html" . -}}
