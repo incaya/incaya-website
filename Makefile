@@ -27,9 +27,6 @@ start: ## Lancement de Hugo en mode dev
 new-blog-post: ## Création d'un nouveau post de blog
 	./new-blog-post.sh
 
-new-project: ## Création d'un nouveau projet
-	./new-project.sh
-
 #-------------
 # Exploitation
 #-------------
