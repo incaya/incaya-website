@@ -1,0 +1,36 @@
+{{ define "meta" }}
+<title>{{ .Page.Title }}</title>
+<meta name="description" content="{{ .Page.Description  }}" />
+{{ end }} {{ define "jsonld" }}
+<script type="application/ld+json">
+  {
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ .RelPermalink | absURL }}"
+    },
+    "description": "{{ .Params.Description }}",
+    "url": "{{ .RelPermalink | absURL }}",
+    "@type": "BlogPosting",
+    "headline": "{{ .Title }}",
+    "dateModified": "{{ .Date.UTC }}",
+    "datePublished": "{{ .Date.UTC }}",
+    "author": { "@type": "Organization", "name": "INCAYA" },
+    "@context": "https://schema.org"
+  }
+</script>
+{{ end }} {{ define "prismcss" }}
+<link rel="stylesheet" href="/css/prism-accessible.css" />
+{{ end }} {{ define "main" }}
+<div class="container">
+  <article>
+    <h1>{{ .Page.Title }}</h1>
+    <div class="intro">{{ .Page.Description }}</div>
+    <div
+      class="hero"
+      style='background-image: url({{ strings.TrimSuffix "/" site.BaseURL }}{{ partial "helpers/get-hero.html" . }});'
+    ></div>
+    {{ .Page.Content }}
+  </article>
+</div>
+<script src="/js/prism.js"></script>
+{{ end }}

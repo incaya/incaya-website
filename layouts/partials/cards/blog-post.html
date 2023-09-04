@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-head">
+    <a href="{{ .RelPermalink }}" title="Lire plus"
+      ><img
+        class="card-img"
+        src="{{ partial "helpers/get-small-hero.html" . }}"
+        alt="{{ .Title }} main image"
+    /></a>
+  </div>
+  <div class="card-body">
+    <h3 class="card-title">{{ .Title }}</h3>
+    <p class="card-text">{{ .Description }}</p>
+  </div>
+  <div class="card-footer">
+    <div class="tags-holder">
+        {{ partial "tags.html" .}}
+    </div>
+    <time datetime="{{ .Date | time.Format ":date_short"}}">{{ .Date | time.Format ":date_medium" }}</time>
+    <a href="{{ .RelPermalink }}" title="Lire plus" class="btn-more">Lire</a>
+  </div>
+</div>

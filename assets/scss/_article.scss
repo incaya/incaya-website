@@ -1,0 +1,37 @@
+article {
+  padding: 0 3%;
+  overflow: hidden;
+  h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 3rem 0 1rem 0;
+    line-height: 2.5rem;
+  }
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  h2 {
+    line-height: 2rem;
+  }
+  p {
+    color: #04141a;
+    font-weight: 500 !important;
+  }
+  a {
+    text-decoration: underline !important;
+  }
+  img {
+    max-width: 100%;
+  }
+  .card-container {
+    .card {
+      min-height: 330px;
+    }
+  }
+}

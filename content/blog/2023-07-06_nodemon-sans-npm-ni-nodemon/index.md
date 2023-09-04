@@ -8,6 +8,8 @@ in_search_index: true
 tags: 
 - javascript
 - anti-npm-npm-club
+images:
+- /blog/nodemon-sans-npm-ni-nodemon/hero.jpg
 ---
 
 `npm` n'est pas en odeur de sainteté ces jours-ci chez INCAYA (cela mériterait un post à part entière pour l'expliquer). Mais comme on aime tout de même JavaScript, nous venons de commencer un projet s'appuyant sur un serveur tournant sur Node.js. L'une des questions classiques en phase de démarrage technique de ce type de projet est la suivante : comment faire pour relancer automatiquement le processus node lorsque le code est modifié ?
@@ -31,7 +33,7 @@ RUN apt-get update && apt-get install -y \
 
 Ensuite, on écrit un petit script `bash` pour lancer le serveur (`node server.js`), puis `inotifwait` sur le répertoire contenant notre code à observer (`api` dans l'exemple à suivre):
 
-```sh
+```bash
 // in watch.sh
 #!/bin/sh
 node server.js &

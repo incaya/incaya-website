@@ -1,6 +1,0 @@
----
-hero: 
-author:
-    name: 
-    image: 
----

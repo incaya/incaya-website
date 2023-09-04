@@ -1,0 +1,96 @@
+<footer>
+  <div class="container">
+    <div class="top-footer">
+      <div>
+        <h1>Navigation</h1>
+        <nav arial-label="menu du pieds de page">
+          <ul>
+            <li>
+              <a href="/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="/la-cooperative/">Coopérative</a>
+            </li>
+            <li class="nav-item">
+              <a href="/nos-references">Références</a>
+            </li>
+            <li class="nav-item">
+              <a href="/blog/">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <h1>Sur le web</h1>
+        <ul>
+          {{ range .Site.Menus.footer_web }}
+          <li>
+            <a
+              rel="me"
+              href="{{.URL }}"
+              title="Aller sur notre page {{ .Name }}"
+            >
+              <img
+                src="{{ .Pre }}"
+                class="icon"
+                alt="lien vers {{ .Name }}"
+              />{{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div>
+        <h1>Contactez-nous</h1>
+        <ul>
+          <li>
+            <a href="mailto:contact@incaya.fr">
+              <img
+                src="/icons/envelope-solid.svg"
+                alt="icone email"
+                class="icon"
+              />
+              contact@incaya.fr
+            </a>
+          </li>
+          {{ range .Site.Menus.footer_contact }}
+          <li>
+            <a
+              rel="me"
+              href="{{.URL }}"
+              title="Aller sur notre page {{ .Name }}"
+            >
+              <img
+                src="{{ .Pre }}"
+                class="icon"
+                alt="lien vers {{ .Name }}"
+              />{{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div>
+        <a href="/" aria-label="Logo du footer Incaya retour en haut de page"
+          ><img src="/images/logo-mobile.svg" alt="logo incaya" class="logo"
+        /></a>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="container">
+    <div class="cc-footer">
+      <a
+        href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"
+        title="Creative Commons"
+        rel="noopener"
+      >
+        <img src="/icons/cc.svg" alt="logo creative commons" class="icon"
+      /></a>
+      2016-2023 INCAYA •
+      <a href="/mentions-legales/" title="mentions légales" rel="noopener"
+        >Mentions Légales</a
+      >
+    </div>
+  </div>
+</footer>

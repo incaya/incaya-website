@@ -1,92 +1,42 @@
 baseURL: https://incaya.fr
 defaultContentLanguage: fr
 languageCode: fr-fr
-title: "INCAYA"
-theme: "incaya"
-
-# Manage languages
-# For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
-languages:
-  fr:
-    languageName: French
-    weight: 1
-
-# Control TOC depth
-markup:
-  tableOfContents:
-    startLevel: 2
-    endLevel: 6
-    ordered: false
-
-# Enable global emoji support
-enableEmoji: false
-
-outputs:
-  home:
-  - HTML
-  - RSS
-  - JSON
-
-# Site parameters
-params:
-  # GitHub repo URL of your site
-  gitRepo: https://github.com/incaya/incaya-website.io
-
-  # specify whether you want to write some blog posts or not
-  enableBlogPost: true
-
-  # specify whether you want to show Table of Contents in reading page
-  enableTOC: true
-
-  # Provide newsletter configuration. This feature hasn't been implemented yet.
-  # Currently, you can just hide it from the footer.
-  newsletter:
-    enable: false
-
- # autorize raw HTML in Markdown files
+title: INCAYA
+disableHugoGeneratorInject: true
+enableRobotsTXT: true
+sitemap:
+  changeFreq: monthly
+  filename: sitemap.xml
+  priority: -1
+# autorize raw HTML in Markdown files
 markup:
   goldmark:
     renderer:
       unsafe: true
-
-# menu footer 
-menu:
-  footer: 
-  - name: Github
-    url: https://github.com/incaya/
-    pre: /icons/github.svg
-    weight: 10
-  - name: Mastodon
-    url: https://mastodon.scop.coop/@incaya
-    weight: 20
-    pre: /icons/mastodon.svg
-  #- name : Matrix
-  #  url: 
-  #  pre: /icons/matrix.svg
-  #  weight: 30
-  #- name : Twitter
-  #  url: 
-  #  pre: /icons/twitter.svg
-  #  weight: 40
-
-
-
 # configure tags
 taxonomies:
   tag: tags
+disableKinds:
+- taxonomy
+- term
 
-# garanty privacy of users
-
-privacy:
-  disqus:
-    disable: true
-  googleAnalytics:
-    disable: true
-  instagram:
-    disable: true
-  twitter:
-    disable: true
-  vimeo:
-    disable: true
-  youtube:
-    disable: true
+# Menus footer 
+menu:
+  footer_contact: 
+  - name: Mastodon
+    url: https://mastodon.scop.coop/@incaya
+    weight: 10
+    pre: /icons/mastodon.svg
+  - name: Linkedin
+    url: https://www.linkedin.com/company/scop-incaya
+    pre: /icons/linkedin.svg
+    weight: 20
+  footer_web: 
+  - name: Codeberg
+    url: https://codeberg.org/INCAYA
+    pre: /icons/codeberg.svg
+    weight: 10
+  - name: Github
+    url: https://github.com/incaya/
+    pre: /icons/github.svg
+    weight: 20

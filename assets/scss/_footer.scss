@@ -1,0 +1,95 @@
+footer {
+  margin-top: 50px;
+  color: $blanc !important;
+  background-color: $foncé;
+  position: relative;
+  z-index: 200;
+  border-top: 4px solid $clair;
+  padding-bottom: 0.5rem !important;
+
+  h1 {
+    font-size: 1.5rem;
+    color: $clair;
+    font-weight: 400;
+    margin: 0 0 0.7rem 0;
+  }
+
+  a {
+    color: $blanc;
+  }
+
+  hr {
+    background-color: $clair;
+    width: 86%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .icon {
+    width: 20px;
+    margin-right: 5px;
+    filter: invert(88%) sepia(11%) saturate(617%) hue-rotate(335deg)
+      brightness(109%) contrast(96%);
+  }
+
+  .top-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 3rem !important;
+    line-height: 1.8rem;
+    @media only screen and (max-width: 576px) {
+      flex-direction: column;
+      align-items: start;
+      margin-left: 5%;
+    }
+    div {
+      margin: 0 1rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      li a {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .logo {
+      margin-top: 1rem !important;
+      width: 100px;
+      height: auto;
+      @media only screen and (max-width: 576px) {
+        display: none;
+      }
+    }
+  }
+
+  .cc-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    a {
+      margin: 0 0.5rem;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        transition: color 0.3s ease-out;
+        color: $logo !important;
+        text-decoration: none;
+      }
+    }
+    .icon {
+      &:hover {
+        filter: invert(65%) sepia(93%) saturate(879%) hue-rotate(164deg)
+          brightness(98%) contrast(91%);
+      }
+    }
+  }
+}

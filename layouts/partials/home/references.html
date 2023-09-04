@@ -1,0 +1,15 @@
+<section class="reference-section">
+  <div class="container">
+    <h2>Ils nous font confiance</h2>
+    <div class="reference-logo">
+      {{ range first 6 $.Site.Data.clients.current }}
+      <img src="{{ .logo }}" alt="{{ .name }}" title="{{ .name }}" />
+      {{ end }}
+    </div>
+    <div class="button-container">
+      <a class="button dark-button-link" href="/nos-references/">
+        Découvrez toutes nos références
+      </a>
+    </div>
+  </div>
+</section>

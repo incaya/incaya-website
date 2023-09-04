@@ -1,0 +1,9 @@
+<section class="recent-posts-section">
+  <div class="container">
+    <h2>Nos derniers articles</h2>
+    <div class="card-container">
+      {{ range first 3 (where site.RegularPages.ByDate.Reverse "Type" "in"
+      "blog" )}} {{ partial "cards/blog-post.html" . }} {{ end }}
+    </div>
+  </div>
+</section>

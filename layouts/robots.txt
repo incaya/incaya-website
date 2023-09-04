@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+Sitemap: https://incaya.fr/sitemap.xml
+User-agent: GPTBot
+Disallow: /
