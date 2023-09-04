@@ -1,18 +1,24 @@
 baseURL: https://incaya.fr
 defaultContentLanguage: fr
 languageCode: fr-fr
-title: "INCAYA"
+title: INCAYA
 disableHugoGeneratorInject: true
-
+enableRobotsTXT: true
+sitemap:
+  changeFreq: monthly
+  filename: sitemap.xml
+  priority: -1
 # autorize raw HTML in Markdown files
 markup:
   goldmark:
     renderer:
       unsafe: true
-
 # configure tags
 taxonomies:
   tag: tags
+disableKinds:
+- taxonomy
+- term
 
 # Menus footer 
 menu:

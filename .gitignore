@@ -9,4 +9,3 @@ configNginxLegacy.conf
 hugo.exe
 bin
 
-!public/robots.txt

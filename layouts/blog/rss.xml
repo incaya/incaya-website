@@ -4,7 +4,6 @@
     <title>Le blog d'INCAYA</title>
     <link>{{ .Permalink }}</link>
     <description>Nos derniers articles</description>
-    <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <managingEditor>contact@incaya.fr</managingEditor>
     <copyright>Creative Commons BY-NC-SA 4.0</copyright>
